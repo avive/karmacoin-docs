@@ -8,57 +8,55 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'Private and Secure',
-    imageUrl: 'logo_basic_var1_white.png',
+    title: 'The coin we all need',
+    imageUrl: 'screen1.png',
     description: (
       <>
-        Strong end-to-end encryption. No one company with access to users data and to change privacy terms.
-        No censorship. No mobile phone number or email required. Self moderated channels.
-        Users are in full control. Swappable service providers. Be as personal or anonymous as you want to be.
+        The world needs a global decentralized cryptocurrency that is actually used by millions of everyday people to fulfill the full potential of crypto as an alternative to national currencies.
       </>
     ),
   },
   {
-    title: 'Powerful Features',
-    imageUrl: 'logo_basic_var2_white.png',
+    title: 'The social graph we need',
+    imageUrl: 'screen2.png',
     description: (
-      <>Use on mobile or on your desktop. Instant message with anyone. Publish status updates to followers. Create or join groups. Publish a paid newsletter. Buy and sell digital media. Create feeds to easily experience content from multiple  sources and more...
+      <>The world needs a global, objective and decentralized social graph of core relationships between people and between people and orgs in order to create meaningful digital decentralized identities. The identities are critical for creating an impactful web3 future.
       </>
     ),
   },
   {
-    title: 'Instant Global Payments',
-    imageUrl: 'logo_basic_var3_white.png',
+    title: 'Introducing KarmaCoin',
+    imageUrl: 'screen3.png',
     description: (
       <>
-         A built-in stable and global digital-currency and a global payments network enable instant payments between any two users and between users and service providers. Buy and sell digital content items, charge a subscription fee for your premium digital content and more...
+         A cryptocurrency designed for giving first and payments later. Provides a first-rate mobile-native user experience for the rest of us. Becomes valuable out of real-world value created by usage and not by speculation and hype.
       </>
     ),
   },
   {
-    title: '100% Ads Free',
-    imageUrl: 'logo_basic_var5_white.png',
+    title: 'Hello Karma Score',
+    imageUrl: 'screen4.png',
     description: (
       <>
-        A new business model for digital communications. No ads on the platform. There is no company that provides the service to users that may change this in the future. Users pay service providers for communication services based on usage with a stable digital currency.
+        Karma score is a measure of a person's positive character traits. It is created by real people appreciating other people using the KarmaCoin mobile app.
       </>
     ),
   },
   {
-    title: 'Highly Opinionated',
-    imageUrl: 'logo_basic_var6_white.png',
+    title: 'A coin for all of us',
+    imageUrl: 'screen5.png',
     description: (
       <>
-        Clear and strong project values about identity, censorship, moderation, users privacy and users rights drive all the platform's design desicions so users interestes and considirations are always first. By design, no company can put its interest above the user's.
+        People use one simple, mobile native wallet app and don't have to deal with any crypto keys.
       </>
     ),
   },
   {
-    title: 'Open Source',
-    imageUrl: 'logo_basic_var7_white.png',
+    title: 'A solid open source blockchain',
+    imageUrl: 'screen1.png',
     description: (
       <>
-        All Subnet software and network protocols are 100% open source and are fully auditable by any security expert to ensure that the apps you install behave what they promise you they behave, are not spying on you, and are not using you as a feature in a product they sell to other companies.
+        KarmaCoin is maintained by a permissioned and decentralized modern blockchain technology.
       </>
     ),
   },
