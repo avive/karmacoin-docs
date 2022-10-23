@@ -88,8 +88,7 @@ function Home() {
       description="The coin for positive humanity">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
-          <img className={styles.bannerLogo} src={'logo_icon_black_trans.svg'}/>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
+          <img className={styles.bannerLogo} src={'banner.png'}/>
           <div className={styles.buttons}>
             <Link
               className={clsx(

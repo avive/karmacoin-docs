@@ -100,7 +100,7 @@ The following is a conceptual definition of all on-chain stored data. Besides us
 ```protobuf
 message OnChainData {
   repeated User users = 1;
-  repeated SmsVerifier sms_verifiers = 2;
+  repeated PhoneVerifier sms_verifiers = 2;
   repeated TraitName traits = 3; // char trait ids supported by the system
   repeated SignedTransaction transactions = 4; // all transactions
 }
