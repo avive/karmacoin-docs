@@ -1,0 +1,97 @@
+---
+id: transactions
+title: Transactions
+sidebar_label: Transactions
+slug: /transactions
+---
+
+Karmacoin has 3 types of transactions.
+- `Payment transaction` - used to send coin between 2 accounts with optionally to appreciate a user's character trait.
+- `New user transaction` - can only be submitted by verifiers once they hace verified a new mobile phone number. This transaction creates a new user on-chain account with initial balance.
+- `Update user transaction` - can be submitted by verifiers to update a user's mobile phone number with a new verified phone number. Submitted by users to update their unique nickname and their encryption pre-keys.
+
+## Transctions Data
+
+```protobuf
+enum TransactionType {
+    TRANSACTION_TYPE_PAYMENT_V1 = 0;
+    TRANSACTION_TYPE_NEW_USER_V1 = 1;
+    TRANSACTION_TYPE_UPDATE_USER_V1 = 2;
+}
+
+// Basic payment transaction with optional character appreciation
+message PaymentTransactionV1 {
+    AccountId from = 1; // account this tx is signed by
+    MobileNumber to = 2; // dest is always a mobile number (of a user or a non-user
+    Amount amount = 3; // amount in tokens to transfer
+    Amount fee = 4; // network fee provided by sender
+    Amount tip = 5; // optional extra tip to miners
+    CharTrait trait = 6; // char trait set by sender. e.g. smart
+}
+
+// new user transactions can be submitted by sms verifiers only
+message NewUserTransactionV1 {
+    // initial user balance
+    User user = 1;
+}
+
+// Update user info
+message UpdateUserV1 {
+  // Only user may change his account id by signing with private key of old accountId
+  AccountId account_id = 1;
+  // Only user may change his own nickname. Nicknames are unique.
+  string nickname = 2;
+
+  // Only Verifier may update user's mobile number as it requires verification
+  MobileNumber mobile_number = 3;
+}
+
+// SignedTransaction is a transaction with additional meta-data such as author signature, network id and timestamp.
+message SignedTransaction {
+    uint64 timestamp = 1; // time transaction was signed
+    bytes transaction_data = 2; // binary transaction data
+    TransactionType type = 3; // transaction type for deserialization
+    uint32 network_id = 4; // network id to avoid confusion with testnets
+    Signature signature = 5; // signer signature on all of the above data
+}
+
+
+```
+
+---
+## Events
+
+```protobuf
+
+// events - emitted by runtime, all stored by archive nodes only
+// full nodes have only recent events
+enum SignupMethod {
+  SIGN_UP_METHOD_INVITE = 0; // user was invited by another user
+  SIGN_UP_METHOD_SIGNUP = 1; // user wasn't invited - signed up
+}
+
+message NewUserEvent {
+  uint64 timestamp = 1;
+  AccountId account_id = 2;
+  SignupMethod sign_up_method = 3;
+  Amount inviter_reward = 4; // for invites - inviter gets a reward - protocol constant
+  SmsVerifier verifier = 5;
+}
+
+// Transaction added to ledger
+message TransactionEvent {
+  uint64 height = 1; // ledger height of execution
+  SignedTransaction transaction = 2;
+  ExecutionResult result = 3;
+}
+
+enum FeeType {
+  FEE_TYPE_MINT = 0;
+  FEE_TYPE_USER = 1;
+}
+```
+
+---
+:::info License
+Copyright (c) 2022 by the [Karmacoin Authors](https://github.com/avive/karmacoin-docs). This work is licensed under the [Karmacoin License](/docs/license).
+:::

@@ -9,12 +9,12 @@ slug: /tokenomics
 
 ## Coin types
 - `KCents` - basic accounting unit.
-- `KCoins ($KC)` - The core Karmacoin cryptocurrency. One KCoin equals one million KCents.
+- `KCoins ($KC)` - The core Karmacoin cryptocurrency. One KCoin equals one thousand KCents.
 - `KCoinsStable $KCS` - The KarmaCoin stable-coin cryptocurrency. This stable coin will be issued post-genesis on the KarmaCoin blockahin.
 ---
 
 ## Supply
-- Supply is capped at 2 billion KCoins. The coins is minted by the protocol over a 10 years period based on the number of users on the system.
+- Supply is capped at 2 billion KCoins (2 trillion Kcents). The coins is minted by the protocol over a 10 years period based on the number of users on the system.
 
 ## Pre-minting Allocations
 - 20% of supply (0.4 Billion Kcoins) is pre-minted on genesis.
