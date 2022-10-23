@@ -1,0 +1,15 @@
+{
+  "version-0.1.0/someSidebar": [
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "👋 Intro",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-0.1.0/intro/intro"
+        }
+      ]
+    }
+  ]
+}
