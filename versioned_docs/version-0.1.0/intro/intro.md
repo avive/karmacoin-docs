@@ -1,12 +1,12 @@
 ---
 id: intro
-title: Introducing Subnet
-sidebar_label: Introducing Subnet
+title: Introducing Karmacoin
+sidebar_label: Introducing Karmacoin
 slug: /
 ---
 
 intro
 
-:::tip License
-Copyright (c) 2022 by the [Subnet Authors](https://github.com/subnetter?tab=repositories). This work is licensed under the [Subnet License](/docs/license).
+:::info License
+Copyright (c) 2022 by the [Karmacoin Authors](https://github.com/avive/karmacoin-docs). This work is licensed under the [Karmacoin License](/docs/license).
 :::

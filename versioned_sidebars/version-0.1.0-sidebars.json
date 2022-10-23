@@ -10,6 +10,25 @@
           "id": "version-0.1.0/intro/intro"
         }
       ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "👋 Design",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-0.1.0/design/blockchain"
+        },
+        {
+          "type": "doc",
+          "id": "version-0.1.0/design/tokenomics"
+        },
+        {
+          "type": "doc",
+          "id": "version-0.1.0/design/onboarding"
+        }
+      ]
     }
   ]
 }

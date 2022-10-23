@@ -1,6 +1,6 @@
 ---
 id: license
-title: Subnet License v0.1.0
+title: Karmacoin License v0.1.0
 sidebar_label: 📜 License
 ---
 
@@ -32,7 +32,7 @@ This License does not grant you any right in any trademark or logo of Licensor o
 TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED WORK IS PROVIDED ON AN “AS IS” BASIS. LICENSOR HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS, EXPRESS OR IMPLIED, INCLUDING (WITHOUT LIMITATION) WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND TITLE.
 
 ## Subnet Authors
-- [Subnetter](https://github.com/subnetter) <subnetter@pm.me>
+- [Aviv Eyal](https://github.com/avive) <aviveyal07@gmail.com>
 
 ## License Inquiries
-Email subnetter@pm.me.
+Email aviveyal07@gmail.com
