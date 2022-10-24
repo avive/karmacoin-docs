@@ -32,7 +32,7 @@ This License does not grant you any right in any trademark or logo of Licensor o
 TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED WORK IS PROVIDED ON AN “AS IS” BASIS. LICENSOR HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS, EXPRESS OR IMPLIED, INCLUDING (WITHOUT LIMITATION) WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND TITLE.
 
 ## Subnet Authors
-- [Aviv Eyal](https://github.com/avive) <aviveyal07@gmail.com>
+- [AE](https://github.com) <a@karmaco.in>
 
 ## License Inquiries
 Email a@karmaco.in
