@@ -9,7 +9,7 @@ slug: /tokenomics
 
 ## Coin types
 - `KCents` - basic accounting unit.
-- `KCoins ($KC)` - The core Karmacoin cryptocurrency. One KCoin equals one thousand KCents.
+- `KCoins ($KC)` - The core Karmacoin cryptocurrency. One KCoin equals one million KCents.
 - `KCoinsStable $KCS` - The KarmaCoin stable-coin cryptocurrency. This stable coin will be issued post-genesis on the KarmaCoin blockahin.
 ---
 
@@ -32,10 +32,18 @@ The total allocation for this minting by the protocol is 1B KCoins.
 - Each month, the protocol mints 100 KCoins to the top 1000 users with the highest Karma coins that didn't get this award yet. Up to 700M KCoins are allocated for this reward. When these have been allocated the protocol stops rewarding users with top karam.
 - The protocol rewards 100M KCoins to users who use the coin for transactions over 10 years period in the form of transactions incentives. Transaction incentives are rewards awarded to the user who transfers coins to another user in the form of minting of the transaction fee instead of the user paying it.
 - These intentional design decision designed to encourage sign-ups, appreciation, and coin usage in the real-world as means of payment. 
-- 
+
+## Treasury
+The Karmacoin foundation is going to allocate 10M KCoins to an on-chain treasury that will be used to reward various stakeholders for behavior that advances the Karmacoin community, usage and values.
+
+## Bounty Rewards Pool
+The Karmacoin foundation is going to allocate 10M KCoins from its pre-minted coins to reward execution of technical tasks such as audits and bug reports. This pool is going to be managed on-chain for maximum transparency.
 
 ## Validator Awards
 - 0.6B KCoins are allocated by the protocol to rewards the Karmacoin blockchain validators. These are minting by the protocol over a 10 years period using a decay curve which rewards validators who starts validating early while still rewarding new validators that join the system over time.
+
+## Investors Funds
+Karmacoin investors founds are going to be managed on-chain by a vesting mechanism that enables them to pull vested funds according to their vesting schedule.
 
 
 :::info License

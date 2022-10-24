@@ -109,6 +109,19 @@ message OnChainData {
 - see Transactions for additional information about Karmacoin transactions...
 ---
 
+## Consensus Protocol
+
+KarmaCoin uses a nominated Proof of Stake (nPOS) consensus protocol with deterministic finality on blocks. The protocol used is Parity tech Babe and Grandpa. Block authors and validators must stake an amount of KCoin in order to participate in the network.
+
+KarmaCoin validators are responsible for both block authoring and chain validation.
+
+---
+
+## Accounts and Addresses
+KarmaCoin uses the SS58 address format for accounts. Accounts are derived from user's maintain private keys and include a network id to avoid cross-chain signing issues.
+
+
+---
 :::info License
 Copyright (c) 2022 by the [Karmacoin Authors](https://github.com/avive/karmacoin-docs). This work is licensed under the [Karmacoin License](/docs/license).
 :::
