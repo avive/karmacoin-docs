@@ -1,7 +1,7 @@
 module.exports = {
   title: 'KarmaCoin',
-  tagline: 'A Decentralized Communications Platform',
-  url: 'https://subnet.wtf',
+  tagline: 'The coin for all of us',
+  url: 'https://karmaco.in',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -14,10 +14,10 @@ module.exports = {
         theme: require('prism-react-renderer/themes/dracula')
     },
     navbar: {
-      title: 'Subnet',
+      title: 'KarmaCoin',
       logo: {
-        alt: 'Subnet Logo',
-        src: 'icon.svg',
+        alt: 'KarmaCoin Logo',
+        src: 'icon.png',
       },
       items: [
       {
