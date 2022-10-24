@@ -1,6 +1,6 @@
-# Subnet docs
+# KarmaCoin docs
 
-This docs web app is built using [Docusaurus 2](https://v2.docusaurus.io/).
+This repository contains the full source code for the KarmaCoin docs web app which is available at https://karmaco.in. It is built using [Docusaurus 2](https://v2.docusaurus.io/).
 
 ## Installation
 
@@ -11,7 +11,7 @@ yarn install
 ## Generate Sequences
 Use https://github.com/seflless/diagrams
 
-Navigate to static/seqs and run
+Navigate to static/seqs and run:
 
 ```console
 diagrams build

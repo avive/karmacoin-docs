@@ -5,7 +5,7 @@ sidebar_label: ðŸ“œ License
 ---
 
 ## Licensed Work
-Licensed Work includes all versions of Subnet documentation, designs, algorithms, computer software, source code authored by Subnet authors, and any executables software program or component compiled from the source code.
+Licensed Work includes all versions of KarmaCoin documentation, designs, algorithms, computer software, source code authored by Subnet authors, and any executables software program or component compiled from the source code.
 
 ## Licensor
 The licensor is the Subnet Authors.
@@ -35,4 +35,4 @@ TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED WORK IS PROVIDED ON AN â
 - [Aviv Eyal](https://github.com/avive) <aviveyal07@gmail.com>
 
 ## License Inquiries
-Email aviveyal07@gmail.com
+Email a@karmaco.in
