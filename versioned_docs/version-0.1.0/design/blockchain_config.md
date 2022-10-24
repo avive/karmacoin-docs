@@ -18,14 +18,22 @@ KarmaCoin uses a dPOS consensus algorithm. Validators need to acquire KCoins fro
 KarmaCoin blockchain includes a Sudo account to perform blockchain maintenance while the the tech is experimental and the product is in beta. The goal is to remove the Sudo account via governance when the blockchain is ready for full decentralization operation.
 
 ## Governance
-A governance decision is needed for the eventual removal of Sudo.
-A governance decision is to perform a blockchain runtime updates.
-A governance is needed for KarmaCoin consensus rules updates.
+Karmacoin supports an on-chain governance system which the Karmacoin foundation is legally obligated to respect.
+The following fundamental product changes must pass an on-chain voting procedure.
 
-## Validator Deposit
+- A governance decision is required for the removal of Sudo account once the chain has proven to be stable and bug free.
+- A governance decision is required to perform any blockchain runtime updates.
+- A governance decision is needed for any consensus rules updates.
 
 ## Existential Deposit
 The existential deposit in KarmaCoin is 100 KCents. When the protocol allocated sign-up reward is depleted after 110 million users, new users get 200 KCents on new account creation from the verifier's account. Existential deposit is the minimum balance which permits an account to execute transactions.
+
+## Social Account Recovery
+
+
+## Lottery Games
+
+
 
 ---
 :::info License
