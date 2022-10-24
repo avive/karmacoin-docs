@@ -9,6 +9,11 @@ module.exports = {
   organizationName: 'avive', // GitHub org/user name.
   projectName: 'karmacoin-docs', // repo name.
   themeConfig: {
+    colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: true,
+      respectPrefersColorScheme: false,
+    },
     prism: {
         additionalLanguages: ['protobuf'],
         theme: require('prism-react-renderer/themes/dracula')
