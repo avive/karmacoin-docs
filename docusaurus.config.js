@@ -7,7 +7,7 @@ module.exports = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'icon.png',
   organizationName: 'avive', // Usually your GitHub org/user name.
-  projectName: 'karmacoin', // Usually your repo name.
+  projectName: 'karmacoin-docs', // Usually your repo name.
   themeConfig: {
     prism: {
         additionalLanguages: ['protobuf'],
@@ -54,7 +54,7 @@ module.exports = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/subnet',
+              href: 'https://github.com/avive/karmacoin',
             },
           ],
         },
@@ -70,7 +70,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/avive/karmacoin',
+            'https://github.com/avive/karmacoin-docs',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true
         },
@@ -78,7 +78,7 @@ module.exports = {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/avive/karmacoin',
+            'https://github.com/avive/karmacoin-docs',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
