@@ -75,7 +75,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/avive/karmacoin-docs',
+            'https://github.com/karmacoin-docs',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true
         },
@@ -83,7 +83,7 @@ module.exports = {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/avive/karmacoin-docs',
+            'https://github.com/karmacoin-docs',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
