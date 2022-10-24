@@ -6,8 +6,8 @@ module.exports = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'icon.png',
-  organizationName: 'avive', // Usually your GitHub org/user name.
-  projectName: 'karmacoin-docs', // Usually your repo name.
+  organizationName: 'avive', // GitHub org/user name.
+  projectName: 'karmacoin-docs', // repo name.
   themeConfig: {
     prism: {
         additionalLanguages: ['protobuf'],

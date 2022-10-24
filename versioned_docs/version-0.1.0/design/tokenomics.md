@@ -17,7 +17,7 @@ slug: /tokenomics
 - Supply is capped at 2 billion KCoins (2 trillion Kcents). The coins is minted by the protocol over a 10 years period based on the number of users on the system.
 
 ## Pre-minting Allocations
-- 20% of supply (0.4 Billion Kcoins) is pre-minted on genesis.
+- 20% of supply (0.4 Billion KCoins) is pre-minted on genesis.
 - 50% of the pre-minted supply (0.2B KCoins) goes to the Karmacoin foundation and is used to build the platform.
 - 50% of the pre-minted supply (0.2B KCoins) goes to Karmacoin investors and is vested over a period of 5 years from genesis.
 
