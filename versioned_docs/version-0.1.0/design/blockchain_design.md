@@ -8,7 +8,7 @@ slug: /blockchain
 # Blockchain Design
 This page describes the KarmaCoin on-chain data. We are using `Protobufs` as the language to describe the data. The design decisions assume Karmacoin blockchain will be implemented using `Substrate`. This design constraint influences the data modeling as we ensure compatibility with Substrate basic data types and idioms. For example, account IDs are not public key but rather derived from public keys with optional a chain-id prefix to avoid cross-chains signature related issues and balances are defined to support locked funds.
 
-## Onchain Data
+## On-chain Data Modeling
 The following section describes the data stored on-chain.
 
 ### Basic Data Types
@@ -108,6 +108,7 @@ message OnChainData {
 
 - see Transactions for additional information about Karmacoin transactions...
 ---
+
 :::info License
 Copyright (c) 2022 by the [Karmacoin Authors](https://github.com/avive/karmacoin-docs). This work is licensed under the [Karmacoin License](/docs/license).
 :::

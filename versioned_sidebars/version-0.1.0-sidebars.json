@@ -14,11 +14,15 @@
     {
       "collapsed": true,
       "type": "category",
-      "label": "👋 Design",
+      "label": "📐 Design",
       "items": [
         {
           "type": "doc",
           "id": "version-0.1.0/design/blockchain"
+        },
+        {
+          "type": "doc",
+          "id": "version-0.1.0/design/blockchain-config"
         },
         {
           "type": "doc",
@@ -27,7 +31,12 @@
         {
           "type": "doc",
           "id": "version-0.1.0/design/onboarding"
+        },
+        {
+          "type": "doc",
+          "id": "version-0.1.0/design/mobileapp"
         }
+
       ]
     }
   ]

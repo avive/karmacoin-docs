@@ -5,7 +5,7 @@ sidebar_label: Onboarding
 slug: /onboarding
 ---
 
-## On-boarding via a referral happy flow
+## On-boarding via a referral
 1. Referrer's client creates a `payment transaction` with the receiver's mobile phone number and submits it to the network. In this case the receiver's has not created a user account yet. User can optionally specify a receiver's character trait to appreciate.
 2. The active verifier sends a text message to the receiver's mobile phone, with link to download the app to his mobile phone with information about the amount of coin sent to it and the optional character trait appreciation.
 3. Receiver downloads the Karmacoin mobile app and signs-up using his mobile phone number.
@@ -28,7 +28,7 @@ The chain should now have the following state:
 > Referral reward and signup rewards are assigned while the protocol hasn't reach the limit of minting of coins for these rewards. See tokenomics for more info.
 
 ---
-## On-boarding without a referral happy flow
+## On-boarding without a referral
 1. New user signs-up via a Karmacoin client and verifies his mobile phone number using the active verifier.
 2. The verifier creates, signs and submits a `new user transaction` to the Karmacoin blockchain. It sets the referral's account id to void to signal that there is no referral for this new account creation.
 3. Block producer executes the transaction, adds the new user account and the transaction to the chain and gets the transaction fee from the verifier. It also assigns the new user sign-up reward when applicable according to the protocol.
