@@ -7,7 +7,7 @@ slug: /
 
 ![](/banner.png)
 
-| ![](/screen1.png)   	 | ![](/screen4.png)	 | ![](/screen3.png)	 | ![](/screen2.png) |
+| ![](/screen1.png)   	 | ![](/screen4.png)	 | ![](/screen3.png)	 | ![](/screen5.png) |
 |-----------------------|--------------------|--------------------|-------------------|
 
 ## Why

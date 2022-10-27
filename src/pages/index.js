@@ -53,7 +53,7 @@ const features = [
   },
   {
     title: 'A solid open source blockchain',
-    imageUrl: 'screen1.png',
+    imageUrl: 'screen6.png',
     description: (
       <>
         KarmaCoin is maintained by a permissioned and decentralized modern blockchain technology.
