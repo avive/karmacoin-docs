@@ -47,16 +47,16 @@ Karmacoin investors founds are going to be managed on-chain by a vesting mechani
 --- 
 ## Summary Allocation KarmaCoin Dev Company
 - A total allocation 250M KCoins of consisting of:
-- 10M KCoins - treasury for contributors allocation
-- 10M KCoins - bounties rewards pool
-- 230M KCoins - builders compensation
+- 10M KCoins - treasury for contributors allocation.
+- 10M KCoins - bounties rewards pool.
+- 230M KCoins - builders compensation.
 
 ## Summary of protocol allocations
-- 500M KCoins - signup rewards pool
-- 500M KCoins - referral rewards pool
-- 250M KCoins - good karma rewards pool
-- 250M KCoins - transactions fees subsidy pool
-- 500M KCoins - validators rewards
+- 500M KCoins - signup rewards.
+- 500M KCoins - referral rewards.
+- 250M KCoins - good karma rewards.
+- 250M KCoins - transactions fees subsidies.
+- 500M KCoins - validators rewards.
 
 :::info License
 Copyright (c) 2022 by the [Karmacoin Authors](https://github.com/avive/karmacoin-docs). This work is licensed under the [Karmacoin License](/docs/license).
