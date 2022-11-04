@@ -12,10 +12,10 @@ slug: /blockchain-config
 We'd like to initial have a 30 seconds blocktime. This can ensure about 60 seconds transactions confirmation time which is reasonable for the first stage of the project. In the future, L2 tech can speed up transaction confirmation.
 
 ## Validators Deposit Amount
-KarmaCoin uses a dPOS consensus algorithm. Validators need to acquire KCoins from the KarmaCoin foundation (or from any other KCoins cold holder) in order to obtain the coins deposit requirement. The minimum validator deposit amount is 50,000 KCoins. It is designed in a way that is low enough to allow for non-rich validators and high-enough to ensure skin-in-the-game from validators and stake that has non-negligible fiat value. The KarmaCoin foundation will conduct coin auctions for validators to enable them to purchase coins in an open market context where the coin price is discovered by the market. 
+See tokenomics
 
 ## Sudo
-KarmaCoin blockchain includes a Sudo account to perform blockchain maintenance while the the tech is experimental and the product is in beta. The goal is to remove the Sudo account via governance when the blockchain is ready for full decentralization operation.
+KarmaCoin blockchain includes a Sudo account to perform blockchain maintenance while the tech is experimental and the product is in beta. The goal is to remove the Sudo account via governance when the blockchain is ready for full decentralization operation.
 
 ## Governance
 Karmacoin supports an on-chain governance system which the Karmacoin foundation is legally obligated to respect.

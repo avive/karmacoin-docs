@@ -14,7 +14,7 @@ slug: /tokenomics
 ---
 
 ## Supply
-- Supply is capped at 2.5 billion KCoins (2.5 trillion Kcents). The coins is minted by the protocol over a 10 years period based on the number of users on the system.
+- Supply is capped at 2.5 billion KCoins (2.5 trillion KCents). The coins are minted by the protocol over a 10 years period based on the number of users on the system.
 
 ## Pre-minting Allocations
 - 20% of supply (0.5 Billion KCoins) is pre-minted on genesis.
@@ -40,6 +40,9 @@ The Karmacoin foundation is going to allocate 10M KCoins from its pre-minted coi
 
 ## Validator Awards
 - 25% of the capped supply (500M KCoins) are allocated by the protocol to rewards the Karmacoin blockchain validators. These are minting by the protocol over a 10 years period using a decay curve which rewards validators who starts validating early while still rewarding new validators that join the system over time.
+
+## Validators Deposit
+KarmaCoin uses a dPOS consensus algorithm. Validators need to acquire KCoins from the KarmaCoin foundation (or from any other KCoins cold holder) in order to obtain the coins deposit requirement. The minimum validator deposit amount is 50,000 KCoins. It is designed in a way that is low enough to allow for non-rich validators and high-enough to ensure skin-in-the-game from validators and stake that has non-negligible fiat value. The KarmaCoin foundation will conduct coin auctions for validators to enable them to purchase coins in an open market context where the coin price is discovered by the market.
 
 ## Investors Funds
 Karmacoin investors founds are going to be managed on-chain by a vesting mechanism that enables them to pull vested funds according to their vesting schedule.
