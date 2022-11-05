@@ -10,19 +10,19 @@ slug: /tokenomics
 ## Coin types
 - `KCents` - basic accounting unit.
 - `KCoins ($KC)` - The core Karmacoin cryptocurrency. One KCoin equals one million KCents.
-- `KCoinsStable $KCS` - The KarmaCoin stable-coin cryptocurrency. This stable coin will be issued post-genesis on the KarmaCoin blockahin.
+- `KStable $KST` - The KarmaCoin stable-coin cryptocurrency. This stable coin will be issued post-genesis on the KarmaCoin blockchain.
 ---
 
 ## Supply
-- Supply is capped at 2.5 billion KCoins (2.5 trillion KCents). The coins are minted by the protocol over a 10 years period based on the number of users on the system.
+- Supply is capped at 2.5 billion KCoins (2.5 trillion KCents). 
 
 ## Pre-minting Allocations
-- 20% of supply (0.5 Billion KCoins) is pre-minted on genesis.
-- 50% of the pre-minted supply (250M KCoins) goes to the Karmacoin foundation and is used to build the platform.
+- 20% of the supply (0.5 Billion KCoins) is pre-minted on genesis.
+- 50% of the pre-minted supply (250M KCoins) goes to the KarmaCoin foundation and is used to build the platform.
 - 50% of the pre-minted supply (250M KCoins) goes to Karmacoin investors and is vested over a period of 5 years from genesis.
 
 ## Karma Mining
-- 75% of the capped supply (1.5B KCoins) are minted by the protocol and awarded to users to encourage sign-ups, usage as means of payment and appreciation. We call this Karma mining.
+- 75% of the capped supply (1.5B KCoins) are distributed by the protocol and awarded to users to encourage sign-ups, usage as means of payment and appreciation. We call this Karma mining.
 
 ### Karma Mining - Minting Rules
 - Upon sign-up, the protocol mints 10 KCoins to each new user with a verified mobile number. The first 10 million users who join the platform gets this award. The next 100 million users who use get 1 KCoin on signup. A total of 500 million KCoins is allocated by the protocol for this minting.
@@ -48,7 +48,7 @@ KarmaCoin uses a dPOS consensus algorithm. Validators need to acquire KCoins fro
 Karmacoin investors founds are going to be managed on-chain by a vesting mechanism that enables them to pull vested funds according to their vesting schedule.
 
 --- 
-## Summary Allocation KarmaCoin Dev Company
+## Summary Allocation KarmaCoin Foundation
 - A total allocation 250M KCoins of consisting of:
 - 10M KCoins - treasury for contributors allocation.
 - 10M KCoins - bounties rewards pool.
