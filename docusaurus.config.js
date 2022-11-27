@@ -64,7 +64,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} by the Subnet Authors. This work is licensed under the <a href="/docs/license"> Subnet License</a>.`,
+      copyright: `Copyright © ${new Date().getFullYear()} by the KarmaCoin Authors. This work is licensed under the <a href="/docs/license"> KarmaCoin License</a>.`,
     },
   },
   presets: [
