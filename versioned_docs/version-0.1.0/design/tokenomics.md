@@ -22,7 +22,7 @@ slug: /tokenomics
 - 50% of the pre-minted supply (250M KCoins) goes to Karmacoin investors and is vested over a period of 5 years from genesis.
 
 ## Karma Mining
-The KramaCoin protocol tokenomics are designed to encourage usage and growth in the early days of the network with the goal of estalbihsing KarmaCoin as a global means ot tipping and payments. 
+The KarmaCoin protocol tokenomics are designed to encourage usage and growth in the early days of the network with the goal of destabilising KarmaCoin as a global means ot tipping and payments. 
 75% of the capped supply (1.5B KCoins) are distributed by the protocol and awarded to users to encourage sign-ups, usage as means of payment and appreciation. We call this Karma mining.
 
 #### Signup Rewards
@@ -37,12 +37,12 @@ The KramaCoin protocol tokenomics are designed to encourage usage and growth in 
 - A total of 500 million KCoins is allocated by the protocol for referral rewards.
 
 #### Karma Rewards
-- Each month, the protocol mints 100 KCoins to the top 1,000 users with the highest Karma coins that didn't get this award yet. 
+- Each month, the protocol mints 10 KCoins to the top 1,000 users with the highest Karma coins that didn't get this award yet. 
 - Up to 250M KCoins are allocated for this reward. When these have been allocated the protocol stops rewarding users with top karam.
 
 #### Transaction Fees Subsidies
 - The protocol rewards up 250M KCoins to users payment transactions over 10 years period in the form of transaction fees subsidies. 
-- Transaction susedies are minted by the protocol for payment transactions and are given to block producers. When a subsedy is applied, the user who submitted the transaction doesn't pay the transaction fee.
+- Transaction susedies are minted by the protocol for payment transactions and are given to block producers. When a subsidy is applied, the user who submitted the transaction doesn't pay the transaction fee.
 - These intentional design decision designed to encourage sign-ups, appreciation, and coin usage in the real-world as means of payment. 
 
 ---
@@ -63,18 +63,21 @@ KarmaCoin uses a dPOS consensus algorithm. Validators need to acquire KCoins fro
 Karmacoin investors founds are going to be managed on-chain by a vesting mechanism that enables them to pull vested funds according to their vesting schedule.
 
 --- 
-## Summary Allocation KarmaCoin Foundation
-- A total allocation 250M KCoins of consisting of:
+
+## Summary Allocation at genesis
+A total allocation 500M KCoins pre-mint consisting of:
 - 10M KCoins - treasury for contributors allocation.
 - 10M KCoins - bounties rewards pool.
-- 230M KCoins - builders compensation.
+- 230M KCoins - builders compensation (vested over a 5 years period)
+- 250M KCoins - KarmaCoin investors coin allocation (vested over a 5 years period)
 
-## Summary of protocol allocations
-- 500M KCoins - signup rewards.
-- 500M KCoins - referral rewards.
-- 250M KCoins - good karma rewards.
-- 250M KCoins - transactions fees subsidies.
-- 500M KCoins - validators rewards.
+## Summary of protocol minting
+A total of 2B KCoins are allocated by the protocol for:
+- 500M KCoins - Signup rewards.
+- 500M KCoins - Referral rewards.
+- 250M KCoins - Karma rewards.
+- 250M KCoins - Transactions fees subsidies.
+- 500M KCoins - Validators rewards.
 
 :::info License
 Copyright (c) 2022 by the [Karmacoin Authors](https://github.com/avive/karmacoin-docs). This work is licensed under the [Karmacoin License](/docs/license).
