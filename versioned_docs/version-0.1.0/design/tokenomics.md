@@ -22,15 +22,30 @@ slug: /tokenomics
 - 50% of the pre-minted supply (250M KCoins) goes to Karmacoin investors and is vested over a period of 5 years from genesis.
 
 ## Karma Mining
-- 75% of the capped supply (1.5B KCoins) are distributed by the protocol and awarded to users to encourage sign-ups, usage as means of payment and appreciation. We call this Karma mining.
+The KramaCoin protocol tokenomics are designed to encourage usage and growth in the early days of the network with the goal of estalbihsing KarmaCoin as a global means ot tipping and payments. 
+75% of the capped supply (1.5B KCoins) are distributed by the protocol and awarded to users to encourage sign-ups, usage as means of payment and appreciation. We call this Karma mining.
 
-### Karma Mining - Minting Rules
-- Upon sign-up, the protocol mints 10 KCoins to each new user with a verified mobile number. The first 10 million users who join the platform gets this award. The next 100 million users who use get 1 KCoin on signup. A total of 500 million KCoins is allocated by the protocol for this minting.
-- The protocol mints 10 KCoin for user who invited a new person who signed-up to the service, up to 100 million invites. 
-- The total allocation for this minting by the protocol is 500M KCoins.
-- Each month, the protocol mints 100 KCoins to the top 1000 users with the highest Karma coins that didn't get this award yet. Up to 250M KCoins are allocated for this reward. When these have been allocated the protocol stops rewarding users with top karam.
-- The protocol rewards 250M KCoins to users who use the coin for transactions over 10 years period in the form of transactions incentives. Transaction incentives are rewards awarded to the user who transfers coins to another user in the form of minting of the transaction fee instead of the user paying it.
+#### Signup Rewards
+- Upon sign-up, the protocol mints a 10 KCoins reward to each new user with a verified mobile number. 
+- The first 40 million users who join the platform gets this award. 
+- The next 100 million users who use get 1 KCoin on signup. This is called `signup rewards`. 
+- A total of 500 million KCoins is allocated by the protocol for signup rewards.
+
+#### Referral Rewards
+- The protocol mints 10 KCoin for a user who invited a new person that signed-up to the service, up to 40 million invites. 
+- The protocol mints 1 KCoin for a user who invited a new person that signed-up to the service for the next 60 million invites.
+- A total of 500 million KCoins is allocated by the protocol for referral rewards.
+
+#### Karma Rewards
+- Each month, the protocol mints 100 KCoins to the top 1,000 users with the highest Karma coins that didn't get this award yet. 
+- Up to 250M KCoins are allocated for this reward. When these have been allocated the protocol stops rewarding users with top karam.
+
+#### Transaction Fees Subsidies
+- The protocol rewards up 250M KCoins to users payment transactions over 10 years period in the form of transaction fees subsidies. 
+- Transaction susedies are minted by the protocol for payment transactions and are given to block producers. When a subsedy is applied, the user who submitted the transaction doesn't pay the transaction fee.
 - These intentional design decision designed to encourage sign-ups, appreciation, and coin usage in the real-world as means of payment. 
+
+---
 
 ## Treasury
 The Karmacoin foundation is going to allocate 10M KCoins to an on-chain treasury that will be used to reward various stakeholders for behavior that advances the Karmacoin community, usage and values.
