@@ -9,7 +9,7 @@ slug: /blockchain-config
 
 
 ## Block time
-We'd like to initial have a 30 seconds blocktime. This can ensure about 60 seconds transactions confirmation time which is reasonable for the first stage of the project. In the future, L2 tech can speed up transaction confirmation.
+We'd like to initial have a 30 seconds block-time. This can ensure about 60 seconds transactions confirmation time which is reasonable for the first stage of the project. In the future, L2 tech can speed up transaction confirmation.
 
 ## Validators Deposit Amount
 See tokenomics

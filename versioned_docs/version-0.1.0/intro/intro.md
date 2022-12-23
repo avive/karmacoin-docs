@@ -35,7 +35,7 @@ The KarmaCoin ledger is maintained by decentralized validations who run a standa
 The ledger maintains KCoins balance, and users character traits. 
 
 ## Learn more
-To go deeper, browse the [KramaCoin intro deck (pdf)](/KarmaCoin_v0.1.pdf)
+To go deeper, browse the [KarmaCoin intro deck (pdf)](/KarmaCoin_v0.1.pdf)
 
 ---
 

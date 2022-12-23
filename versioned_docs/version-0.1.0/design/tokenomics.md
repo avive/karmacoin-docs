@@ -17,7 +17,8 @@ slug: /tokenomics
 - Supply is capped at 2.5 billion KCoins (2.5 trillion KCents). 
 
 ## Pre-minting Allocations
-- 20% of the supply (0.5 Billion KCoins) is pre-minted on genesis.
+- 80% of the supply (2B KCoins) are minted by the protocol post genesis.
+- 20% of the supply (0.5B KCoins) is pre-minted on genesis.
 - 50% of the pre-minted supply (250M KCoins) goes to the KarmaCoin foundation and is used to build the platform.
 - 50% of the pre-minted supply (250M KCoins) goes to Karmacoin investors and is vested over a period of 5 years from genesis.
 
@@ -43,6 +44,7 @@ The KarmaCoin protocol tokenomics are designed to encourage usage and growth in 
 #### Transaction Fees Subsidies
 - The protocol rewards up 250M KCoins to users payment transactions over 10 years period in the form of transaction fees subsidies. 
 - Transaction susedies are minted by the protocol for payment transactions and are given to block producers. When a subsidy is applied, the user who submitted the transaction doesn't pay the transaction fee.
+- Only the first 10 transactions per user are eligible for transaction fees subsidies to mitigate spam attacks.
 - These intentional design decision designed to encourage sign-ups, appreciation, and coin usage in the real-world as means of payment. 
 
 ---
