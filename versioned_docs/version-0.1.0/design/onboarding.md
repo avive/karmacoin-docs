@@ -32,6 +32,7 @@ The chain should now have the following state:
 
 ---
 ## On-boarding without a referral
+
 1. New user signs-up via a Karmacoin client and verifies his mobile phone number using the active verifier.
 2. The verifier sends the user a signed attestation with his account number, verified mobile phone number and nickname.
 3. The new user creates, signs and submits a `new user transaction` to the Karmacoin blockchain which includes the verifier's attestation. It sets the referral's account id to void to signal that there is no referral for this new account creation.

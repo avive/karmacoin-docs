@@ -6,7 +6,11 @@ slug: /blockchain
 ---
 
 # Blockchain Design
-This page describes the KarmaCoin on-chain data. We are using `Protobufs` as the language to describe the data. The design decisions assume Karmacoin blockchain will be implemented using `Substrate`. This design constraint influences the data modeling as we ensure compatibility with Substrate basic data types and idioms. For example, account IDs are not public key but rather derived from public keys with optional a chain-id prefix to avoid cross-chains signature related issues and balances are defined to support locked funds.
+This page describes the KarmaCoin on-chain data. We are using `Protobufs` as the language to describe the data. 
+
+The design decisions assume Karmacoin blockchain will be implemented using `Substrate`. 
+
+This design constraint influences the data modeling as we ensure compatibility with Substrate basic data types and idioms. For example, account Ids are not just ED25519 public keys as they include a chain-id prefix to avoid cross-chains signature issues and balances are defined to support locked funds.
 
 ## On-chain Data Modeling
 The following section describes the data stored on-chain.
@@ -16,15 +20,16 @@ The following section describes the data stored on-chain.
 ```protobuf
 // Account id is derived from a public key
 message AccountId {
-  // derived from pub key
+  // net id and public key per Substrate concept
   bytes data = 1;
 }
 
-// CharTrait defines a specific supported character trait
+// CharTrait defines specific supported character traits
 enum CharTrait {
   CHAR_TRAIT_KIND = 0;
   CHAR_TRAIT_HELPFUL = 1;
   CHAR_TRAIT_SMART = 2;
+  // etc...
 }
 
 // TraitName associates a name to each unique CharTrait
@@ -52,6 +57,7 @@ enum CoinType {
   // other coin types can be added in future versions of the protocol
 }
 
+// We use substrate notions here to support PoStake consensus such as locked funds
 message Balance {
   Amount free = 1;
   Amount reserved = 2;
@@ -102,7 +108,7 @@ message OnChainData {
   repeated User users = 1;
   repeated PhoneVerifier sms_verifiers = 2;
   repeated TraitName traits = 3; // char trait ids supported by the system
-  repeated SignedTransaction transactions = 4; // all transactions
+  repeated SignedTransaction transactions = 4; // all transactions in blocks
 }
 ```
 
@@ -110,16 +116,16 @@ message OnChainData {
 ---
 
 ## Consensus Protocol
+KarmaCoin uses a nominated Proof of Stake (nPOS) consensus protocol with deterministic finality on blocks. The protocol used is Parity tech `Babe` and `Grandpa`. Block producers and validators must stake an amount of KCoin in order to participate in the network. Entities who want to participate in the consensus protocol must be both block producers and validators.
 
-KarmaCoin uses a nominated Proof of Stake (nPOS) consensus protocol with deterministic finality on blocks. The protocol used is Parity tech Babe and Grandpa. Block authors and validators must stake an amount of KCoin in order to participate in the network.
-
-KarmaCoin validators are responsible for both block authoring and chain validation.
 
 ---
 
 ## Accounts and Addresses
-KarmaCoin uses the SS58 address format for accounts. Accounts are derived from user's maintain private keys and include a network id to avoid cross-chain signing issues.
+KarmaCoin should Substrate SS58 address format for accounts identifiers. Accounts ids should be derived from user's maintain public keys and include a network id to avoid cross-chain signing issues. If public key for signature verification purposes can't be obtained from these ids then it needs to be included separately in signed transactions and messages so signatures can be verified.
 
+## Mobile phone verifiers
+Verifiers should always run a blockchain node and must always participate in the consensus protocol. e.g. they are both block producers and validators. Verifiers servers should be configured to have local access to a node managed by the verifiers and use the same ids for verification and consensus participation.
 
 ---
 :::info License

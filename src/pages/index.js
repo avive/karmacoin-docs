@@ -112,6 +112,7 @@ function Home() {
           </section>
         )}
       </main>
+
     </Layout>
   );
 }
