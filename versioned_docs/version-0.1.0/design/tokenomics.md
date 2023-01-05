@@ -14,7 +14,7 @@ slug: /tokenomics
 ---
 
 ## Supply
-- Supply is capped at 2.5 billion KCoins (2.5 trillion KCents) with the following caveat. 1000 KCents art minted for each new user signup and awarded for that user after the initial 140M users. 
+- Supply is capped at 2.5 billion KCoins (2.5 trillion KCents) with the following caveat. 1000 KCents are minted for each new user signup and awarded for that user after the initial 140M users. This amounts to perpetual minting of 100 Karma coins for 1 million new users.
 
 ## Pre-minting Allocations
 - 80% of the supply (2B KCoins) are minted by the protocol post genesis.
@@ -28,10 +28,10 @@ The KarmaCoin protocol tokenomics are designed to encourage usage and growth in 
 
 #### Signup Rewards
 - Upon sign-up, the protocol mints a 10 KCoins reward to each new user with a verified mobile number. 
-- The first 40 million users who join the platform gets this award. 
-- The next 100 million users who use get 1 KCoin on signup. This is called `signup rewards`. 
-- Users beyond the first 140M ones get a small reward of 1000 KCents on signup.
+- The first 40 million users who join the platform get this award. 
+- The next 100 million users who join the platform, get 1 KCoin on signup. This is called `signup rewards`. 
 - A total of 500 million KCoins is allocated by the protocol for signup rewards.
+- Users beyond the first 140M ones get a small reward of 1000 KCents on signup. This amounts to perpetual minting of 100 Karma coins per new 1 million users.
 
 #### Referral Rewards
 - The protocol mints 10 KCoin for a user who invited a new person that signed-up to the service, up to 40 million invites. 
