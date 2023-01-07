@@ -36,7 +36,7 @@ The ledger maintains KCoins balance, and users character traits. 
 
 ## App Demo
 
-[KarmaCoin Mobile App Demo](https://www.figma.com/proto/XU3xigkjjA0m9qEkkulmWm/KarmaCoin?page-id=0%3A1&node-id=450%3A820&viewport=19%2C-206%2C0.12&scaling=contain&starting-point-node-id=450%3A820)
+[KarmaCoin Mobile App Demo](https://www.figma.com/proto/XU3xigkjjA0m9qEkkulmWm/KarmaCoin?page-id=0%3A1&node-id=552%3A686&viewport=-369%2C-379%2C0.53&scaling=contain&starting-point-node-id=552%3A686)
 
 ## Learn more
 To go deeper, browse the [KarmaCoin intro deck (pdf)](/KarmaCoin_v0.1.pdf)
