@@ -5,8 +5,6 @@ sidebar_label: Introducing Karmacoin
 slug: /
 ---
 
-![](/banner.png)
-
 | ![](/screen1.png)   	 | ![](/screen4.png)	 | ![](/screen3.png)	 | ![](/screen5.png) |
 |-----------------------|--------------------|--------------------|-------------------|
 

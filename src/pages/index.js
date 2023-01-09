@@ -65,14 +65,14 @@ const features = [
 function Feature({imageUrl, title, description}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
-    <div className={clsx('col col--4', styles.feature)}>
+    <div className={clsx('col col--4')}>
       {imgUrl && (
         <div className="text--center">
           <img className={styles.featureImage} src={imgUrl} alt={title} />
         </div>
       )}
       <h3>{title}</h3>
-      <p>{description}</p>
+      <p className="padding--sm">{description}</p>
     </div>
   );
 }
@@ -86,23 +86,28 @@ function Home() {
       description="The coin for positive humanity">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
-          <img className={styles.bannerLogo} src={'banner.png'}/>
+          <img className={styles.bannerLogo} src={'logo_400x400.png'}/>
+
+        </div>
+      </header>
+      <main>
+        <div className="container">
+          <p className={clsx(styles.titleBanner)}>Welcome to Karma Coin</p>
+          <p className={clsx(styles.subtitleBanner)}>Karma coin is an easy-to-use cryptocurrency designed for appreciation, tipping and communities.</p>
           <div className={styles.buttons}>
             <Link
-              className={clsx(
-                'button button--outline button--secondary button--lg',
-                styles.getStarted,
-              )}
-              to={useBaseUrl('docs/')}>
+                className={clsx(
+                    'button button--outline button--secondary button--lg',
+                    styles.getStarted,
+                )}
+                to={useBaseUrl('docs/')}>
               Get Started
             </Link>
           </div>
         </div>
-      </header>
-      <main>
         {features && features.length > 0 && (
           <section className={styles.features}>
-            <div className="container">
+            <div className="container, text--center">
               <div className="row">
                 {features.map((props, idx) => (
                   <Feature key={idx} {...props} />

@@ -45,12 +45,8 @@ module.exports = {
           title: 'Community',
           items: [
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/',
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/company/karmacoin/',
             },
           ],
         },

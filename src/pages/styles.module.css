@@ -5,12 +5,30 @@
  * and scoped locally.
  */
 
+.titleBanner {
+    padding: 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    font-size: 48pt;
+}
+
+.subtitleBanner {
+  padding: 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  font-size: 32pt;
+  line-height: 1.2;
+  margin-bottom: 24pt;
+}
+
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: inherit;
+  background-color: inherit;
 }
 
 @media screen and (max-width: 966px) {
@@ -38,5 +56,5 @@
 }
 
 .bannerLogo {
-  width: 100%;
+  height: 200px;
 }
