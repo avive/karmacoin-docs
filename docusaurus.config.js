@@ -25,16 +25,23 @@ module.exports = {
         src: 'icon.png',
       },
       items: [
-      {
-          type: 'docsVersionDropdown',
+        {
           position: 'left',
-
-          // Add additional dropdown items at the beginning/end of the dropdown.
-          dropdownItemsBefore: [],
-          dropdownItemsAfter: [{to: '/versions', label: 'All versions'}],
-
-          // Do not add the link active class when browsing docs.
-          dropdownActiveClassDisabled: true,
+          className: 'header-link',
+          label: 'Team',
+          to: '/team',
+        },
+        {
+          position: 'left',
+          className: 'header-link',
+          label: 'Jobs',
+          to: '/jobs',
+        },
+        {
+          position: 'left',
+          className: 'header-link',
+          label: 'Docs',
+          to: '/docs',
         },
       ],
     },
