@@ -1,10 +1,10 @@
 ---
-title: Flutter Developer
-description: Job description for Flutter Developer
+title: Senior Rust Developer
+description: Job description for Rust Developer
 hide_table_of_contents: true
 ---
 
-# Flutter Developer
+# Senior Rust Developer
 
 ## About Karma Coin
 <p>Karma is an easy-to-use cryptocurrency for appreciations, tippings, and communities. We are building a global platform that enables anyone with just a mobile phone to show appreciation (a.k.a. tipping). Our motto is “The more you give, the more we all get”.</p>
@@ -14,15 +14,19 @@ hide_table_of_contents: true
 
 
 ## The Opportunity
-We are looking for a great Flutter developer to join the founding team and work on the open source Karma Coin cross-platform App. This is a remote part-time or full-time contracting position. Compensation in USD or in Crypto and is based on skills, experience, performance, and time commitment to the project.
+We are looking for a great Rust developer to join the founding team and build the open source Karma Coin blockchain using Rust and the Substrate blockchain framework. This is a remote part-time or full-time contracting position. Compensation in USD or in Crypto and is based on skills, experience, performance, and time commitment to the project.
+
 
 ## Requirements
-1. Great Flutter dev skills.
-2. Hands-on experience building a non-trivial Flutter app with reviewable idiomatic Flutter source code.
-3. Ability to build a professional looking platform-optimized UXs using Material and Cupertino widgets.
-4. Good speaking and writing English communications skills.
-5. A computer science college degree or equivalent. 
+1. Great Rust dev skills.
+Able to write high-quality and highly-tested app logic in idiomatic Rust.
+2. In-depth knowledge and hands-on experience developing a blockchain application using the Substrate framework.
+3. Have access to relevant Rust source code that can be reviewed.
+4. Good understanding of fundamental blockchain technology concepts, and of proof of stake based consensus protocols.
+Good speaking and writing English communications skills.
+5. A computer science college degree or equivalent.
 6. Own a good dev computer and have a good Internet connection for remote meetings.
 7. Able to make at least a part-time commitment to work on this project on an ongoing basis.
 
-Please only apply if you meet all the requirements by emailing <a href='mailto://flutter_dev@karmaco.in'>flutter_dev@karmaco.in</a>
+
+Please only apply if you meet all the requirements by emailing <a href='mailto://rust_dev@karmaco.in'>rust_dev@karmaco.in</a>

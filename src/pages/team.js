@@ -14,8 +14,7 @@ const TeamMembers = [
         image: require('@site/static/icon1.png').default,
         description: (
             <>
-                Docusaurus was designed from the ground up to be easily installed and
-                used to get your website up and running quickly.
+                About Rachel...
             </>
         ),
     },
@@ -26,8 +25,7 @@ const TeamMembers = [
         image: require('@site/static/icon1.png').default,
         description: (
             <>
-                Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-                ahead and move your docs into the <code>docs</code> directory.
+                About Oriya...
             </>
         ),
     },
@@ -38,8 +36,7 @@ const TeamMembers = [
         image: require('@site/static/icon1.png').default,
         description: (
             <>
-                Extend or customize your website layout by reusing React. Docusaurus can
-                be extended while reusing the same header and footer.
+                About Avive...
             </>
         ),
     },
@@ -49,9 +46,9 @@ function Member({image, link, name, title, description}) {
     return (
         <div className={clsx('col col--4')}>
             <div className="text--center">
-                <img src={image} className={styles.featureSvg} role="img" />
+                <img src={image} className={styles.featureImage} role="img" />
             </div>
-            <div className="text--center padding-horiz--md">
+            <div className="text--center padding-horiz--md padding-vert--md">
                 <h3><a href={link}>{name}</a></h3>
                 <h2>{title}</h2>
                 <p>{description}</p>
