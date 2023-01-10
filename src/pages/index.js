@@ -93,7 +93,7 @@ function Home() {
       <main>
         <div className="container">
           <p className={clsx(styles.titleBanner)}>Welcome to Karma Coin</p>
-          <p className={clsx(styles.subtitleBanner)}>Karma coin is an easy-to-use cryptocurrency designed for appreciation, tipping and communities.</p>
+          <p className={clsx(styles.subtitleBanner)}>Karma Coin is an easy-to-use cryptocurrency and app designed for appreciation, tipping and communities.</p>
           <div className={styles.buttons}>
             <Link
                 className={clsx(
