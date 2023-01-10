@@ -17,7 +17,7 @@ hide_table_of_contents: true
 We are looking for a great Flutter developer to join the founding team and work on the open source Karma Coin cross-platform App. This is a remote part-time or full-time contracting position. Compensation in USD or in Crypto and is based on skills, experience, performance, and time commitment to the project.
 
 ## Requirements
-1. Great Flutter dev skills.
+1. Great Dart and Flutter dev skills.
 2. Hands-on experience building a non-trivial Flutter app with reviewable idiomatic Flutter source code.
 3. Ability to build a professional looking platform-optimized UXs using Material and Cupertino widgets.
 4. Good speaking and writing English communications skills.
@@ -25,4 +25,9 @@ We are looking for a great Flutter developer to join the founding team and work 
 6. Own a good dev computer and have a good Internet connection for remote meetings.
 7. Able to make at least a part-time commitment to work on this project on an ongoing basis.
 
-Please only apply if you meet all the requirements by emailing <a href='mailto://flutter_dev@karmaco.in'>flutter_dev@karmaco.in</a>
+Please only apply if you meet <b>all the requirements</b> by emailing a cover letter and your CV to <a href='mailto://flutter_dev@karmaco.in'>flutter_dev@karmaco.in</a>
+
+## Additional Information
+- <a href='/docs'>Karma Coin software design</a>
+- <a href='https://www.figma.com/proto/XU3xigkjjA0m9qEkkulmWm/KarmaCoin?page-id=0%3A1&node-id=552%3A686&viewport=-369%2C-379%2C0.53&scaling=contain&starting-point-node-id=552%3A686'>Karma Coin mobile app interactive demo</a>
+- <a href='https://github.com/avive/karmacoin'>Karma Coin blockchain mockup server</a>
