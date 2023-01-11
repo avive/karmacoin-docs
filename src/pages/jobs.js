@@ -9,7 +9,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 const Positions = [
 {
     title: 'Flutter Developer',
-        image_url: require('@site/static/icon1.png').default,
+        image_url: require('@site/static/flutter_logo_400.png').default,
         link: '/flutter_dev',
         description: (
         <>
@@ -19,7 +19,7 @@ const Positions = [
 },
 {
     title: 'Senior Rust (Substrate) Developer',
-        image_url: require('@site/static/icon1.png').default,
+        image_url: require('@site/static/rust_logo_400.png').default,
         link: '/rust_dev',
         description: (
         <>
@@ -47,16 +47,26 @@ export default function JobsPage() {
     const {siteConfig} = useDocusaurusContext();
     return (
         <Layout
-            title={`Hello from ${siteConfig.title}`}
-            description="Description will go into a meta tag in <head />">
+            title={`KarmaCoin Jobs`}
+            description="Open positions in Karma Coin <head />">
             <main>
+                <h1 className={clsx('text--center', 'hero__title', 'padding--sm')}>
+                    Open Positions
+                </h1>
+                <h2 className={clsx('text--center', 'hero__subtitle', 'padding--sm')}>
+                    Join the founding team, and make a positive impact on the world
+                </h2>
                 <section className={styles.features}>
                     <div className="container" style={{
                         display: 'flex',
                         justifyContent: 'center',
-                        alignItems: 'center',
+                        alignItems: 'top',
                     }}>
-                        <div className="row">
+                        <div className="row" style={{
+                                display: 'flex',
+                                justifyContent: 'center',
+                                alignItems: 'top',
+                            }}>
                             {Positions.map((props, idx) => (
                                 <Job key={idx} {...props} />
                             ))}

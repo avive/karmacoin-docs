@@ -58,12 +58,21 @@ module.exports = {
           ],
         },
         {
-          title: 'Code',
+          title: 'Docs',
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/avive/karmacoin',
+              label: 'Getting Started',
+              href: '/docs',
             },
+          ],
+        },
+        {
+          title: 'Tech',
+          items: [
+            {
+              label: 'Code',
+              href: 'https://github.com/karma-coin',
+            }
           ],
         },
       ],
