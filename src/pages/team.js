@@ -10,7 +10,7 @@ const TeamMembers = [
     {
         name: 'Rachel Kiner',
         title: 'Head of Communities',
-        link: 'https://www.instagram.com/lovepriestesss/',
+        link: 'https://www.linkedin.com/in/rachel-kiner-10100952/',
         image: require('@site/static/r_profile.png').default,
         description: (
             <>
