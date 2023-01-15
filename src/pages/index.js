@@ -87,7 +87,6 @@ function Home() {
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <img className={styles.bannerLogo} src={'logo_400x400.png'}/>
-
         </div>
       </header>
       <main>
@@ -97,11 +96,10 @@ function Home() {
           <div className={styles.buttons}>
             <Link
                 className={clsx(
-                    'button button--outline button--secondary button--lg',
-                    styles.getStarted,
+                    'button button--outline button--secondary button--lg'
                 )}
-                to={useBaseUrl('docs/')}>
-              Get Started
+                to='https://www.figma.com/proto/XU3xigkjjA0m9qEkkulmWm/KarmaCoin?page-id=0%3A1&node-id=552%3A686&viewport=-575%2C-2195%2C0.49&scaling=min-zoom&starting-point-node-id=552%3A686&show-proto-sidebar=1'>
+              Launch Demo
             </Link>
           </div>
         </div>

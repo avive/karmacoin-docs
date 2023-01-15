@@ -23,6 +23,17 @@
   margin-bottom: 24pt;
 }
 
+.textBanner {
+  padding: 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  font-size: 24pt;
+  line-height: 1.2;
+  margin-bottom: 24pt;
+}
+
+
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
