@@ -56,7 +56,7 @@ const features = [
     imageUrl: 'screen6.png',
     description: (
       <>
-        KarmaCoin is maintained by a permissioned and decentralized modern blockchain technology.
+        KarmaCoin is maintained by a permissionless and decentralized modern blockchain technology.
       </>
     ),
   },
@@ -68,11 +68,11 @@ function Feature({imageUrl, title, description}) {
     <div className={clsx('col col--4')}>
       {imgUrl && (
         <div className="text--center">
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
+          <img className={clsx(styles.featureImage)} src={imgUrl} alt={title} />
         </div>
       )}
-      <h3>{title}</h3>
-      <p className="padding--sm">{description}</p>
+      <h3 className={clsx(styles.subTitle)}>{title}</h3>
+      <p className={clsx('padding--sm', styles.smallText)}>{description}</p>
     </div>
   );
 }
@@ -91,14 +91,14 @@ function Home() {
       </header>
       <main>
         <div className="container">
-          <p className={clsx(styles.titleBanner)}>Welcome to Karma Coin</p>
-          <p className={clsx(styles.subtitleBanner)}>Karma Coin is an easy-to-use cryptocurrency and app designed for appreciation, tipping and communities.</p>
+          <div className={clsx(styles.titleBanner)}>Hello Karma Coin</div>
+          <div className={clsx(styles.subtitleBanner)}>Karma Coin is an easy-to-use cryptocurrency and app designed for appreciation, tipping and communities.</div>
           <div className={styles.buttons}>
             <Link
                 className={clsx(
                     'button button--outline button--secondary button--lg'
                 )}
-                to='https://www.figma.com/proto/XU3xigkjjA0m9qEkkulmWm/KarmaCoin?page-id=0%3A1&node-id=552%3A686&viewport=-575%2C-2195%2C0.49&scaling=min-zoom&starting-point-node-id=552%3A686&show-proto-sidebar=1'>
+                to='https://www.figma.com/proto/XU3xigkjjA0m9qEkkulmWm/KarmaCoin?page-id=0%3A1&node-id=552%3A686&viewport=-575%2C-2195%2C0.49&scaling=scale-down&starting-point-node-id=552%3A686&hide-ui=1'>
               Launch Demo
             </Link>
           </div>
@@ -114,6 +114,8 @@ function Home() {
             </div>
           </section>
         )}
+
+
       </main>
 
     </Layout>

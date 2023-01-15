@@ -5,12 +5,49 @@
  * and scoped locally.
  */
 
+
+.smallText {
+    font-size: 18px;
+}
+
+.karmaIcon {
+    width: 42px;
+    height: 42px;
+}
+
+.subTitle {
+    margin-top: 6px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.smallIconSection {
+    display:flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.featureContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    margin: 2rem;
+}
+
 .titleBanner {
     padding: 0;
     text-align: center;
     position: relative;
     overflow: hidden;
-    font-size: 48pt;
+    font-size: 42pt;
+    font-weight: 500;
+    line-height: 1.0;
+    margin-bottom: 24px;
 }
 
 .subtitleBanner {
@@ -18,7 +55,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  font-size: 32pt;
+  font-size: 24pt;
   line-height: 1.2;
   margin-bottom: 24pt;
 }
@@ -28,7 +65,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  font-size: 24pt;
+  font-size: 22pt;
   line-height: 1.2;
   margin-bottom: 24pt;
 }
@@ -57,8 +94,9 @@
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
+  padding: 2rem;
   width: 100%;
+  margin-top: 24px;
 }
 
 .featureImage {
@@ -67,5 +105,5 @@
 }
 
 .bannerLogo {
-  height: 200px;
+  height: 180px
 }
