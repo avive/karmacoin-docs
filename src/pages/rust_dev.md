@@ -1,13 +1,13 @@
 ---
 title: Senior Rust Developer
-description: Job description for Rust Developer
+description: Job description for rust developer
 hide_table_of_contents: true
 ---
 
 # Senior Rust Developer
 
 ## About Karma Coin
-<p>Karma is an easy-to-use cryptocurrency for appreciations, tippings, and communities. We are building a global platform that enables anyone with just a mobile phone to show appreciation (a.k.a. tipping). Our motto is “The more you give, the more we all get”.</p>
+<p>Karma is an easy-to-use cryptocurrency for appreciations, tipping, and communities. We are building a global platform that enables anyone with just a mobile phone to show appreciation (a.k.a. tipping). Our motto is “The more you give, the more we all get”.</p>
 
 <p>Karma Coin rewards all its users - primarily the giver and the receiver, alongside partner organizations and worthy causes. The idea behind Karma Coin is to enable anyone to show appreciation regardless of their financial status or connections to traditional financial institutions and government-issued money. Our intention and vision for Karma Coin is to become the default global “Token of Appreciation”, as it is built on the basic principles of Karma, the Currency of Giving, and the Gifting Economy. For more information, visit <a href="https://karmaco.in">https://karmaco.in</a></p> 
 

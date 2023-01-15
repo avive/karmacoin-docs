@@ -27,6 +27,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 16px;
 }
 
 .featureContainer {
@@ -34,9 +35,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-    margin: 2rem;
 }
 
 .titleBanner {
@@ -89,14 +87,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+    padding-bottom: 32px;
 }
 
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem;
+  padding-left: 2rem;
+    padding-right: 2rem;
   width: 100%;
-  margin-top: 24px;
 }
 
 .featureImage {

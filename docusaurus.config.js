@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'KarmaCoin',
+  title: 'Karma Coin',
   tagline: 'The coin for all of us',
   url: 'https://karmaco.in',
   baseUrl: '/',
@@ -19,7 +19,7 @@ module.exports = {
         theme: require('prism-react-renderer/themes/dracula')
     },
     navbar: {
-      title: 'KarmaCoin',
+      title: 'Karma Coin',
       logo: {
         alt: 'KarmaCoin Logo',
         src: 'icon.png',

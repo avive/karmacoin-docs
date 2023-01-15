@@ -47,13 +47,13 @@ export default function JobsPage() {
     const {siteConfig} = useDocusaurusContext();
     return (
         <Layout
-            title={`KarmaCoin Jobs`}
+            title={`Karma Coin Jobs`}
             description="Open positions in Karma Coin <head />">
             <main>
-                <h1 className={clsx('text--center', 'hero__title', 'padding--sm')}>
+                <h1 className={clsx('text--center', styles.titleBanner, 'padding--sm')}>
                     Open Positions
                 </h1>
-                <h2 className={clsx('text--center', 'hero__subtitle', 'padding--sm')}>
+                <h2 className={clsx('text--center', styles.subtitleBanner, 'padding--sm')}>
                     Join the founding team, and make a positive impact on the world
                 </h2>
                 <section className={styles.features}>

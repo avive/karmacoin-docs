@@ -1,13 +1,13 @@
 ---
 title: Flutter Developer
-description: Job description for Flutter Developer
+description: Job description for flutter developer
 hide_table_of_contents: true
 ---
 
 # Flutter Developer
 
 ## About Karma Coin
-<p>Karma is an easy-to-use cryptocurrency for appreciations, tippings, and communities. We are building a global platform that enables anyone with just a mobile phone to show appreciation (a.k.a. tipping). Our motto is “The more you give, the more we all get”.</p>
+<p>Karma is an easy-to-use cryptocurrency for appreciations, tipping, and communities. We are building a global platform that enables anyone with just a mobile phone to show appreciation (a.k.a. tipping). Our motto is “The more you give, the more we all get”.</p>
 
 <p>Karma Coin rewards all its users - primarily the giver and the receiver, alongside partner organizations and worthy causes. The idea behind Karma Coin is to enable anyone to show appreciation regardless of their financial status or connections to traditional financial institutions and government-issued money. Our intention and vision for Karma Coin is to become the default global “Token of Appreciation”, as it is built on the basic principles of Karma, the Currency of Giving, and the Gifting Economy. For more information, visit <a href="https://karmaco.in">https://karmaco.in</a></p> 
 
@@ -26,7 +26,7 @@ We are looking for a great Flutter developer to join the founding team and work 
 ## Applying
 Is this your dream job? If so, impress us with your Flutter dev skills by submitting a github PR with a well documented solution to this issue: https://github.com/avive/karmacoin-app/issues/1
 
-Please only apply if you (1) meet <b>all the requirements</b> listed here, and (2) submitted a PR to the issue, by emailing a cover letter, your CV and a link to your PR to <a href='mailto://flutter_dev@karmaco.in'>flutter_dev@karmaco.in</a>
+Please only apply if you (1) meet <b>all the requirements</b> listed here, and (2) submitted a PR to the issue. Apply by emailing a cover letter, your CV pdf, and a link to your PR to <a href='mailto://flutter_dev@karmaco.in'>flutter_dev@karmaco.in</a>
 
 ## Additional Information
 - <a href='/docs'>Karma Coin software design</a>

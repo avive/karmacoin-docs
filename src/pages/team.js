@@ -68,13 +68,13 @@ export default function TeamPage() {
     const {siteConfig} = useDocusaurusContext();
     return (
         <Layout
-            title={`Team KarmaCoin`}
-            description="Team members bios">
+            title={`Team Karma Coin`}
+            description="About the team">
             <main>
-                <h1 className={clsx('text--center', 'hero__title', 'padding--sm')}>
+                <h1 className={clsx('text--center', styles.titleBanner, 'padding--sm')}>
                     Karma Coin Founding Team
                 </h1>
-                <h2 className={clsx('text--center', 'hero__subtitle, padding--sm')}>
+                <h2 className={clsx('text--center', styles.subtitleBanner, 'padding--sm')}>
                     Committed to empowering generosity and to connecting communities
                 </h2>
                 <section className={styles.features}>
