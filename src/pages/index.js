@@ -82,10 +82,11 @@ const features = [
     ),
   },
   {
-    title: 'Universal Token of Appreciation',
+    title: 'A Universal Token of Appreciation',
     imageUrl: 'screen3.png',
     description: (
-        <>Tipping and appreciation just got easier and more meaningful. You can tip anyone with a mobile number with just few taps.
+        <>
+          Tipping and appreciation just got easier and more meaningful. You can tip anyone with a mobile number with just few taps.
         </>
     ),
   },
@@ -93,15 +94,17 @@ const features = [
     title: 'Hello Karma Score',
     imageUrl: 'screen4.png',
     description: (
-        <>Karma Score gives meaning and insight into people's positive character traits and personality, as perceived by others. Karma Score is the new crypto like.
+        <>
+          Karma Score gives meaning and insight into people's positive character traits and personality, as perceived by others. Karma Score is the new crypto like.
         </>
     ),
   },
   {
-    title: 'A coin for all of us',
+    title: 'A Coin For All of Us',
     imageUrl: 'screen5.png',
     description: (
-        <>Tip and appreciate anyone in the world with a mobile phone with few taps.
+        <>
+          Send Karma Coin to anyone with a phone number with just few taps.
         </>
     ),
   },

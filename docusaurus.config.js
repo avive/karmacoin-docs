@@ -7,7 +7,7 @@ module.exports = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'icon.png',
   organizationName: 'avive', // GitHub org/user name.
-  projectName: 'Karma Coin-docs', // repo name.
+  projectName: 'KarmaCoin-docs', // repo name.
   themeConfig: {
     colorMode: {
       defaultMode: 'dark',
