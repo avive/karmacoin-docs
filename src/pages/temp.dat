@@ -1,0 +1,42 @@
+import clsx from "clsx";
+import styles from "./styles.module.css";
+import React from "react";
+
+
+  <div className={clsx(styles.smallIconSection)}>
+          <img className={clsx(styles.karmaIcon)} src={'logo_400x400.png'}/>
+        </div>
+        <div className={clsx(styles.featureContainer)}>
+          <p className={clsx(styles.titleBanner)}>Karma Coin for Validators</p>
+          <p className={clsx(styles.subtitleBanner)}>Karma Coin is an easy-to-use cryptocurrency and app designed for appreciation, tipping and communities.</p>
+        </div>
+
+
+<div className={clsx(styles.smallIconSection)}>
+    <img className={clsx(styles.karmaIcon)} src={'logo_400x400.png'}/>
+</div>
+<div className={clsx(styles.featureContainer)}>
+    <p className={clsx(styles.titleBanner)}>Karma Coin for Users</p>
+    <p className={clsx(styles.subtitleBanner)}>Karma Coin is an easy-to-use cryptocurrency and app designed for appreciation, tipping and communities.</p>
+</div>
+<div className={clsx(styles.smallIconSection)}>
+    <img className={clsx(styles.karmaIcon)} src={'logo_400x400.png'}/>
+</div>
+<div className={clsx(styles.featureContainer)}>
+    <p className={clsx(styles.titleBanner)}>Karma Coin for Communities</p>
+    <p className={clsx(styles.subtitleBanner)}>Karma Coin is an easy-to-use cryptocurrency and app designed for appreciation, tipping and communities.</p>
+</div>
+<div className={clsx(styles.smallIconSection)}>
+    <img className={clsx(styles.karmaIcon)} src={'logo_400x400.png'}/>
+</div>
+<div className={clsx(styles.featureContainer)}>
+    <p className={clsx(styles.titleBanner)}>Karma Coin for Blockchain Validators</p>
+    <p className={clsx(styles.subtitleBanner)}>Karma Coin is an easy-to-use cryptocurrency and app designed for appreciation, tipping and communities.</p>
+</div>
+<div className={clsx(styles.smallIconSection)}>
+    <img className={clsx(styles.karmaIcon)} src={'logo_400x400.png'}/>
+</div>
+<div className={clsx(styles.featureContainer)}>
+    <p className={clsx(styles.titleBanner)}>Karma Coin for Developers</p>
+    <p className={clsx(styles.subtitleBanner)}>Karma Coin is an easy-to-use cryptocurrency and app designed for appreciation, tipping and communities.</p>
+</div>

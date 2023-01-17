@@ -17,7 +17,7 @@ const TeamMembers = [
             <p>Meet Rachel, a driven and dynamic professional determined to create a better world.
                 With over a decade of expertise in both the business and nonprofit sectors, she is a master of strategic planning, project management, and organizational development.</p>
             <p>As a true believer in the power of individual potential, Rachel is dedicated to inspiring and empowering people to bring meaningful and lasting change to their lives and communities. An active member of the professional community, she is always seeking out opportunities to connect with peers and continue her own growth.</p>
-            <p>In addition to her professional accomplishments, Rachel is also an advocate for social good and is eager to use her skills to make a positive impact. As Head of Communities for the KarmaCoin team, she is excited to be a part of a platform that enables anyone to show appreciation and support their favorite causes.</p>
+            <p>In addition to her professional accomplishments, Rachel is also an advocate for social good and is eager to use her skills to make a positive impact. As Head of Communities for the Karma Coin team, she is excited to be a part of a platform that enables anyone to show appreciation and support their favorite causes.</p>
             </>
         ),
     },

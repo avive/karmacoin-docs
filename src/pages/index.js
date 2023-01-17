@@ -27,7 +27,7 @@ function Home() {
                 className={clsx(
                     'button button--outline button--secondary button--lg'
                 )}
-                to='https://www.figma.com/proto/XU3xigkjjA0m9qEkkulmWm/KarmaCoin?page-id=0%3A1&node-id=552%3A686&viewport=-575%2C-2195%2C0.49&scaling=scale-down&starting-point-node-id=552%3A686&hide-ui=1'>
+                to='https://www.figma.com/proto/XU3xigkjjA0m9qEkkulmWm/Karma Coin?page-id=0%3A1&node-id=552%3A686&viewport=-575%2C-2195%2C0.49&scaling=scale-down&starting-point-node-id=552%3A686&hide-ui=1'>
               Launch Demo
             </Link>
           </div>
@@ -35,13 +35,16 @@ function Home() {
         <div className={clsx(styles.smallIconSection)}>
           <img className={clsx(styles.karmaIcon)} src={'logo_400x400.png'}/>
         </div>
-        <div className={clsx(styles.featureContainer)}>
           <p className={clsx(styles.titleBanner)}>Karma Coin for Users</p>
+
+          <div className={clsx(styles.subtitleBanner)}>Karma Coin is the universal token of appreciation. We are revolutionizing the way we show appreciation to each other by creating a global, universally accepted token of appreciation that can be used by anyone, anywhere. Karma Coin builds on the good nature of humans rather than on greed and speculation.</div>
+
+          <div className={clsx(styles.featureContainer)}>
         </div>
         {features && features.length > 0 && (
           <section className={styles.features}>
-            <div className="container, text--center">
-              <div className="row">
+            <div className={clsx('container', 'text--center')}>
+              <div className={clsx('row', styles.centerRow)}>
                 {features.map((props, idx) => (
                   <Feature key={idx} {...props} />
                 ))}
@@ -49,9 +52,20 @@ function Home() {
             </div>
           </section>
         )}
+        <div className={clsx(styles.smallIconSection)}>
+          <img className={clsx(styles.karmaIcon)} src={'logo_400x400.png'}/>
+        </div>
+        <p className={clsx(styles.titleBanner)}>Karma Coin for Validators</p>
 
-
-
+        <div className={clsx(styles.subtitleBanner)}> Karma Coin is a new permissionless cryptocurrency enabled by the Karma Coin blockchain - an open and decentralized blockchain network.
+          As a validator, you play a vital role in maintaining and securing the Karma Coin permissionless blockchain, and in return, you are rewarded for your contributions with Karma Coin. <a href='#'> Learn more...</a></div>
+        <div className={clsx(styles.smallIconSection)}>
+          <img className={clsx(styles.karmaIcon)} src={'logo_400x400.png'}/>
+        </div>
+        <p className={clsx(styles.titleBanner)}>Karma Coin for Community Manager</p>
+        <div className={clsx(styles.subtitleBanner)}>
+          Grow your community stronger. Give your members real-world membership benefits. Enable your members to appreciate each-other according to your community values, and reward them according to their contribution to your community. <a href='#'> Learn more...</a>
+        </div>
       </main>
 
     </Layout>
@@ -60,28 +74,18 @@ function Home() {
 
 const features = [
   {
-    title: 'The coin we all need',
+    title: 'Easy to use App',
     imageUrl: 'screen1.png',
     description: (
-        <>
-          The world needs a global decentralized cryptocurrency that is actually used by millions of everyday people to fulfill the full potential of crypto as an alternative to national currencies.
+        <>Joining Karma Coin is simple and easy, all you need is a mobile phone. Karma Coin easy to use app revolutionizes the way we tip and appreciate. It is available for iOS, Android and Desktop devices.
         </>
     ),
   },
   {
-    title: 'The social graph we need',
-    imageUrl: 'screen2.png',
-    description: (
-        <>The world needs a global, objective and decentralized social graph of core relationships between people and between people and orgs in order to create meaningful digital decentralized identities. The identities are critical for creating an impactful web3 future.
-        </>
-    ),
-  },
-  {
-    title: 'Introducing KarmaCoin',
+    title: 'Universal Token of Appreciation',
     imageUrl: 'screen3.png',
     description: (
-        <>
-          A cryptocurrency designed for giving first and payments later. Provides a first-rate mobile-native user experience for the rest of us. Becomes valuable out of real-world value created by usage and not by speculation and hype.
+        <>Tipping and appreciation just got easier and more meaningful. You can tip anyone with a mobile number with just few taps.
         </>
     ),
   },
@@ -89,8 +93,7 @@ const features = [
     title: 'Hello Karma Score',
     imageUrl: 'screen4.png',
     description: (
-        <>
-          Karma score is a measure of a person's positive character traits. It is created by real people appreciating other people using the KarmaCoin mobile app.
+        <>Karma Score gives meaning and insight into people's positive character traits and personality, as perceived by others. Karma Score is the new crypto like.
         </>
     ),
   },
@@ -98,8 +101,7 @@ const features = [
     title: 'A coin for all of us',
     imageUrl: 'screen5.png',
     description: (
-        <>
-          People use one simple, mobile native wallet app and don't have to deal with any crypto keys.
+        <>Tip and appreciate anyone in the world with a mobile phone with few taps.
         </>
     ),
   },
@@ -108,7 +110,7 @@ const features = [
     imageUrl: 'screen6.png',
     description: (
         <>
-          KarmaCoin is maintained by a permissionless and decentralized modern blockchain technology.
+          Karma Coin is maintained by a dedicated permissionless and modern blockchain which provides security and transparency.
         </>
     ),
   },

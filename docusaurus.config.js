@@ -7,7 +7,7 @@ module.exports = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'icon.png',
   organizationName: 'avive', // GitHub org/user name.
-  projectName: 'karmacoin-docs', // repo name.
+  projectName: 'Karma Coin-docs', // repo name.
   themeConfig: {
     colorMode: {
       defaultMode: 'dark',
@@ -21,7 +21,7 @@ module.exports = {
     navbar: {
       title: 'Karma Coin',
       logo: {
-        alt: 'KarmaCoin Logo',
+        alt: 'Karma Coin Logo',
         src: 'icon.png',
       },
       items: [
@@ -40,6 +40,24 @@ module.exports = {
         {
           position: 'left',
           className: 'header-link',
+          label: 'For Users',
+          to: '/jobs',
+        },
+        {
+          position: 'left',
+          className: 'header-link',
+          label: 'For Validators',
+          to: '/jobs',
+        },
+        {
+          position: 'left',
+          className: 'header-link',
+          label: 'For Communities',
+          to: '/jobs',
+        },
+        {
+          position: 'left',
+          className: 'header-link',
           label: 'Docs',
           to: '/docs',
         },
@@ -53,7 +71,7 @@ module.exports = {
           items: [
             {
               label: 'LinkedIn',
-              href: 'https://www.linkedin.com/company/karmacoin/',
+              href: 'https://www.linkedin.com/company/Karma Coin/',
             },
           ],
         },
@@ -76,7 +94,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} by the KarmaCoin Authors. This work is licensed under the <a href="/docs/license"> KarmaCoin License</a>.`,
+      copyright: `Copyright © ${new Date().getFullYear()} by the Karma Coin Authors. This work is licensed under the <a href="/docs/license"> Karma Coin License</a>.`,
     },
   },
   presets: [
@@ -87,7 +105,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/karmacoin-docs',
+            'https://github.com/Karma Coin-docs',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true
         },
@@ -95,7 +113,7 @@ module.exports = {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/karmacoin-docs',
+            'https://github.com/Karma Coin-docs',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

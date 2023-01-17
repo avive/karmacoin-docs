@@ -31,5 +31,5 @@ Please only apply if you meet <b>all the requirements</b> by emailing a cover le
 
 ## Additional Information
 - <a href='/docs'>Karma Coin software design</a>
-- <a href='https://www.figma.com/proto/XU3xigkjjA0m9qEkkulmWm/KarmaCoin?page-id=0%3A1&node-id=552%3A686&viewport=-369%2C-379%2C0.53&scaling=contain&starting-point-node-id=552%3A686'>Karma Coin mobile app interactive demo</a>
-- <a href='https://github.com/avive/karmacoin'>Karma Coin blockchain mockup server</a>
+- <a href='https://www.figma.com/proto/XU3xigkjjA0m9qEkkulmWm/Karma Coin?page-id=0%3A1&node-id=552%3A686&viewport=-369%2C-379%2C0.53&scaling=contain&starting-point-node-id=552%3A686'>Karma Coin mobile app interactive demo</a>
+- <a href='https://github.com/avive/Karma Coin'>Karma Coin blockchain mockup server</a>

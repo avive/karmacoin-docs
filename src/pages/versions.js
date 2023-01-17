@@ -18,9 +18,9 @@ function Version() {
   return (
     <Layout
       title="Versions"
-      description="KarmaCoin versions page listing all documented site versions">
+      description="Karma Coin versions page listing all documented site versions">
       <main className="container margin-vert--lg">
-        <h1>KarmaCoin Documentation Versions</h1>
+        <h1>Karma Coin Documentation Versions</h1>
 
         {latestVersion && (
           <div className="margin-bottom--lg">
@@ -70,7 +70,7 @@ function Version() {
           <div className="margin-bottom--lg">
             <h3 id="archive">Past versions (Not maintained anymore)</h3>
             <p>
-              Here you can find documentation for previous versions of KarmaCoin.
+              Here you can find documentation for previous versions of Karma Coin.
             </p>
             <table>
               <tbody>

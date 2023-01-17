@@ -6,9 +6,9 @@ slug: /blockchain
 ---
 
 # Blockchain Design
-This page describes the KarmaCoin on-chain data. We are using `Protobufs` as the language to describe the data. 
+This page describes the Karma Coin on-chain data. We are using `Protobufs` as the language to describe the data. 
 
-The design decisions assume Karmacoin blockchain will be implemented using `Substrate`. 
+The design decisions assume Karma Coin blockchain will be implemented using `Substrate`. 
 
 This design constraint influences the data modeling as we ensure compatibility with Substrate basic data types and idioms. For example, account Ids are not just ED25519 public keys as they include a chain-id prefix to avoid cross-chains signature issues and balances are defined to support locked funds.
 
@@ -52,7 +52,7 @@ message Amount {
 
 // Supported built-in coin types
 enum CoinType {
-  COIN_TYPE_CORE = 0;   // $KCents - the basic accounting unit of KarmaCoins
+  COIN_TYPE_CORE = 0;   // $KCents - the basic accounting unit of Karma Coins
   COIN_TYPE_STABLE = 1; // $KCStableCents - a built-in stable coin
   // other coin types can be added in future versions of the protocol
 }
@@ -112,22 +112,22 @@ message OnChainData {
 }
 ```
 
-- see Transactions for additional information about Karmacoin transactions...
+- see Transactions for additional information about Karma Coin transactions...
 ---
 
 ## Consensus Protocol
-KarmaCoin uses a nominated Proof of Stake (nPOS) consensus protocol with deterministic finality on blocks. The protocol used is Parity tech `Babe` and `Grandpa`. Block producers and validators must stake an amount of KCoin in order to participate in the network. Entities who want to participate in the consensus protocol must be both block producers and validators.
+Karma Coin uses a nominated Proof of Stake (nPOS) consensus protocol with deterministic finality on blocks. The protocol used is Parity tech `Babe` and `Grandpa`. Block producers and validators must stake an amount of KCoin in order to participate in the network. Entities who want to participate in the consensus protocol must be both block producers and validators.
 
 
 ---
 
 ## Accounts and Addresses
-KarmaCoin should Substrate SS58 address format for accounts identifiers. Accounts ids should be derived from user's maintain public keys and include a network id to avoid cross-chain signing issues. If public key for signature verification purposes can't be obtained from these ids then it needs to be included separately in signed transactions and messages so signatures can be verified.
+Karma Coin should Substrate SS58 address format for accounts identifiers. Accounts ids should be derived from user's maintain public keys and include a network id to avoid cross-chain signing issues. If public key for signature verification purposes can't be obtained from these ids then it needs to be included separately in signed transactions and messages so signatures can be verified.
 
 ## Mobile phone verifiers
 Verifiers should always run a blockchain node and must always participate in the consensus protocol. e.g. they are both block producers and validators. Verifiers servers should be configured to have local access to a node managed by the verifiers and use the same ids for verification and consensus participation.
 
 ---
 :::info License
-Copyright (c) 2022 by the [Karmacoin Authors](https://github.com/avive/karmacoin-docs). This work is licensed under the [Karmacoin License](/docs/license).
+Copyright (c) 2022 by the [Karma Coin Authors](https://github.com/avive/Karma Coin-docs). This work is licensed under the [Karma Coin License](/docs/license).
 :::

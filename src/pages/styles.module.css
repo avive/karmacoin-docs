@@ -27,7 +27,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 16px;
+    margin-bottom: 30px;
+    margin-top: 22px;
 }
 
 .featureContainer {
@@ -37,6 +38,24 @@
     justify-content: center;
 }
 
+.featureBullets {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.centerRow {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .titleBanner {
     padding: 0;
     text-align: center;
@@ -44,17 +63,17 @@
     overflow: hidden;
     font-size: 42pt;
     font-weight: 500;
-    line-height: 1.0;
+    line-height: 1.1;
     margin-bottom: 24px;
 }
 
 .subtitleBanner {
-  padding: 0;
+  padding: 10pt;
   text-align: center;
   position: relative;
   overflow: hidden;
   font-size: 24pt;
-  line-height: 1.2;
+  line-height: 1.3;
   margin-bottom: 24pt;
 }
 

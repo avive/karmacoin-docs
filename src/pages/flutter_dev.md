@@ -24,11 +24,11 @@ We are looking for a great Flutter developer to join the founding team and work 
 7. Able to make at least a part-time commitment to work on this project on an ongoing basis.
 
 ## Applying
-Is this your dream job? If so, impress us with your Flutter dev skills by submitting a github PR with a well documented solution to this issue: https://github.com/avive/karmacoin-app/issues/1
+Is this your dream job? If so, impress us with your Flutter dev skills by submitting a github PR with a well documented solution to this issue: https://github.com/avive/Karma Coin-app/issues/1
 
 Please only apply if you (1) meet <b>all the requirements</b> listed here, and (2) submitted a PR to the issue. Apply by emailing a cover letter, your CV pdf, and a link to your PR to <a href='mailto://flutter_dev@karmaco.in'>flutter_dev@karmaco.in</a>
 
 ## Additional Information
 - <a href='/docs'>Karma Coin software design</a>
-- <a href='https://www.figma.com/proto/XU3xigkjjA0m9qEkkulmWm/KarmaCoin?page-id=0%3A1&node-id=552%3A686&viewport=-369%2C-379%2C0.53&scaling=contain&starting-point-node-id=552%3A686'>Karma Coin mobile app interactive demo</a>
-- <a href='https://github.com/avive/karmacoin'>Karma Coin blockchain mockup server</a>
+- <a href='https://www.figma.com/proto/XU3xigkjjA0m9qEkkulmWm/Karma Coin?page-id=0%3A1&node-id=552%3A686&viewport=-369%2C-379%2C0.53&scaling=contain&starting-point-node-id=552%3A686'>Karma Coin mobile app interactive demo</a>
+- <a href='https://github.com/avive/Karma Coin'>Karma Coin blockchain mockup server</a>

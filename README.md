@@ -1,6 +1,6 @@
-# KarmaCoin docs
+# Karma Coin docs
 
-This repository contains the full source code for the KarmaCoin docs web app which is available at https://karmaco.in. It is built using [Docusaurus 2](https://v2.docusaurus.io/).
+This repository contains the full source code for the Karma Coin docs web app which is available at https://karmaco.in. It is built using [Docusaurus 2](https://v2.docusaurus.io/).
 
 ## Installation
 

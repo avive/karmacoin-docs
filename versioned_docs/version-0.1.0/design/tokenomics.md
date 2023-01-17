@@ -9,8 +9,8 @@ slug: /tokenomics
 
 ## Coin types
 - `KCents` - basic accounting unit.
-- `KCoins ($KC)` - The core Karmacoin cryptocurrency. One KCoin equals one million KCents.
-- `KStable $KST` - The KarmaCoin stable-coin cryptocurrency. This stable coin will be issued post-genesis on the KarmaCoin blockchain.
+- `KCoins ($KC)` - The core Karma Coin cryptocurrency. One KCoin equals one million KCents.
+- `KStable $KST` - The Karma Coin stable-coin cryptocurrency. This stable coin will be issued post-genesis on the Karma Coin blockchain.
 ---
 
 ## Supply
@@ -19,11 +19,11 @@ slug: /tokenomics
 ## Pre-minting Allocations
 - 80% of the supply (2B KCoins) are minted by the protocol post genesis.
 - 20% of the supply (0.5B KCoins) is pre-minted on genesis.
-- 50% of the pre-minted supply (250M KCoins) goes to the KarmaCoin foundation and is used to build the platform.
-- 50% of the pre-minted supply (250M KCoins) goes to Karmacoin investors and is vested over a period of 5 years from genesis.
+- 50% of the pre-minted supply (250M KCoins) goes to the Karma Coin foundation and is used to build the platform.
+- 50% of the pre-minted supply (250M KCoins) goes to Karma Coin investors and is vested over a period of 5 years from genesis.
 
 ## Karma Mining
-The KarmaCoin protocol tokenomics are designed to encourage usage and growth in the early days of the network with the goal of destabilising KarmaCoin as a global means ot tipping and payments. 
+The Karma Coin protocol tokenomics are designed to encourage usage and growth in the early days of the network with the goal of destabilising Karma Coin as a global means ot tipping and payments. 
 75% of the capped supply (1.5B KCoins) are distributed by the protocol and awarded to users to encourage sign-ups, usage as means of payment and appreciation. We call this Karma mining.
 
 #### Signup Rewards
@@ -51,19 +51,19 @@ The KarmaCoin protocol tokenomics are designed to encourage usage and growth in 
 ---
 
 ## Treasury
-The Karmacoin foundation is going to allocate 10M KCoins to an on-chain treasury that will be used to reward various stakeholders for behavior that advances the Karmacoin community, usage and values.
+The Karma Coin foundation is going to allocate 10M KCoins to an on-chain treasury that will be used to reward various stakeholders for behavior that advances the Karma Coin community, usage and values.
 
 ## Bounty Rewards Pool
-The Karmacoin foundation is going to allocate 10M KCoins from its pre-minted coins to reward execution of technical tasks such as audits and bug reports. This pool is going to be managed on-chain for maximum transparency.
+The Karma Coin foundation is going to allocate 10M KCoins from its pre-minted coins to reward execution of technical tasks such as audits and bug reports. This pool is going to be managed on-chain for maximum transparency.
 
 ## Validator Awards
-- 25% of the capped supply (500M KCoins) are allocated by the protocol to rewards the Karmacoin blockchain validators. These are minting by the protocol over a 10 years period using a decay curve which rewards validators who starts validating early while still rewarding new validators that join the system over time.
+- 25% of the capped supply (500M KCoins) are allocated by the protocol to rewards the Karma Coin blockchain validators. These are minting by the protocol over a 10 years period using a decay curve which rewards validators who starts validating early while still rewarding new validators that join the system over time.
 
 ## Validators Deposit
-KarmaCoin uses a dPOS consensus algorithm. Validators need to acquire KCoins from the KarmaCoin foundation (or from any other KCoins cold holder) in order to obtain the coins deposit requirement. The minimum validator deposit amount is 50,000 KCoins. It is designed in a way that is low enough to allow for non-rich validators and high-enough to ensure skin-in-the-game from validators and stake that has non-negligible fiat value. The KarmaCoin foundation will conduct coin auctions for validators to enable them to purchase coins in an open market context where the coin price is discovered by the market.
+Karma Coin uses a dPOS consensus algorithm. Validators need to acquire KCoins from the Karma Coin foundation (or from any other KCoins cold holder) in order to obtain the coins deposit requirement. The minimum validator deposit amount is 50,000 KCoins. It is designed in a way that is low enough to allow for non-rich validators and high-enough to ensure skin-in-the-game from validators and stake that has non-negligible fiat value. The Karma Coin foundation will conduct coin auctions for validators to enable them to purchase coins in an open market context where the coin price is discovered by the market.
 
 ## Investors Funds
-Karmacoin investors founds are going to be managed on-chain by a vesting mechanism that enables them to pull vested funds according to their vesting schedule.
+Karma Coin investors founds are going to be managed on-chain by a vesting mechanism that enables them to pull vested funds according to their vesting schedule.
 
 --- 
 
@@ -72,7 +72,7 @@ A total allocation 500M KCoins pre-mint consisting of:
 - 10M KCoins - treasury for contributors allocation.
 - 10M KCoins - bounties rewards pool.
 - 230M KCoins - builders compensation (vested over a 5 years period)
-- 250M KCoins - KarmaCoin investors coin allocation (vested over a 5 years period)
+- 250M KCoins - Karma Coin investors coin allocation (vested over a 5 years period)
 
 ## Summary of protocol minting
 A total of 2B KCoins are allocated by the protocol for:
@@ -83,5 +83,5 @@ A total of 2B KCoins are allocated by the protocol for:
 - 500M KCoins - Validators rewards.
 
 :::info License
-Copyright (c) 2022 by the [Karmacoin Authors](https://github.com/avive/karmacoin-docs). This work is licensed under the [Karmacoin License](/docs/license).
+Copyright (c) 2022 by the [Karma Coin Authors](https://github.com/avive/Karma Coin-docs). This work is licensed under the [Karma Coin License](/docs/license).
 :::

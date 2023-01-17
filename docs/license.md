@@ -1,19 +1,19 @@
 ---
 id: license
-title: Karmacoin License v0.1.0
+title: Karma Coin License v0.1.0
 sidebar_label: 📜 License
 ---
 
 ## Licensed Work
-Licensed Work includes all versions of KarmaCoin documentation, designs, algorithms, computer software, source code authored by KarmaCoin authors, and any executables software program or component compiled from the source code.
+Licensed Work includes all versions of Karma Coin documentation, designs, algorithms, computer software, source code authored by Karma Coin authors, and any executables software program or component compiled from the source code.
 
 ## Licensor
-The licensor is the KarmaCoin Authors.
+The licensor is the Karma Coin Authors.
 
 ## License Terms
 The Licensed Work is copyright (c) 2021 by the Licensor.
 
-The KarmaCoin Authors hereby grants you the right to copy, modify, create derivative works, or redistribute the Licensed work, for non-commercial use.
+The Karma Coin Authors hereby grants you the right to copy, modify, create derivative works, or redistribute the Licensed work, for non-commercial use.
 
 If your use of the Licensed Work does not comply with this License then you must purchase a commercial license from the Licensor or you must refrain from using the Licensed Work.
 
@@ -31,7 +31,7 @@ This License does not grant you any right in any trademark or logo of Licensor o
 
 TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE LICENSED WORK IS PROVIDED ON AN “AS IS” BASIS. LICENSOR HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS, EXPRESS OR IMPLIED, INCLUDING (WITHOUT LIMITATION) WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, AND TITLE.
 
-## KarmaCoin Authors
+## Karma Coin Authors
 - [AE](https://github.com) <a@karmaco.in>
 
 ## License Inquiries
