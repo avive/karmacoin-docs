@@ -47,13 +47,13 @@ module.exports = {
           position: 'left',
           className: 'header-link',
           label: 'For Validators',
-          to: '/jobs',
+          to: '/validators',
         },
         {
           position: 'left',
           className: 'header-link',
           label: 'For Communities',
-          to: '/jobs',
+          to: '/communities',
         },
         {
           position: 'left',

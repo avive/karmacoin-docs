@@ -87,6 +87,33 @@
   margin-bottom: 24pt;
 }
 
+.mainTextContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: left;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.mainText {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 22pt;
+    line-height: 1.2;
+    padding: 20px;
+}
+
+.mainBullets {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    flex-wrap: nowrap;
+    justify-content: left;
+    line-height: 1.5;
+}
 
 .heroBanner {
   padding: 4rem 0;

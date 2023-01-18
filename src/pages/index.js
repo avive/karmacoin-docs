@@ -23,8 +23,7 @@ function Home() {
           <div className={clsx(styles.titleBanner)}>Hello Karma Coin</div>
           <div className={clsx(styles.subtitleBanner)}>Karma Coin is an easy-to-use cryptocurrency and app designed for appreciation, tipping and communities.</div>
           <div className={styles.buttons}>
-            <Link
-                className={clsx(
+            <Link className={clsx(
                     'button button--outline button--secondary button--lg'
                 )}
                 to='https://www.figma.com/proto/XU3xigkjjA0m9qEkkulmWm/Karma Coin?page-id=0%3A1&node-id=552%3A686&viewport=-575%2C-2195%2C0.49&scaling=scale-down&starting-point-node-id=552%3A686&hide-ui=1'>
@@ -36,9 +35,7 @@ function Home() {
           <img className={clsx(styles.karmaIcon)} src={'logo_400x400.png'}/>
         </div>
           <p className={clsx(styles.titleBanner)}>Karma Coin for Users</p>
-
           <div className={clsx(styles.subtitleBanner)}>Karma Coin is the universal token of appreciation. We are revolutionizing the way we show appreciation to each other by creating a global, universally accepted token of appreciation that can be used by anyone, anywhere. Karma Coin builds on the good nature of humans rather than on greed and speculation.</div>
-
           <div className={clsx(styles.featureContainer)}>
         </div>
         {features && features.length > 0 && (
@@ -58,14 +55,18 @@ function Home() {
         <p className={clsx(styles.titleBanner)}>Karma Coin for Validators</p>
 
         <div className={clsx(styles.subtitleBanner)}> Karma Coin is a new permissionless cryptocurrency enabled by the Karma Coin blockchain - an open and decentralized blockchain network.
-          As a validator, you play a vital role in maintaining and securing the Karma Coin permissionless blockchain, and in return, you are rewarded for your contributions with Karma Coin. <a href='#'> Learn more...</a></div>
+          As a validator, you play a vital role in maintaining and securing the Karma Coin permissionless blockchain, and in return, you are rewarded for your contributions with Karma Coin. <a href='/validators'> Learn more...</a></div>
         <div className={clsx(styles.smallIconSection)}>
           <img className={clsx(styles.karmaIcon)} src={'logo_400x400.png'}/>
         </div>
-        <p className={clsx(styles.titleBanner)}>Karma Coin for Community Manager</p>
+        <p className={clsx(styles.titleBanner)}>Karma Coin for Community Managers</p>
         <div className={clsx(styles.subtitleBanner)}>
-          Grow your community stronger. Give your members real-world membership benefits. Enable your members to appreciate each-other according to your community values, and reward them according to their contribution to your community. <a href='#'> Learn more...</a>
+          Grow your community stronger. Give your members real-world membership benefits. Enable your members to appreciate each-other according to your community values, and reward them according to their contribution to your community. <a href='/communities'> Learn more...</a>
         </div>
+        <div className={clsx(styles.smallIconSection)}>
+          <img className={clsx(styles.karmaIcon)} src={'logo_400x400.png'}/>
+        </div>
+
       </main>
 
     </Layout>
