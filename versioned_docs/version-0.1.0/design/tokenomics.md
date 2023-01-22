@@ -42,16 +42,20 @@ The Karma Coin protocol tokenomics are designed to encourage usage and growth in
 - Each month, the protocol mints 10 KCoins to the top 1,000 users with the highest Karma coins that didn't get this award yet. 
 - Up to 250M KCoins are allocated for this reward. When these have been allocated the protocol stops rewarding users with top karam.
 
+#### Causes Rewards
+- 500K KCoins are allocated by the protocol to reward causes submitted by users.
+- Each month, for at the first 50 months since genesis, 10,000 Kcoins are distributed by the protocol to up to 20 causes that got funding in that calendar month via appreciations that didn't get funding in the previous month. The causes are randomly selected by the protocol. Getting a cause to become eligible requires cause registration and verification as a real non-profit with an established reputation.
+
 #### Transaction Fees Subsidies
 - The protocol rewards up 250M KCoins to users payment transactions over 10 years period in the form of transaction fees subsidies. 
 - Transaction susedies are minted by the protocol for payment transactions and are given to block producers. When a subsidy is applied, the user who submitted the transaction doesn't pay the transaction fee.
 - Only the first 10 transactions per user are eligible for transaction fees subsidies to mitigate spam attacks.
 - These intentional design decision designed to encourage sign-ups, appreciation, and coin usage in the real-world as means of payment. 
-- After the 250M KCoins have been minted for transaction fees subsidies, the protocol keeps minting 1 KCent for each transaction to subsidize the transaction fees of signup transactions. This is required to onboard new users. This amounts to issuance of 1,000 Kcoins for 1 billion new users, so it doesn't change the overall supply signficantly in the long run.
+- After the 250M KCoins have been minted for transaction fees subsidies, the protocol keeps minting 1 KCent for each transaction to subsidize the transaction fees of signup transactions. This is required to onboard new users. This amounts to issuance of 1,000 Kcoins for 1 billion new users, so it doesn't change the overall supply significantly in the long run.
 ---
 
 ## Treasury
-The Karma Coin foundation is going to allocate 10M KCoins to an on-chain treasury that will be used to reward various stakeholders for behavior that advances the Karma Coin community, usage and values.
+The Karma Coin foundation is going to allocate 9.5M KCoins to an on-chain treasury that will be used to reward various stakeholders for behavior that advances the Karma Coin community, usage and values.
 
 ## Bounty Rewards Pool
 The Karma Coin foundation is going to allocate 10M KCoins from its pre-minted coins to reward execution of technical tasks such as audits and bug reports. This pool is going to be managed on-chain for maximum transparency.
