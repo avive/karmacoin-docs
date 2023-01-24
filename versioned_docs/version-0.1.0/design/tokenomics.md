@@ -13,78 +13,70 @@ slug: /tokenomics
 - `KStable $KST` - The Karma Coin stable-coin cryptocurrency. This stable coin will be issued post-genesis on the Karma Coin blockchain.
 ---
 
-## Supply
-- Supply is capped at 2.5 billion KCoins (2.5 trillion KCents) with the following caveat. 1000 KCents are minted for each new user signup and awarded for that user after the initial 140M users. This amounts to perpetual minting of 100 Karma coins for 1 million new users.
+## Supply Model
+The coin issuance and supply are designed to rewards both users and validators and to encourage early adoption by both of these stakeholders, while also providing some coins to the Karma Coin dev company for the development and the maintenance of the product and the tech stack. 
+
+This issuance model is designed so the vast majority of the coins are issued in the first 20 years of the project while still rewarding validators and new users indefinitely. So technically Karma Coin supply is not capped but the amounts issued after the first 20 years from genesis are negligible compared to the first 20 years issuance.
+
+After the first 20 years from genesis the coin supply will be 2.5 billion KCoins (2.5 trillion KCents). We refer this is amount as 'the supply' in this document. 
+
+In the following years, after the first 20 years, the only coin issuance by the protocol is validator rewards and signup rewards. These are issued indefinitely into the future. The validators rewards decay exponentially so only x are minted in year 20 to 40 from genesis. Signup rewards amount to up to 100 million additional protocol minted KCes for each 10 years period after the initial 20 years.
 
 ## Pre-minting Allocations
-- 80% of the supply (2B KCoins) are minted by the protocol post genesis.
-- 20% of the supply (0.5B KCoins) is pre-minted on genesis.
-- 50% of the pre-minted supply (250M KCoins) goes to the Karma Coin foundation and is used to build the platform.
-- 50% of the pre-minted supply (250M KCoins) goes to Karma Coin investors and is vested over a period of 5 years from genesis.
-
-## Karma Mining
-The Karma Coin protocol tokenomics are designed to encourage usage and growth in the early days of the network with the goal of destabilising Karma Coin as a global means ot tipping and payments. 
-75% of the capped supply (1.5B KCoins) are distributed by the protocol and awarded to users to encourage sign-ups, usage as means of payment and appreciation. We call this Karma mining.
-
-#### Signup Rewards
-- Upon sign-up, the protocol mints a 10 KCoins reward to each new user with a verified mobile number. 
-- The first 40 million users who join the platform get this award. 
-- The next 100 million users who join the platform, get 1 KCoin on signup. This is called `signup rewards`. 
-- A total of 500 million KCoins is allocated by the protocol for signup rewards.
-- Users beyond the first 140M ones get a small reward of 1000 KCents on signup. This amounts to perpetual minting of 100 Karma coins per new 1 million users.
-
-#### Referral Rewards
-- The protocol mints 10 KCoin for a user who invited a new person that signed-up to the service, up to 40 million invites. 
-- The protocol mints 1 KCoin for a user who invited a new person that signed-up to the service for the next 60 million invites.
-- A total of 500 million KCoins is allocated by the protocol for referral rewards.
-
-#### Karma Rewards
-- Each month, the protocol mints 10 KCoins to the top 1,000 users with the highest Karma coins that didn't get this award yet. 
-- Up to 250M KCoins are allocated for this reward. When these have been allocated the protocol stops rewarding users with top karam.
-
-#### Causes Rewards
-- 500K KCoins are allocated by the protocol to reward causes submitted by users.
-- Each month, for at the first 50 months since genesis, 10,000 Kcoins are distributed by the protocol to up to 20 causes that got funding in that calendar month via appreciations that didn't get funding in the previous month. The causes are randomly selected by the protocol. Getting a cause to become eligible requires cause registration and verification as a real non-profit with an established reputation.
-
-#### Transaction Fees Subsidies
-- The protocol rewards up 250M KCoins to users payment transactions over 10 years period in the form of transaction fees subsidies. 
-- Transaction susedies are minted by the protocol for payment transactions and are given to block producers. When a subsidy is applied, the user who submitted the transaction doesn't pay the transaction fee.
-- Only the first 10 transactions per user are eligible for transaction fees subsidies to mitigate spam attacks.
-- These intentional design decision designed to encourage sign-ups, appreciation, and coin usage in the real-world as means of payment. 
-- After the 250M KCoins have been minted for transaction fees subsidies, the protocol keeps minting 1 KCent for each transaction to subsidize the transaction fees of signup transactions. This is required to onboard new users. This amounts to issuance of 1,000 Kcoins for 1 billion new users, so it doesn't change the overall supply significantly in the long run.
----
-
-## Treasury
-The Karma Coin foundation is going to allocate 9.5M KCoins to an on-chain treasury that will be used to reward various stakeholders for behavior that advances the Karma Coin community, usage and values.
-
-## Bounty Rewards Pool
-The Karma Coin foundation is going to allocate 10M KCoins from its pre-minted coins to reward execution of technical tasks such as audits and bug reports. This pool is going to be managed on-chain for maximum transparency.
+- 1.875B KCs (75% of the supply) are minted by the protocol over 20 years from genesis.
+- 625M KCs (25% of the supply) are minted on genesis.
+- 375M KCs (15% of the supply) go to the Karma Coin treasury and are used to build the platform.
+- 250M KCs (10% of the supply) are allocated to be provided to the Karma Coin blockchain validators as their initial stake in the protocol.
 
 ## Validator Awards
-- 25% of the capped supply (500M KCoins) are allocated by the protocol to rewards the Karma Coin blockchain validators. These are minting by the protocol over a 10 years period using a decay curve which rewards validators who starts validating early while still rewarding new validators that join the system over time.
+- 500M KCs (20% of the supply) are allocated by the protocol to rewards the Karma Coin blockchain validators for providing security to the network for the first 20 years from genesis. These are minting by the protocol using an exponential decay function which rewards validators who starts validating early while still rewarding new validators that join the system over time. (First month reward 10M KCs, Lambda = 0.020036). The issuance continues indefinitely using the same decay function.
+
+## Karma Mining
+The Karma Coin protocol tokenomics are designed to encourage usage and growth in the early days of the network with the goal of destabilising Karma Coin as a global means of appreciation, tipping and payments. 
+
+1.375B KCs (55% of the supply) are distributed by the protocol and awarded to users to encourage sign-ups, usage as means of payment and appreciation. We call this Karma mining. Karma Mining includes the following coin issuance:
+
+### Signup Rewards
+Signup rewards are designed to solve the cryptocurrency on ramp problem. Upon sign-up, the protocol mints a 1 KCoins reward to each new user with a verified mobile phone number. 
+- A total of 300 million KCs is allocated by the protocol for signup rewards.
+- The first 10 million users get 10 KCs on signup.
+- The next 200 millions user get 1 KC on signup. 
+- Users beyond the first 210 million users get a small reward of 1000 KCents on signup. This amounts to perpetual minting of 100 KCs for 1 million new users.
+
+### Referral Rewards
+- A total of 300 million KCs is allocated by the protocol for referral rewards. Referral rewards are awarded to a users who appreciated someone who signed up as a result to Karma Coin.
+- A Karma Coin user can only get 1 referral reward.
+- The first 10 million referees get a 10 KCs reward when their referral signs up.
+- The next 200 millions referees get a 1 KC reward when their referral signs up.
+
+### Karma Rewards
+- Each month, the protocol mints 10 KCoins to the top 1,000 users with the highest Karma coins that didn't get this award yet. 
+- Up to 300M KCoins are allocated for this reward. When these have been allocated the protocol stops rewarding users with top karma.
+
+### Causes Rewards
+- 225 millions KCs are allocated by the protocol to reward causes submitted by users.
+- Each month, for at the first 50 months since genesis, 10,000 KCoins are distributed by the protocol to up to 20 causes that got funding in that calendar month via appreciations that didn't get funding in the previous month. The causes are randomly selected by the protocol. Getting a cause to become eligible requires cause registration and verification as a real non-profit with an established reputation.
+
+#### Transaction Fees Subsidies
+The protocol allocates up 250M KCs as transaction fees subsidies. Fees susedies are minted by the protocol for appreciation and payment transactions and are given to the Karma Coin blockchain block producers. When a subsidy is applied, the user who submitted the transaction doesn't pay the transaction fee from his own balance.
+- Only the first 10 transactions per user are eligible for transaction fees subsidies to mitigate spam attacks.
+- These intentional design decision is designed to encourage sign-ups, appreciation, and coin usage in the real-world as means of tipping, appreciation and payment. 
+- After the 250M KCoins have been minted for fees subsidies, the protocol keeps minting 1 KCent for each transaction to subsidize the transaction fees of signup transactions. This is required to seamlessly onboard new users. This amounts to issuance of 1,000 KCs for 1 billion new users, so it doesn't change the overall supply significantly in the long term.
+---
 
 ## Validators Deposit
-Karma Coin uses a dPOS consensus algorithm. Validators need to acquire KCoins from the Karma Coin foundation (or from any other KCoins cold holder) in order to obtain the coins deposit requirement. The minimum validator deposit amount is 50,000 KCoins. It is designed in a way that is low enough to allow for non-rich validators and high-enough to ensure skin-in-the-game from validators and stake that has non-negligible fiat value. The Karma Coin foundation will conduct coin auctions for validators to enable them to purchase coins in an open market context where the coin price is discovered by the market.
+Karma Coin uses a dPOS consensus algorithm. Validators need to acquire KCoins from the Karma Coin foundation (or from any other KCoins cold holder) in order to obtain the coins deposit requirement. The minimum validator deposit amount is 100,000 KCs. This is designed in a way that is low enough to allow for non-rich validators and high-enough to ensure skin-in-the-game from validators and stake that has non-negligible fiat value. The Karma Coin foundation will conduct coin auctions for validators to enable them to purchase coins in an open market context where the coin price is discovered by the market.
 
-## Investors Funds
-Karma Coin investors founds are going to be managed on-chain by a vesting mechanism that enables them to pull vested funds according to their vesting schedule.
-
---- 
-
-## Summary Allocation at genesis
-A total allocation 500M KCoins pre-mint consisting of:
-- 10M KCoins - treasury for contributors allocation.
-- 10M KCoins - bounties rewards pool.
-- 230M KCoins - builders compensation (vested over a 5 years period)
-- 250M KCoins - Karma Coin investors coin allocation (vested over a 5 years period)
 
 ## Summary of protocol minting
-A total of 2B KCoins are allocated by the protocol for:
-- 500M KCoins - Signup rewards.
-- 500M KCoins - Referral rewards.
-- 250M KCoins - Karma rewards.
-- 250M KCoins - Transactions fees subsidies.
-- 500M KCoins - Validators rewards.
+A total of 1.875B KCoins are minted by the protocol for:
+- 300M KCs - Signup rewards.
+- 300M KCs - Referral rewards.
+- 300M KCs - Karma rewards.
+- 250M Kcs - Transactions fees subsidies.
+- 225M KCs - Causes rewards;
+- 500M KCs - Validators rewards.
+
 
 :::info License
 Copyright (c) 2022 by the [Karma Coin Authors](https://github.com/avive/Karma Coin-docs). This work is licensed under the [Karma Coin License](/docs/license).
