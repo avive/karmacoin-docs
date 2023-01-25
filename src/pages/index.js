@@ -25,18 +25,21 @@ function Home() {
           <div className={styles.buttons}>
             <Link className={clsx(
                     'button button--outline button--secondary button--lg'
-                )}
+                )} target='_blank'
                 to='https://www.figma.com/proto/XU3xigkjjA0m9qEkkulmWm/Karma Coin?page-id=0%3A1&node-id=552%3A686&viewport=-575%2C-2195%2C0.49&scaling=scale-down&starting-point-node-id=552%3A686&hide-ui=1'>
               Launch Demo
+            </Link>
+            <div className={clsx(styles.smallSpacer)}/>
+            <Link className={clsx(
+                'button button--outline button--secondary button--lg'
+            )} target='_blank'
+                  to='https://getwaitlist.com/waitlist/4912'>
+              Join Waiting List
             </Link>
           </div>
         </div>
         <div className={clsx(styles.smallIconSection)}>
           <img className={clsx(styles.karmaIcon)} src={'logo_400x400.png'}/>
-        </div>
-          <p className={clsx(styles.titleBanner)}>Karma Coin for Users</p>
-          <div className={clsx(styles.subtitleBanner)}>Karma Coin is the universal token of appreciation. We are revolutionizing the way we show appreciation to each other by creating a global, universally accepted token of appreciation that can be used by anyone, anywhere. Karma Coin builds on the good nature of humans rather than on greed and speculation.</div>
-          <div className={clsx(styles.featureContainer)}>
         </div>
         {features && features.length > 0 && (
           <section className={styles.features}>

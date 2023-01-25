@@ -87,6 +87,10 @@
   margin-bottom: 24pt;
 }
 
+.smallSpacer {
+    width: 42px;
+}
+
 .mainTextContainer {
     display: flex;
     flex-direction: row;

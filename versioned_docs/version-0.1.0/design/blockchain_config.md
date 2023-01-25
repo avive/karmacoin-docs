@@ -29,7 +29,7 @@ The following fundamental product changes must pass an on-chain voting procedure
 The existential deposit in Karma Coin is 100 KCents. Existential deposit is the minimum balance which permits an account to execute transactions. Note that sign-up transactions fees come from either protocol subsidiaries or from the signup reward and when both of these are not applicable, the protocol mints 1KCent to pay the transaction fee of these transactions to allow new users to sign-up in the long run.
 
 ## Genesis Config
-Karma Coin genesis canonical config constants are defined in the following file: [genesis.rs](https://github.com/avive/Karma Coin/blob/main/crates/base/src/genesis_config_service.rs)
+Karma Coin genesis canonical config constants are defined in the following file: [genesis.rs](https://github.com/avive/KarmaCoin/blob/main/crates/base/src/genesis_config_service.rs)
 
 
 
