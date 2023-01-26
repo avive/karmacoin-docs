@@ -29,7 +29,6 @@ function Home() {
                 to='https://www.figma.com/proto/XU3xigkjjA0m9qEkkulmWm/Karma Coin?page-id=0%3A1&node-id=552%3A686&viewport=-575%2C-2195%2C0.49&scaling=scale-down&starting-point-node-id=552%3A686&hide-ui=1'>
               Launch Demo
             </Link>
-            <div className={clsx(styles.smallSpacer)}/>
             <Link className={clsx(
                 'button button--outline button--secondary button--lg'
             )} target='_blank'
@@ -56,7 +55,6 @@ function Home() {
           <img className={clsx(styles.karmaIcon)} src={'logo_400x400.png'}/>
         </div>
         <p className={clsx(styles.titleBanner)}>Karma Coin for Validators</p>
-
         <div className={clsx(styles.subtitleBanner)}> Karma Coin is a new permissionless cryptocurrency enabled by the Karma Coin blockchain - an open and decentralized blockchain network.
           As a validator, you play a vital role in maintaining and securing the Karma Coin permissionless blockchain, and in return, you are rewarded for your contributions with Karma Coin. <a href='/validators'> Learn more...</a></div>
         <div className={clsx(styles.smallIconSection)}>
@@ -66,10 +64,6 @@ function Home() {
         <div className={clsx(styles.subtitleBanner)}>
           Grow your community stronger. Give your members real-world membership benefits. Enable your members to appreciate each-other according to your community values, and reward them according to their contribution to your community. <a href='/communities'> Learn more...</a>
         </div>
-        <div className={clsx(styles.smallIconSection)}>
-          <img className={clsx(styles.karmaIcon)} src={'logo_400x400.png'}/>
-        </div>
-
       </main>
 
     </Layout>

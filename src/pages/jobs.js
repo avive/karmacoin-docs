@@ -37,7 +37,7 @@ function Job({image_url, title, link, description}) {
             </div>
             <div className="text--center padding-horiz--md padding-vert--md">
                 <h3><a href={link}>{title}</a></h3>
-                <p>{description}</p>
+                <p className={clsx('jobDesc')}>{description}</p>
             </div>
         </div>
     );

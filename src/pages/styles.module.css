@@ -16,7 +16,7 @@
 }
 
 .subTitle {
-    margin-top: 6px;
+    margin-top: 4px;
     font-size: 24px;
     font-weight: 700;
 }
@@ -64,17 +64,24 @@
     font-size: 42pt;
     font-weight: 500;
     line-height: 1.1;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
+    margin-top: 30px;
 }
 
 .subtitleBanner {
-  padding: 10pt;
+  padding-left: 24pt;
+  padding-right: 24pt;
   text-align: center;
   position: relative;
   overflow: hidden;
-  font-size: 24pt;
-  line-height: 1.3;
+  font-size: 28pt;
+  font-weight: 400;
+  line-height: 1.2;
   margin-bottom: 24pt;
+}
+
+.jobDesc {
+    font-size: 24px;
 }
 
 .textBanner {
@@ -97,8 +104,20 @@
     align-items: start;
     justify-content: left;
     flex-wrap: wrap;
-    padding: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
     font-size: 24px;
+}
+
+@media only screen and (max-width: 600px) {
+    .mainTextContainer {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .subtitleBanner {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
 }
 
 .mainText {
@@ -107,7 +126,8 @@
     text-align: left;
     font-size: 22pt;
     line-height: 1.2;
-    padding: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .mainBullets {
@@ -137,7 +157,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: inherit;
+    flex-flow: row wrap;
     padding-bottom: 32px;
+    gap: 16px;
 }
 
 .features {
