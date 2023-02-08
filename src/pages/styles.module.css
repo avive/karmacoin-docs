@@ -74,8 +74,8 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  font-size: 28pt;
-  font-weight: 400;
+  font-size: 26pt;
+  font-weight: 500;
   line-height: 1.2;
   margin-bottom: 24pt;
 }
@@ -110,13 +110,27 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .titleBanner {
+        font-size: 32px;
+    }
+
     .mainTextContainer {
         padding-left: 30px;
         padding-right: 30px;
+
     }
     .subtitleBanner {
-        padding-left: 12px;
-        padding-right: 12px;
+        padding-left: 16px;
+        padding-right: 16px;
+        font-size: 26px;
+    }
+    .mainText p {
+        font-size: 24px;
+
+    }
+
+    .mainBullets {
+        font-size: 24px;
     }
 }
 
@@ -136,7 +150,11 @@
     text-align: left;
     flex-wrap: nowrap;
     justify-content: left;
-    line-height: 1.5;
+}
+
+.mainBullets li {
+    line-height: 1.2;
+    margin-bottom: 6px;
 }
 
 .heroBanner {

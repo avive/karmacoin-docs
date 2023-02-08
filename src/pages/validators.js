@@ -20,7 +20,7 @@ export default function ValidatorsPage() {
                 </h2>
                 <div className={clsx(styles.mainTextContainer)}>
                     <div className={clsx('row', styles.mainText, 'text--left')}>
-                        <p>Karma Coin is a unique cryptocurrency designed for appreciation and tipping. The cryptocurrency runs on the Karma Coin blockchain. The Karma Coin blockchain uses a proof-of-stake consensus protocol. As a validator, you'll have the opportunity to help secure the network and earn rewards for your efforts.
+                        <p>Karma Coin is a unique cryptocurrency designed for appreciation and tipping. The cryptocurrency runs on the Karma Coin blockchain. The Karma Coin blockchain uses a proof-of-stake consensus protocol.</p><p> As a validator, you'll have the opportunity to help secure the network and earn rewards for your efforts.
                             </p><p>By becoming a validator, you'll be able to:</p>
                         <ul className={clsx(styles.mainBullets)}>
                             <li>Earn passive income by validating transactions on the KarmaCoin network.</li>

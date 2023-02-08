@@ -12,7 +12,7 @@ slug: /blockchain-config
 We'd like to initial have a 30 seconds block-time. This can ensure about 60 seconds transactions confirmation time which is reasonable for the first stage of the project. In the future, L2 tech can speed up transaction confirmation.
 
 ## Validators Deposit Amount
-Validators deposit is 50,000 KCoins. See tokenomics for more info.
+Validators deposit is 2.5M KCoins. See tokenomics for more info.
 
 ## Sudo
 Karma Coin blockchain should include a Sudo account to perform blockchain maintenance while the tech is experimental and the product is in beta. The goal is to remove the Sudo account via governance when the blockchain is ready for full decentralization operation.

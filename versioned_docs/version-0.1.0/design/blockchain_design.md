@@ -122,7 +122,15 @@ Karma Coin uses a nominated Proof of Stake (nPOS) consensus protocol with determ
 ---
 
 ## Accounts and Addresses
-Karma Coin should Substrate SS58 address format for accounts identifiers. Accounts ids should be derived from user's maintain public keys and include a network id to avoid cross-chain signing issues. If public key for signature verification purposes can't be obtained from these ids then it needs to be included separately in signed transactions and messages so signatures can be verified.
+Karma Coin uses accounts and addresses so the standard Substrate wallets can be used with Karma Coin.
+
+Karma Coin should Substrate SS58 address format for accounts identifiers. 
+
+Users keypairs should use the ED25519 scheme.
+
+Accounts ids should be derived from user's maintain public keys and include a network id to avoid cross-chain signing issues. If public key for signature verification purposes can't be obtained from these ids then it needs to be included separately in signed transactions and messages so signatures can be verified.
+
+
 
 ## Mobile phone verifiers
 Verifiers should always run a blockchain node and must always participate in the consensus protocol. e.g. they are both block producers and validators. Verifiers servers should be configured to have local access to a node managed by the verifiers and use the same ids for verification and consensus participation.
