@@ -6,7 +6,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 
-const TeamMembers = [
+const TeamMembersRowOne = [
     {
         name: 'Rachel Kiner',
         title: 'Head of Communities',
@@ -49,6 +49,20 @@ const TeamMembers = [
     },
 ];
 
+const TeamMembersRowTwo = [
+    {
+        name: 'Danylo K',
+        title: '🇺🇦 Lead blockchain developer',
+        link: 'https://github.com/HolyGrease',
+        image: require('@site/static/d_k_profile.png').default,
+        description: (
+            <>
+                <p>Meet Danylo, a skilled blockchain developer with proven expertise in driving improvements throughout the entire development lifecycle. Danylo brings to Karma Coin significant valuable experience and skills in building app-specific blockchains in Rust using the Substrate platform.</p>
+            </>
+        ),
+    },
+];
+
 function Member({image, link, name, title, description}) {
     return (
         <div className={clsx('col col--4')}>
@@ -84,7 +98,20 @@ export default function TeamPage() {
                             justifyContent: 'center',
                             alignItems: 'top',
                         }}>
-                            {TeamMembers.map((props, idx) => (
+                            {TeamMembersRowOne.map((props, idx) => (
+                                <Member key={idx} {...props} />
+                            ))}
+                        </div>
+                    </div>
+                </section>
+                <section className={styles.features}>
+                    <div className="container">
+                        <div className="row" style={{
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'top',
+                        }}>
+                            {TeamMembersRowTwo.map((props, idx) => (
                                 <Member key={idx} {...props} />
                             ))}
                         </div>
