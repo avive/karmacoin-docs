@@ -34,12 +34,6 @@ module.exports = {
         {
           position: 'left',
           className: 'header-link',
-          label: 'Jobs',
-          to: '/jobs',
-        },
-        {
-          position: 'left',
-          className: 'header-link',
           label: 'For Validators',
           to: '/validators',
         },
@@ -54,6 +48,12 @@ module.exports = {
           className: 'header-link',
           label: 'Docs',
           to: '/docs',
+        },
+        {
+          position: 'left',
+          className: 'header-link',
+          label: 'Jobs',
+          to: '/jobs',
         },
       ],
     },

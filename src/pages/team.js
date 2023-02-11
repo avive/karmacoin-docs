@@ -8,7 +8,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 const TeamMembersRowOne = [
     {
-        name: 'Rachel Kiner',
+        name: '🇺🇸🇮🇱 Rachel Kiner',
         title: 'Head of Communities',
         link: 'https://www.linkedin.com/in/rachel-kiner-10100952/',
         image: require('@site/static/r_profile.png').default,
@@ -22,7 +22,7 @@ const TeamMembersRowOne = [
         ),
     },
     {
-        name: 'Oriya Pollak',
+        name: '🇺🇸🇮🇱 Oriya Pollak',
         title: 'Head of Partnerships',
         link: 'https://www.linkedin.com/in/oriya/',
         image: require('@site/static/o_profile.png').default,
@@ -36,7 +36,7 @@ const TeamMembersRowOne = [
     },
     {
         title: 'Founder and CEO',
-        name: 'Aviv Eyal',
+        name: '🇺🇸🇮🇱 Aviv Eyal',
         link: 'https://linktr.ee/avive',
         image: require('@site/static/ae_profile.png').default,
         description: (
@@ -51,13 +51,25 @@ const TeamMembersRowOne = [
 
 const TeamMembersRowTwo = [
     {
-        name: 'Danylo K',
-        title: '🇺🇦 Lead blockchain developer',
+        name: '🇺🇦 Danylo K',
+        title: 'Lead blockchain developer',
         link: 'https://github.com/HolyGrease',
         image: require('@site/static/d_k_profile.png').default,
         description: (
             <>
                 <p>Meet Danylo, a skilled blockchain developer with proven expertise in driving improvements throughout the entire development lifecycle. Danylo brings to Karma Coin significant valuable experience and skills in building app-specific blockchains in Rust using the Substrate platform.</p>
+            </>
+        ),
+    },
+    {
+        name: '🇺🇸🇺🇦 INC4',
+        title: 'Technology Partner',
+        link: 'https://inc4.net/',
+        image: require('@site/static/inc4.png').default,
+        description: (
+            <>
+                <p>INC4 is a software development company with focus on blockchain technology. </p>
+                <p>Thought the 10 years of its operation, they have gained vast experience in developing various complex solutions: from DeFi platforms, smart contracts, exchanges and wallets to fully customized private blockchains and decentralized applications, they have been there at each key industry milestone, helping customers implement the technology into their unique projects.</p>
             </>
         ),
     },
