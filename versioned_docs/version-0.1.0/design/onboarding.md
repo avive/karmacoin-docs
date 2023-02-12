@@ -8,7 +8,7 @@ slug: /onboarding
 ## On-boarding via a referral
 
 
-![](/screen2.png)
+![](/screen3.png)
 
 1. Referrer's client creates a `payment transaction` with the receiver's mobile phone number and submits it to the network. In this case the receiver's has not created a user account yet. User can optionally specify a receiver's character trait to appreciate.
 2. The transaction gets to the transactions pool. An active verifier sees the transaction and figures out that receiver hasn't registered yet. It sends a text message to the receiver's mobile phone, with link to download the app to his mobile phone with information about the amount of coin sent to it and the optional character trait appreciation.

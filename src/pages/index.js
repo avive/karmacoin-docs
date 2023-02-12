@@ -26,7 +26,7 @@ function Home() {
             <Link className={clsx(
                     'button button--outline button--secondary button--lg'
                 )} target='_blank'
-                to='https://www.figma.com/proto/XU3xigkjjA0m9qEkkulmWm/Karma Coin?page-id=0%3A1&node-id=552%3A686&viewport=-575%2C-2195%2C0.49&scaling=scale-down&starting-point-node-id=552%3A686&hide-ui=1'>
+                to='https://bit.ly/3K0vyn2'>
               Launch Demo
             </Link>
             <Link className={clsx(
