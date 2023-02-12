@@ -37,7 +37,6 @@ The ledger maintains KCoins balance, and users character traits. 
 [Karma Coin Mobile App Demo](https://www.figma.com/proto/XU3xigkjjA0m9qEkkulmWm/Karma%20Coin?page-id=0%3A1&node-id=552%3A686&viewport=-575%2C-2195%2C0.49&scaling=scale-down&starting-point-node-id=552%3A686&hide-ui=1)
 
 ---
-
 :::info License
-Copyright (c) 2022 by the [Karma Coin Authors](https://github.com/avive/Karma Coin-docs). This work is licensed under the [Karma Coin License](/docs/license).
+Copyright (c) 2022 by the Karma Coin Authors. This work is licensed under the [Karma Coin License](/docs/license).
 :::

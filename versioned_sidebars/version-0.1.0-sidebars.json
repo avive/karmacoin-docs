@@ -34,9 +34,23 @@
         },
         {
           "type": "doc",
+          "id": "version-0.1.0/design/verifiers"
+        },
+        {
+          "type": "doc",
           "id": "version-0.1.0/design/mobileapp"
         }
-
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "💾 Code",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-0.1.0/code/repos"
+        }
       ]
     }
   ]

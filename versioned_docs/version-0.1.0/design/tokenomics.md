@@ -89,12 +89,13 @@ A total of 1.875B KCs are minted by the protocol over 20 years from genesis. Min
 - 500M KCs - Validators rewards.
 
 After 20 years, the protocol mints small amounts of additional KCs. 
-- Validators rewards - based on the same decay function used to calculate rewards in the first 20 years.
+- Validator rewards - based on the same decay function used to calculate rewards in the first 20 years.
 - Signup rewards - 1000 KCents per signup. 100 KCs for 1 million new users
 - Signup transactions fee subsidy - 1 KCent per signup. 1 KC for 1 million signups.
 
 ----
 
+---
 :::info License
-Copyright (c) 2022 by the [Karma Coin Authors](https://github.com/avive/Karma Coin-docs). This work is licensed under the [Karma Coin License](/docs/license).
+Copyright (c) 2022 by the Karma Coin Authors. This work is licensed under the [Karma Coin License](/docs/license).
 :::

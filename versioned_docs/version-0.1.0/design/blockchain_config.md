@@ -32,8 +32,7 @@ The existential deposit in Karma Coin is 100 KCents. Existential deposit is the 
 Karma Coin genesis canonical config constants are defined in the following file: [genesis.rs](https://github.com/avive/KarmaCoin/blob/main/crates/base/src/genesis_config_service.rs)
 
 
-
 ---
 :::info License
-Copyright (c) 2022 by the [Karma Coin Authors](https://github.com/avive/Karma Coin-docs). This work is licensed under the [Karma Coin License](/docs/license).
+Copyright (c) 2022 by the Karma Coin Authors. This work is licensed under the [Karma Coin License](/docs/license).
 :::
