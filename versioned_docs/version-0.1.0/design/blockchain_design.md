@@ -126,14 +126,55 @@ Karma Coin uses accounts and addresses so the standard Substrate wallets can be 
 
 Karma Coin should Substrate SS58 address format for accounts identifiers. 
 
-Users keypairs should use the ED25519 scheme.
+Users key pairs should use the ED25519 scheme.
 
 Accounts ids should be derived from user's maintain public keys and include a network id to avoid cross-chain signing issues. If public key for signature verification purposes can't be obtained from these ids then it needs to be included separately in signed transactions and messages so signatures can be verified.
 
-
+---
 
 ## Mobile phone verifiers
 Verifiers should always run a blockchain node and must always participate in the consensus protocol. e.g. they are both block producers and validators. Verifiers servers should be configured to have local access to a node managed by the verifiers and use the same ids for verification and consensus participation.
+
+---
+
+## Transactions
+Karma Coin supports 3 kinds of blockchain transactions: `NewUser`, `Update` and `Payment`. Each transaction is signed by the user's private key which corresponds to its public accountId.
+
+### NewUser Transaction
+This transaction is submitted by new Karma Coin users to create an on-chain account.
+It includes a signed message from a trusted verifier that attests the user's requested unique user-name, verified phone number and account id.
+
+```protobuf
+
+// Created and signed by a verifier to attest that an account owns a mobile number
+message UserVerificationData {
+  AccountId verifier_account_id = 1;
+  uint64 timestamp = 2;
+  VerificationResult verification_result = 3;
+  AccountId account_id = 4;
+  MobileNumber mobile_number = 5;
+  string requested_user_name = 7;
+  Signature signature = 8;
+}
+
+enum VerificationResult {
+  VERIFICATION_RESULT_UNSPECIFIED = 0;
+  VERIFICATION_RESULT_USER_NAME_TAKEN = 1; // there's already a user with the requested user name
+  VERIFICATION_RESULT_VERIFIED = 2; // user is verified using provided token
+  VERIFICATION_RESULT_UNVERIFIED = 3; // user is not verifier using provided token
+  VERIFICATION_RESULT_MISSING_DATA = 4; // request is missing required data
+  VERIFICATION_RESULT_INVALID_SIGNATURE = 5; // bad client signature
+  VERIFICATION_RESULT_ACCOUNT_MISMATCH = 6; // different account associated with phone number
+}
+
+// new user transactions submitted by users
+message NewUserTransactionV1 {
+    // Evidence from a valid verifier about the new user
+    UserVerificationData verify_number_response = 1;
+}
+```
+
+
 
 ---
 :::info License

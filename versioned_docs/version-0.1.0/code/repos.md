@@ -1,7 +1,7 @@
 ---
 id: repos
 title: Code Repositories
-sidebar_label: Code
+sidebar_label: Repositories
 ---
 
 ## Open Source Code Repositories
@@ -9,10 +9,11 @@ All Karma Coin code is open source and is available on Github under the [Karma C
 
 ## App
 The Karma Coin Android, iOS and Web app. The App is written in Dart and uses the Flutter framework.
+
 https://github.com/karma-coin/karmacoin-app
 
 ## Server
-A Rust implementation of the Karma Coin Blockchain, blockchain aip, and the Verifier api.
+A Rust implementation of the Karma Coin Blockchain, blockchain api, and the Verifier api. The APIs are specified in the proto3 language here: [APIs Specs](https://github.com/karma-coin/karmacoin-server/tree/main/crates/base/proto/karma_coin/core_types)
 
 https://github.com/karma-coin/karmacoin-server
 
@@ -23,6 +24,7 @@ https://github.com/karma-coin/karmacoin-verifier
 
 ## Docs
 Karma Coin tech documentation site.
+
 https://github.com/karma-coin/karmacoin-docs
 
 ---

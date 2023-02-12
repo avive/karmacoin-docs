@@ -26,6 +26,10 @@
         },
         {
           "type": "doc",
+          "id": "version-0.1.0/design/transactions"
+        },
+        {
+          "type": "doc",
           "id": "version-0.1.0/design/tokenomics"
         },
         {
