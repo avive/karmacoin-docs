@@ -56,6 +56,21 @@
           "id": "version-0.1.0/code/repos"
         }
       ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
+      "label": "🧱 Validators",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-0.1.0/validators/faq"
+        }
+      ]
+    },
+    {
+      "type": "doc",
+      "id": "version-0.1.0/license"
     }
   ]
 }

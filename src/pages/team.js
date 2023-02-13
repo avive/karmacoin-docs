@@ -51,6 +51,18 @@ const TeamMembersRowOne = [
 
 const TeamMembersRowTwo = [
     {
+        name: '🇺🇦 Alina Tustanovska',
+        title: 'Head of Delivery',
+        link: 'https://www.linkedin.com/in/alina-tustanovska/',
+        image: require('@site/static/alina_profile.png').default,
+        description: (
+            <>
+                <p>Meet Alina, an experienced executive manager with a 7-year background in blockchain. With strong focus on efficient operations, technical delivery and financial management, she has successfully delivered over 30 products featuring numerous blockchain networks, sophisticated solutions and technology stacks.</p>
+                <p>Alina believes that a true key to sucess in any project is building a strong team of professionals, and connecting them with a clearly-defined goal built on common values.</p>
+            </>
+        ),
+    },
+    {
         name: '🇺🇦 Danylo K',
         title: 'Lead blockchain developer',
         link: 'https://github.com/HolyGrease',

@@ -12,8 +12,13 @@ The Karma Coin Android, iOS and Web app. The App is written in Dart and uses the
 
 https://github.com/karma-coin/karmacoin-app
 
+## Karmachain
+A rust implementation of the permission-less Karma Coin blockchain using the Substrate framework.
+
+https://github.com/karma-coin/karmachain
+
 ## Server
-A Rust implementation of the Karma Coin Blockchain, blockchain api, and the Verifier api. The APIs are specified in the proto3 language here: [APIs Specs](https://github.com/karma-coin/karmacoin-server/tree/main/crates/base/proto/karma_coin/core_types)
+A Rust implementation of a permissioned Karma Coin Blockchain, blockchain api, and the Verifier api. The APIs are specified in the proto3 language here: [APIs Specs](https://github.com/karma-coin/karmacoin-server/tree/main/crates/base/proto/karma_coin/core_types)
 
 https://github.com/karma-coin/karmacoin-server
 
