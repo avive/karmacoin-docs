@@ -3,7 +3,7 @@ import Layout from '@theme/Layout';
 import clsx from 'clsx';
 import styles from './styles.module.css';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-
+import Link from '@docusaurus/Link';
 
 export default function CommunitiesPage() {
     const {siteConfig} = useDocusaurusContext();
@@ -31,6 +31,18 @@ export default function CommunitiesPage() {
                             </ul>
                         <p>Don't miss out on this opportunity to give your members a tool that will benefit their everyday life. Contact us to learn more and customize your Karma Coin app today!</p>
                         <p>Interested in learning more? Please contact us at <a href='mailto:community@karmaco.in'>comunity@karmaco.in</a>.</p>
+
+
+                        <div className={clsx('buttons')}>
+                            <Link className={clsx(
+                                'button button--outline button--secondary button--lg'
+                            )} target='_blank'
+                                  to='https://forms.gle/RfpqQAAFnRevABRj9'>
+                                Schedule a Demo
+                            </Link>
+                        </div>
+                        <p>&nbsp;</p>
+
                     </div>
                 </div>
             </main>

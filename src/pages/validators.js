@@ -3,6 +3,7 @@ import Layout from '@theme/Layout';
 import clsx from 'clsx';
 import styles from './styles.module.css';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Link from '@docusaurus/Link';
 
 
 export default function ValidatorsPage() {
@@ -31,6 +32,16 @@ export default function ValidatorsPage() {
                         </ul>
                         <p>We are looking for solid validators to become a Karma Coin mainenet launch partner.</p>
                         <p>Interested in learning more? Please contact us at <a href='mailto:validators@karmaco.in'>validators@karmaco.in</a>.</p>
+
+                        <div className={clsx('buttons')}>
+                            <Link className={clsx(
+                                    'button button--outline button--secondary button--lg'
+                                )} target='_blank'
+                                      to='https://forms.gle/MTT5esnpCBMU63vt9'>
+                                    Schedule a Demo
+                                </Link>
+                        </div>
+                        <p>&nbsp;</p>
                     </div>
                 </div>
             </main>

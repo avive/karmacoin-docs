@@ -172,13 +172,21 @@
 }
 
 .buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: inherit;
     flex-flow: row wrap;
     padding-bottom: 32px;
     gap: 16px;
+}
+
+.leftButtonsRow {
+    display: flex;
+    align-content: center;
+    padding-bottom: 32px;
+    overflow: inherit;
+    background-color: yellow;
 }
 
 .features {

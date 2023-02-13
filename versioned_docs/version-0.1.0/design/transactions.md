@@ -7,6 +7,9 @@ slug: /transactions
 
 Karma Coin has 3 kinds of blockchain transactions: `New User Transaction`, `Update User Transaction` and `Payment Transaction`. Transaction data is included in a generic higher-level SignedTransaction data object which includes fields common to all transactions and is signed by the user.
 
+> In addition to the core transactions described above, Karma Coin supports transactions for Staking Karma Coins with validators, nominating validators, and voting on governance proposals.
+
+
 ```protobuf
 enum TransactionType {
   TRANSACTION_TYPE_PAYMENT_V1 = 0;
