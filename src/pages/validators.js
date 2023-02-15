@@ -30,7 +30,8 @@ export default function ValidatorsPage() {
                             <li>Gain early access to new features and updates to the network.</li>
                             <li>Help build the future of appreciation and payments.</li>
                         </ul>
-                        <p>We are looking for solid validators to become a Karma Coin mainenet launch partner.</p>
+                        <p>We are looking for solid validators to become a Karma Coin mainnet launch partner.</p>
+                        <p>For more info, check out our <a href='/docs/validators/faq'>Validators FAQ</a>.</p>
                         <p>Interested in learning more? Please contact us at <a href='mailto:validators@karmaco.in'>validators@karmaco.in</a>.</p>
 
                         <div className={clsx('buttons')}>

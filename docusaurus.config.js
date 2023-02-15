@@ -65,7 +65,11 @@ module.exports = {
           items: [
             {
               label: 'LinkedIn',
-              href: 'https://www.linkedin.com/company/Karma Coin/',
+              href: 'https://www.linkedin.com/company/karmacoin',
+            },
+            {
+              label: 'Twitter',
+              href: 'https://twitter.com/TeamKarmaCoin',
             },
           ],
         },
@@ -76,6 +80,14 @@ module.exports = {
               label: 'Getting Started',
               href: '/docs',
             },
+            {
+              label: 'For Validators',
+              href: '/validators',
+            },
+            {
+              label: 'For Communities',
+              href: '/communities',
+            },
           ],
         },
         {
@@ -84,6 +96,14 @@ module.exports = {
             {
               label: 'Code',
               href: 'https://github.com/karma-coin',
+            },
+            {
+              label: 'Karmachain',
+              href: 'https://github.com/karma-coin/karmachain',
+            },
+            {
+              label: 'Economics',
+              href: '/docs/tokenomics',
             }
           ],
         },

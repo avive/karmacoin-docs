@@ -58,7 +58,7 @@ const TeamMembersRowTwo = [
         description: (
             <>
                 <p>Meet Alina, an experienced executive manager with a 7-year background in blockchain. With strong focus on efficient operations, technical delivery and financial management, she has successfully delivered over 30 products featuring numerous blockchain networks, sophisticated solutions and technology stacks.</p>
-                <p>Alina believes that a true key to sucess in any project is building a strong team of professionals, and connecting them with a clearly-defined goal built on common values.</p>
+                <p>Alina believes that a true key to success in any project is building a strong team of professionals, and connecting them with a clearly-defined goal built on common values.</p>
             </>
         ),
     },
@@ -128,6 +128,9 @@ export default function TeamPage() {
                         </div>
                     </div>
                 </section>
+                <div className={clsx(styles.smallIconSection)}>
+                    <p>&nbsp;</p>
+                </div>
                 <section className={styles.features}>
                     <div className="container">
                         <div className="row" style={{
