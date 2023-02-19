@@ -47,14 +47,6 @@ message TraitScore {
 // A non-negative coin amount in a supported coin type
 message Amount {
   uint64 value = 1;
-  CoinType coin_type = 2;
-}
-
-// Supported built-in coin types
-enum CoinType {
-  COIN_TYPE_CORE = 0;   // $KCents - the basic accounting unit of Karma Coins
-  COIN_TYPE_STABLE = 1; // $KCStableCents - a built-in stable coin
-  // other coin types can be added in future versions of the protocol
 }
 
 // We use substrate notions here to support PoStake consensus such as locked funds
@@ -81,7 +73,7 @@ message User {
   uint64 nonce = 2;
   string user_name = 3; // unique across the system
   MobileNumber mobile_number = 4; // verified current number
-  repeated Balance balances = 5;
+  repeated Balance balance = 5;
   repeated TraitScore trait_scores = 6;
   repeated PreKey pre_keys = 7; // one-time enc pre-keys for e2e messaging
 }

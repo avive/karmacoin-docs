@@ -9,7 +9,7 @@ slug: /mobile-app
 
 
 ### Light Client
-The first release of the Karma Coin mobile app will not be a light blockchain client but a full client which relies on a remote public blockchain API. Future versions of the app will include a full light-client that has better trust assumptions on third-party APIs.
+The first release of the Karma Coin mobile app will not be a light blockchain client but a full client which relies on a remote public blockchain API. Future versions of the app will include a full light-client that has better trust assumptions regarding third-party APIs.
 
 ---
 :::info License

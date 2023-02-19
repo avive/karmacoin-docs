@@ -158,7 +158,7 @@
 }
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 1.6rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -204,4 +204,15 @@
 
 .bannerLogo {
   height: 180px
+}
+
+.youtubeVideo {
+    aspect-ratio: 16 / 9;
+    width: 85%;
+}
+
+@media screen and (max-width: 966px) {
+    .youtubeVideo {
+        width: 95%;
+    }
 }

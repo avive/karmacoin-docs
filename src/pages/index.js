@@ -13,15 +13,19 @@ function Home() {
     <Layout
       title={`${siteConfig.title}`}
       description="The coin for positive humanity">
-      <header className={clsx('hero hero--primary', styles.heroBanner)}>
-        <div className="container">
-          <img className={styles.bannerLogo} src={'logo_400x400.png'}/>
-        </div>
-      </header>
+
       <main>
         <div className="container">
           <div className={clsx(styles.titleBanner)}>Hello Karma Coin</div>
           <div className={clsx(styles.subtitleBanner)}>Karma Coin is an easy-to-use cryptocurrency and app designed for appreciation, tipping and communities.</div>
+          <div className={clsx(styles.titleBanner)}>
+          <iframe className={clsx(styles.titleBanner, styles.youtubeVideo)} src="https://www.youtube-nocookie.com/embed/rJVybs4JOdA?controls=0"
+                  title="Karma Coin App Demo" frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen>
+          </iframe>
+          </div>
+          </div>
           <div className={styles.buttons}>
             <Link className={clsx(
                     'button button--outline button--secondary button--lg'
@@ -36,10 +40,12 @@ function Home() {
               Join Waiting List
             </Link>
           </div>
-        </div>
+
         <div className={clsx(styles.smallIconSection)}>
           <img className={clsx(styles.karmaIcon)} src={'logo_400x400.png'}/>
         </div>
+
+
         {features && features.length > 0 && (
           <section className={styles.features}>
             <div className={clsx('container', 'text--center')}>

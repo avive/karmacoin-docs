@@ -107,6 +107,15 @@ module.exports = {
             }
           ],
         },
+        {
+          title: 'Misc',
+          items: [
+            {
+              label: 'LinkTree',
+              href: 'https://linktr.ee/karmaco.in',
+            }
+          ],
+        },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} by the Karma Coin Authors. This work is licensed under the <a href="/docs/license"> Karma Coin License</a>.`,
     },

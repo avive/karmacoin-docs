@@ -42,7 +42,7 @@ In the following years, after the first 20 years, the only coin issuance by the 
 ---
 
 ## Validator Awards
-500M KCs (20% of the supply) are allocated by the protocol to rewards the Karma Coin blockchain validators for providing security to the network for the first 20 years from genesis. These are minting by the protocol using a standard exponential decay function which rewards validators who starts validating early while still rewarding new validators that join the system over time. (First month reward 10M KCs, Lambda = 0.020036). The issuance continues indefinitely using the same decay function.
+500M KCs (20% of the supply) are allocated by the protocol to rewards the Karma Coin blockchain validators for providing security to the network for the first 20 years from genesis. These are minting by the protocol using a standard exponential decay function which rewards validators who starts validating early while still rewarding new validators that join the system over time. (First month reward 10M KCs, Lambda = 0.020036). The issuance continues indefinitely using the same decay function. Considering becoming a Karma Coin validator? [Contact us](https://forms.gle/MTT5esnpCBMU63vt9) to schedule a product demo and to discuss validators economics.
 
 ---
 
