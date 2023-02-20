@@ -41,6 +41,7 @@ message UserVerificationData {
   VerificationResult verification_result = 3;
   AccountId account_id = 4;
   MobileNumber mobile_number = 5;
+  bytes referral_transaciton_id = 6;
   string requested_user_name = 7;
   Signature signature = 8;
 }
