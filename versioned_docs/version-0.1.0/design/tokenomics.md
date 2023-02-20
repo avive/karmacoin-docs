@@ -85,7 +85,7 @@ A total of 1.875B KCs are minted by the protocol over 20 years from genesis. Min
 - 300M KCs - Referral rewards.
 - 300M KCs - Karma rewards.
 - 250M Kcs - Transactions fees subsidies.
-- 225M KCs - Causes rewards;
+- 225M KCs - Causes rewards.
 - 500M KCs - Validators rewards.
 
 After 20 years, the protocol mints small amounts of additional KCs. 

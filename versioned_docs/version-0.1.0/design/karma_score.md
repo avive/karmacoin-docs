@@ -91,7 +91,7 @@ When a user appreciates another user via a payment transaction executed in the c
 
 ### Initial formula
 
-`KarmaScore(community) = assigned_traits_count(community) + sent_appreciations(community) + referrals_count(community)
+`KarmaScore(community) = assigned_traits_count(community) + sent_appreciations(community) + referrals_count(community)`
 
 Where `assigned_traits_count` is the sum of personality traits assigned to the user in the community via an appreciation, `sent_appreciations(community)` is number of appreciations that the user has sent to other users in the community. e.g. an appreciation where the community id was specified and `referrals_count(community)` is the total number of appreciations sent by the user that resulted in a new community member sign-up.
 
