@@ -52,6 +52,12 @@ module.exports = {
         {
           position: 'left',
           className: 'header-link',
+          label: 'Karmachain',
+          to: '/karmachain',
+        },
+        {
+          position: 'left',
+          className: 'header-link',
           label: 'Jobs',
           to: '/jobs',
         },
@@ -99,7 +105,7 @@ module.exports = {
             },
             {
               label: 'Karmachain',
-              href: 'https://github.com/karma-coin/karmachain',
+              href: '/karmachain',
             },
             {
               label: 'Economics',
