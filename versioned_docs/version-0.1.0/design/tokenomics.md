@@ -18,7 +18,7 @@ slug: /tokenomics
 The coin issuance and supply are designed to reward both users and validators and to encourage early adoption by both of these stakeholders, while also providing some coins to the Karma Coin dev company for the development and the maintenance of the product and the tech stack. 
 
 The coin issued by the Karma Coin blockchain includes three main types of issuance:
-1. Validator awards.
+1. Validator rewards.
 2. Karma mining issuance.
 3. Genesis minting.
 
@@ -41,8 +41,14 @@ In the following years, after the first 20 years, the only coin issuance by the 
 
 ---
 
-## Validator Awards
-500M KCs (20% of the supply) are allocated by the protocol to rewards the Karma Coin blockchain validators for providing security to the network for the first 20 years from genesis. These are minting by the protocol using a standard exponential decay function which rewards validators who starts validating early while still rewarding new validators that join the system over time. (First month reward 10M KCs, Lambda = 0.020036). The issuance continues indefinitely using the same decay function. Considering becoming a Karma Coin validator? [Contact us](https://forms.gle/MTT5esnpCBMU63vt9) to schedule a product demo and to discuss validators economics.
+## Validator Rewards
+- 500M KCs (20% of the supply) are allocated by the protocol to rewards the Karma Coin blockchain validators for providing security to the network for the first 20 years from genesis.
+- These are minting by the protocol using a standard exponential decay function which rewards validators who starts validating early while still rewarding new validators that join the system over time. 
+- On the first month from genesis, the total validators rewards are 10M KCs, Lambda = 0.020036). 
+- The issuance continues indefinitely using the same decay function. So on the second month from genesis, total rewards are 9.8M KCs and 9.6M on the third month and so on.
+- The expected rewards of a validator, depends on the amount of its staked Karma Coin. For example, if a validator has staked 2.5M KCs, and total active validators staking in a given month is 25M KCs, then the validator is expected to receive 10% of the total validators rewards for that period.
+- Additional details about the validators rewards issuance model, expevted total rewards since genesis, and the delay function are available [here](http://bit.ly/3SkmQlz).
+- Considering becoming a Karma Coin validator? [Contact us](https://forms.gle/MTT5esnpCBMU63vt9) to schedule a product demo and to discuss validators economics.
 
 ---
 

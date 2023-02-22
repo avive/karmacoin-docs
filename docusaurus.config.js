@@ -58,6 +58,12 @@ module.exports = {
         {
           position: 'left',
           className: 'header-link',
+          label: 'Airdrop',
+          to: '/airdrop',
+        },
+        {
+          position: 'left',
+          className: 'header-link',
           label: 'Jobs',
           to: '/jobs',
         },

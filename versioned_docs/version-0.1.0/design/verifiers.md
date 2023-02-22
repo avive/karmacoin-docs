@@ -13,7 +13,14 @@ Verifiers are microservices that are responsible for verifying users mobile phon
 ## Verifier Role
 Verifiers get requests from users client app to verify a phone number. Verification is an association between a user's accountId (its public key) and a mobile phone number. A verifier verifies the association and returns a signed message signed with the verifier private identity key. This message is included by user's clients in NewUserV1 signup transactions. Block producers validate that this message was signed by a trusted verifier before creating a new on-chain user account when processing the new user transaction. This design makes the verification evidence part of the core transaction processing logic and makes it unnecessary for block producers to use an external api service when processing transactions. In addition, the verifier evidence goes on-chain and therefore is agreed upon as valid by the Karma Coin blockchain validators. Their honest behavior is to only approve signup transactions in blocks that use a trusted validators and are properly signed by such validator.
 
-In addition to phone verification role, validators store the ids of payment transactions to non-users and add these ids in the attestations they provide to users as part of the signup flow. For more information see [onboarding](/docs/onboarding
+## Signups and Referral Rewards Flow Role
+In addition to phone verification role, validators store the ids of payment transactions to non-users and add these ids in the attestations they provide to users as part of the signup flow. For more information see [onboarding](/docs/onboarding).
+Verifier has access to a backing Karmachain node. The node should expose an RPC to get the transactions in the pool. Verifier is using this RPC to query the pool for payment and new user transactions to fulfill its signup and the referral rewards role.
+
+For signups with a referral flow, the verifier is responsible for sending a text message to a payment transaction receiver's phone number when there's no on-chain account already for this receiver. The text message includes information about the appreciation and/or payment and instructions how to download the Karma Coin app to the user's device.
+
+For referral rewards, the verifier is responsible for including in attestations provided to users as part of the sign-up flow with the transaction id of the referral transaction if such is available in the pool.
+
 
 ## Current Implementation
 User clients use Firebase phone authentication to sign up to Karma Coin. We store the user's account ID in the Firebase users database using the user's name field. Verifiers use the firebase admin api to query the firebase users database and to check that the user is indeed authenticated on Firebase using his requested mobile phone number and account id. This logic is implemented [here](https://github.com/karma-coin/karmacoin-verifier).
