@@ -11,7 +11,7 @@ export default function AirdropsPage() {
     return (
         <Layout
             title={`Airdrops`}
-            description="Karma Coin Airdrops Program<head />">
+            description="Karma Coin Airdrops Program">
             <main>
                 <h1 className={clsx('text--center', styles.titleBanner, 'padding--sm')}>
                     The Karma Coin Airdrop
@@ -23,11 +23,11 @@ export default function AirdropsPage() {
                     <div className={clsx('row', styles.mainText, 'text--left')}>
                         <p>Karma Coin has a unique economic model that rewards early adopters for signing-up and using the Karma Coin App for tipping and appreciating others.</p>
                         <p>The App is going to be available this summer for iOS, Android and web platforms.</p>
-                        <p>We are glad to announce round one of our airdrop program. The program is designed to award early adopters who sign-up to Karma coin pre app-launch.</p>
-                        <p>To get your award, just get on our <a href="https://getwaitlist.com/waitlist/4912" target="_blank">Waiting List</a>.</p>
-                        <p>The earlier you join, the higher your award.</p>
+                        <p>We are glad to announce round one of our airdrop program. The program is designed to reward early adopters who sign-up to Karma coin pre app-launch.</p>
+                        <p>To claim your Karma Coins, just get on our <a href="https://getwaitlist.com/waitlist/4912" target="_blank">Waiting List</a>.</p>
+                        <p>The earlier you join, the higher your award...</p>
                         <ul className={clsx(styles.mainBullets)}>
-                            <li>The first 100 people get 1,000 Karma Coins.</li>
+                            <li>The first 100 people who join the waiting list get 1,000 Karma Coins.</li>
                             <li>The next 1,000 get 500 Karma Coins.</li>
                             <li>The next 10,000 get 250 Karma Coins.</li>
                             <li>The next 10 million get good karma :-)</li>

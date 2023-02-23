@@ -11,7 +11,7 @@ export default function KarmaChainPage() {
     return (
         <Layout
             title={`Karmachain`}
-            description="Karmachain empowers Karma Coin<head />">
+            description="Karmachain empowers Karma Coin">
             <main>
                 <h1 className={clsx('text--center', styles.titleBanner, 'padding--sm')}>
                     Hello Karmachain

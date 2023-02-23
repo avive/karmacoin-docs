@@ -10,7 +10,7 @@ export default function CommunitiesPage() {
     return (
         <Layout
             title={`Karma Coin for Communities`}
-            description="Karma Coin offering for community managers <head />">
+            description="Karma Coin offering for community managers">
             <main>
                 <h1 className={clsx('text--center', styles.titleBanner, 'padding--sm')}>
                     Karma Coin for Communities

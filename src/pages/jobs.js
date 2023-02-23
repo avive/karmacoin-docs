@@ -48,7 +48,7 @@ export default function JobsPage() {
     return (
         <Layout
             title={`Karma Coin Jobs`}
-            description="Open positions in Karma Coin <head />">
+            description="Open positions in Karma Coin">
             <main>
                 <h1 className={clsx('text--center', styles.titleBanner, 'padding--sm')}>
                     Open Positions

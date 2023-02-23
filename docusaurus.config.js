@@ -83,6 +83,10 @@ module.exports = {
               label: 'Twitter',
               href: 'https://twitter.com/TeamKarmaCoin',
             },
+            {
+              label: 'Telegram',
+              href: 'https://t.me/+YDBZLJNknFM4YTE0',
+            },
           ],
         },
         {

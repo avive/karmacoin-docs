@@ -187,19 +187,19 @@ message BlockEvent {
 The Transactions Pool is a temporary storage for transactions that are received by a node but not yet included in a block. The pool is used to store transactions that are received before a block producer is elected and to store transactions that were rejected by a block producer for inclusion in a block. The following describes the transactions pool model. Some special care is needed to implement Karma Coin correctly which involves how transactions are processed and how the pool is managed.
 
 ### Payment Translations Handling
-As one of the top project goals is to make it easy for users to sign up and appreciate. Clients do not block users from submitting payment/appreciation transactions as soon as they've signe-up. Before a new user's `new user transcation` is processed there's no online account for the user. The following rules should be applied:
+As one of the top project goals is to make it easy for users to sign up and appreciate. Clients do not block users from submitting payment/appreciation transactions as soon as they've signe-up in the app and before a new user's `new user transcation` is processed there's no online account for the user. The following rules should be applied:
 
-1. The pool management logic should not reject payment transactions where the sender's account is not found on chain. These transactions should be stored in the pool for a period of 7 days. 
-2. Block producers should not process payment transactions where ethe sender's account is not found on chain. Only payment transactions where the sender's account is found on chain should be processed and included in new blocks.
+1. The pool management logic should not reject payment transactions where the sender's account is not found on chain. These transactions should be stored in the pool for a period of 14 days. 
+2. Block producers should not process payment transactions where the sender's account is not found on chain. Only payment transactions where the sender's account is found on chain should be processed and included in new blocks.
 
 ### New User Transactions Handling
 Some checks should be performed by the pool logic before accepting a new user transaction to the pool. The following validation rules should be applied:
 
 1. A valid validators' attestation - signed by an active validator. 
 2. User requested nickname is available. e.g. was not already taken.
-3. Valid reference to a payment transaction when the transaction includes a referral transaction id. That payment transaction should be in the pool.
+3. Valid reference to a payment transaction when the transaction includes a `referral transaction id`. The payment transaction identified by the id should be in the pool.
 
-In case that a transaction does not meet these validation criteria, it should not be added to the pool.
+In case that a transaction does not meet these validation criteria, it should not be added to the pool and rejected upon submission.
 
 
 

@@ -10,7 +10,7 @@ export default function UsersPage() {
     return (
         <Layout
             title={`Welcome to Karma Coin`}
-            description="About the Karma Coin App <head />">
+            description="About the Karma Coin App">
             <main>
                 <h1 className={clsx('text--center', styles.titleBanner, 'padding--sm')}>
                     Welcome to Karma Coin

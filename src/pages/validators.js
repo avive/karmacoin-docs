@@ -11,7 +11,7 @@ export default function ValidatorsPage() {
     return (
         <Layout
             title={`Karma Coin Validators`}
-            description="Karma Coin offering for blockchain validators <head />">
+            description="Karma Coin offering for blockchain validators">
             <main>
                 <h1 className={clsx('text--center', styles.titleBanner, 'padding--sm')}>
                     Karma Coin for Validators
