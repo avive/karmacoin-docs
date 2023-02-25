@@ -32,7 +32,6 @@ export default function CommunitiesPage() {
                         <p>Don't miss out on this opportunity to give your members a tool that will benefit their everyday life. Contact us to learn more and customize your Karma Coin app today!</p>
                         <p>Interested in learning more? Please contact us at <a href='mailto:community@karmaco.in'>comunity@karmaco.in</a>.</p>
 
-                        <div className="container">
                             <div className={clsx('buttons')}>
                                 <Link className={clsx(
                                     'button button--outline button--secondary button--lg'
@@ -41,7 +40,6 @@ export default function CommunitiesPage() {
                                     Schedule a Demo
                                 </Link>
                             </div>
-                        </div>
                         <p>&nbsp;</p>
 
                     </div>
