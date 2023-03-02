@@ -118,8 +118,8 @@ module.exports = {
               href: '/karmachain',
             },
             {
-              label: 'Economics',
-              href: '/docs/tokenomics',
+              label: 'Tech Stack',
+              href: '/docs/code/techstack',
             }
           ],
         },
@@ -129,6 +129,10 @@ module.exports = {
             {
               label: 'LinkTree',
               href: 'https://linktr.ee/karmaco.in',
+            },
+            {
+              label: 'Economics',
+              href: '/docs/tokenomics',
             }
           ],
         },
@@ -142,20 +146,22 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl:
-            'https://github.com/Karma Coin-docs',
+            'https://github.com/avive/karmacoin-docs',
           showLastUpdateAuthor: true,
           showLastUpdateTime: true
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
           editUrl:
-            'https://github.com/Karma Coin-docs',
+            'https://github.com/avive/karmacoin-docs',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
+        },
+        gtag: {
+          trackingID: 'G-1D42G0L4SS',
+          anonymizeIP: false,
         },
       },
     ],

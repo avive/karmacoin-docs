@@ -58,6 +58,10 @@
         {
           "type": "doc",
           "id": "version-0.1.0/code/repos"
+        },
+        {
+          "type": "doc",
+          "id": "version-0.1.0/code/techstack"
         }
       ]
     },
