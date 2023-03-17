@@ -64,7 +64,21 @@ message TraitScore {
 
 ```
 
-So each user's account conceptually has a collection of AssignedTraits which may have an associated community. The coun of each trait for the user is the total number of such assigned traits in the user's account. 
+So each user's account conceptually has a collection of AssignedTraits which may have an associated community. The count of each trait for the user is the total number of such assigned traits in the user's account. 
+
+### Special Character Traits
+The following special character traits are automatically awarded to users by the Karmachain rules, based on specific users actions in the Karma Coin app.
+
+#### Ambassador Character Trait
+A user gets 1 point in this trait for each payment transaction that resulted in a new user sign up (referral conversion).
+
+#### Karma Spender Character Trait
+A user gets 1 point in this trait for each payment transaction without an appreciation it sent that was executed (received by receiver's account).
+
+#### Karma Grower Character Trait
+A user gets 1 point in this trait for signing up to Karma Coin.
+
+Special traits are never assigned in the context of a community, there are only applicable to the global karma score and the global user's chart traits.
 
 ---
 
@@ -75,16 +89,17 @@ The formula for Karma Score should take into account the number of non-zero coun
 
 ### Global Karma Score - Initial formula
 
-`KarmaScore = 1 + received_appreciations +  sent_apprecitiaons + communities_memberships + referals`
+`KarmaScore = received_appreciations +  sent_apprecitiaons + communities_memberships`
 
 Where
-- `received_appreciations` is the count of appreciations sent to the user (a payment transaction with a non-0 character trait) user.
+- `received_appreciations` is the count of appreciations sent to the user (a payment transaction with a non-0 character trait) user. Note that this includes any special character trait point assigned by Karmachain to the user and not only appreciations sent by other users.
 - `sent_appreciations` is the count of appreciations sent by the user.
 - `communites_memberships` is the count of the Karma Coin communities that the user is member of.
-- `referrals` is the count of appreciations sent by the user who resulted in a new user sign-up. 
-- The `1` is added to the score to give a point to the user for his sign-up to Karma Coin. e.g. the creation of a user's on-chain account based on his NewUser transaction going on-chain.
 
 The goal of this simple formula is make the user's score based on their actions in the app and the actions of other users in the app in relation to it. The formula is designed to be simple and easy to compute. We will keep iterating over this formula to make more indicative of user's karma. 
+
+Note that users get points for referrals and payments via the special Karmachain assigned traits so users get karma score for these actions via these special traits..
+
 
 -- 
 ## Community-Specific Karma Score
@@ -94,12 +109,12 @@ When a user appreciates another user via a payment transaction executed in the c
 
 ### Community-Specific Karma Score - Initial formula
 
-`KarmaScore(community) = received_appreciations(community) + sent_appreciations(community) + referrals(community)`
+`KarmaScore(community) = 1 + received_appreciations(community) + sent_appreciations(community)`
 
 Where 
-- `received apprecitions(community)` is the count of community-specific appreciations sent by other users by another community member.
+- `1` is assigned for members for joining the community.
+- `received apprecitions(community)` is the count of community-specific appreciations sent by other users by another community member. Note that these include special traits assigned by the protocol in the community.
 - `sent_appreciations(community)` is the count of community-specific appreciations that the user has sent to other community members. e.g. an appreciation where the community id was specified.
-- `referrals(community)` is the total number of appreciations sent by the user that resulted in a new community member sign-up.
 
 By community-specific appreciation we mean an appreciation that was sent by one community member to another community memmber in the Karma Coin App in the context of a specific community. Note that when a community manager appreciates someone and that person signs-up, it becomes a member of the community and the appreciation is also community-specific.
 
