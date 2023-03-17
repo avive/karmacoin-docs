@@ -12,8 +12,8 @@ Each on-chain user account has an associated Karma Score. It is computed based o
 
 In addition to the global Karma Score each user has a Karma Score for each community he is a member of. This score is computed based on the user's actions in the community. This model is explained in greater details below.
 
-## Personality Traits
-Personality traits are positive specific traits that can be assigned to users such as honest, smart, helpful, patient, etc via payment transactions. Each trait is associated with a name and a unique identifier. Each trait has a name, id and a possible associated with one or more supported communities.
+## Character Traits
+Character traits (aka traits) are positive specific traits that can be assigned to users such as honest, smart, helpful, patient, etc... via payment transactions. Each trait is associated with a name and a unique identifier. Each trait has a name, id and a possible associated with one or more supported communities.
 
 ```protobuf
 // Unique char traits supported in a Karmachain network
@@ -29,41 +29,37 @@ message CharTrait {
   CharTraitId trait = 1;
   // The name of this trait
   string name = 2;
+  // representative emoji for this trait
+  string emoji = 3;
 }
 ```
 
 ## Data Modeling and Storage
-A karmachain blockchain network (such as the mainnet) should include a list of all supported personality traits and supported communities and make these available for clients via the Karma Coin API. 
+A karmachain blockchain network (such as the mainnet) should include a list of all supported character traits and supported communities and make these available for clients via the Karma Coin API. 
 
 An initial list should be part of a network's genesis config. 
 
-New personality traits and new communities can be added by Sudo via Sudo calls to the blockchain at any time.
+New character traits and new communities can be added by Sudo via Sudo calls to the blockchain at any time.
 
 The number of appreciations per traits should be stored in user's account on-chain data. For example, if a user got 3 awesome transactions then 3 should be associated with the awesome trait in the user's account data.
-We call this user's personality trait count. The count is 0 for all traits for new users.
+We call this user's character trait count. The count is 0 for all traits for new users.
 
-In addition, the association between each personality trait count and a supported community should be stored on chain. For each community, there's a set of traits that specify the community important values and the ways that the community managers would like community members to appreciate each other by. 
+In addition, the association between each character trait count and a supported community should be stored on chain. For each community, there's a set of traits that specify the community important values and the ways that the community managers would like community members to appreciate each other by. 
 
 So for example, consider a `grateful` character trait. Any user can appreciate any other user using it without being a member. Assume we have a supported community that has a 'grateful' community trait. Users who are members of that community can appreciate other members using the 'grateful' trait in the context of the community via the App. In this case, the community ID should be associated with the grateful trait appreciation in the user's account data. 
 
-### Assigned Personality Traits
-Personality traits count is monotonically increasing. A count can be increased in two ways:
-1. Via a personality trait specified in a payment transaction to the user's account from another user. For example, if user A specified smart in a payment transaction to user B then the smart count of user B is increased by 1.
-2. Via block producers based on consensus rules when processing user's transactions. For example, if a user appreciates a non-existing user by mobile number and that person becomes a user then the inviter `karma coin ambassador` personality trait count should increase by 1. These consensus rules will be part of the Karmachain runtime spec. The main idea is to reward users with personality traits that are beneficial to the network growth and usage.
+### Trait Scores
+Traits scores are assigned to users for any character trait that has a non-zero count in the user's account.
+
+1. Via a character trait specified in a payment transaction to the user's account from another user. For example, if user A specified smart in a payment transaction to user B then the smart count of user B is increased by 1.
+2. Via block producers based on consensus rules when processing user's transactions. For example, if a user appreciates a non-existing user by mobile number and that person becomes a user then the inviter `karma coin ambassador` character trait count should increase by 1. These consensus rules will be part of the Karmachain runtime spec. The main idea is to reward users with character traits that are beneficial to the network growth and usage.
 
 ```protobuf
-// An assigned trait to a specific user - stored in user's account
-message AssignedTrait {
-  // The specific trait (kind and name)
-  TraitName trait = 1;
-  // Optional community id when applicable for this assigned trait
-  int32 community = 2;
-}
-
-// User's on-chain account includes a list of assigned personality traits
-message UserAccountData {
-  repeted AssignedTrait assigned_traits = 1;
-  ...
+message TraitScore {
+  uint32 trait_id = 1;
+  uint32 score = 2;
+  // 0 for no community, otherwise community id this trait was assigned
+  uint32 community_id = 3;
 }
 
 ```
@@ -73,27 +69,39 @@ So each user's account conceptually has a collection of AssignedTraits which may
 ---
 
 ## Global Karma Score
-Each user has a global karma score. The karma score is computed only based on the user's personality traits count on-chain and therefore can be efficiently computed by clients or servers in a straight-forward way so  there's no need to specially store it on chain.
+Each user has a global karma score. The karma score is computed only based on the user's character traits count on-chain and therefore can be efficiently computed by clients or servers in a straight-forward way so  there's no need to specially store it on chain.
 
-The formula for Karma Score should take into account the number of non-zero count personality traits associated with the user and the count of each of these traits. This design gives us the flexibility to change the formula in clients based on the assigned-traits on-chain data.
+The formula for Karma Score should take into account the number of non-zero count character traits associated with the user and the count of each of these traits. This design gives us the flexibility to change the formula in clients based on the assigned-traits on-chain data.
 
-### Initial formula
+### Global Karma Score - Initial formula
 
-`KarmaScore = 1 + assigned_traits_count + communities_count + sent_apprecitiaons_count + referals_count`
+`KarmaScore = 1 + received_appreciations +  sent_apprecitiaons + communities_memberships + referals`
 
-Where `assigned_traits_count` is the count of each personality trait assigned to the user, `communites_count` is the total number unique communities that the user got assigned personality traits in (communities he's member of), `sent_appreciations_count` is the total number of appreciations sent by the user, and `referrals_count` is the total number of appreciations sent by the user who resulted in a new user sign-up. One is added to give a point to the user for his sign-up to Karma Coin. e.g. the creation of a user's on-chain account based on his NewUser transaction going on-chain.
+Where
+- `received_appreciations` is the count of appreciations sent to the user (a payment transaction with a non-0 character trait) user.
+- `sent_appreciations` is the count of appreciations sent by the user.
+- `communites_memberships` is the count of the Karma Coin communities that the user is member of.
+- `referrals` is the count of appreciations sent by the user who resulted in a new user sign-up. 
+- The `1` is added to the score to give a point to the user for his sign-up to Karma Coin. e.g. the creation of a user's on-chain account based on his NewUser transaction going on-chain.
+
+The goal of this simple formula is make the user's score based on their actions in the app and the actions of other users in the app in relation to it. The formula is designed to be simple and easy to compute. We will keep iterating over this formula to make more indicative of user's karma. 
 
 -- 
 ## Community-Specific Karma Score
-A community specific karma score specified how the user's actions in the community are appreciated by other users in the community according to the specific community values. The community specific karma score is computed based on the user's personality traits count in the community and therefore can be efficiently computed by clients or servers in a straight-forward way so  there's no need to specially store it on chain.
+A community-specific karma score specified how the user's actions in the community are appreciated by other users in the community according to the specific community values. The community specific karma score is computed based on the user's character traits count in the community and therefore can be efficiently computed by clients or servers in a straight-forward way so  there's no need to specially store it on chain.
 
-When a user appreciates another user via a payment transaction executed in the context of a community in the Karma Coin App, a unique community ID should be added to the transaction. The receiving user's account should store this association together with the personality trait. For example. if user A appreciated user B by specifying he's grateful in community C then community C should be associated with the grateful personality trait in user B's account data. This is required to compute user's B community C specific karma score.
+When a user appreciates another user via a payment transaction executed in the context of a community in the Karma Coin App, a unique community ID should be added to the transaction. The receiving user's account should store this association together with the character trait. For example. if user A appreciated user B by specifying he's grateful in community C then community C should be associated with the grateful character trait in user B's account data. This is required to compute user's B community C specific karma score.
 
-### Initial formula
+### Community-Specific Karma Score - Initial formula
 
-`KarmaScore(community) = assigned_traits_count(community) + sent_appreciations(community) + referrals_count(community)`
+`KarmaScore(community) = received_appreciations(community) + sent_appreciations(community) + referrals(community)`
 
-Where `assigned_traits_count` is the sum of personality traits assigned to the user in the community via an appreciation, `sent_appreciations(community)` is number of appreciations that the user has sent to other users in the community. e.g. an appreciation where the community id was specified and `referrals_count(community)` is the total number of appreciations sent by the user that resulted in a new community member sign-up.
+Where 
+- `received apprecitions(community)` is the count of community-specific appreciations sent by other users by another community member.
+- `sent_appreciations(community)` is the count of community-specific appreciations that the user has sent to other community members. e.g. an appreciation where the community id was specified.
+- `referrals(community)` is the total number of appreciations sent by the user that resulted in a new community member sign-up.
+
+By community-specific appreciation we mean an appreciation that was sent by one community member to another community memmber in the Karma Coin App in the context of a specific community. Note that when a community manager appreciates someone and that person signs-up, it becomes a member of the community and the appreciation is also community-specific.
 
 ---
 :::info License

@@ -29,7 +29,7 @@ To become a validator you need to purchase a Karma Coins stake from the Karma Co
 You need to purchase Karma Coins from the Karma Coin development company. Contact us for more information.
 
 ### What is the minimum staking amount?
-The minimum staking amount required to become a validator is 2.5 million Karma Coins.
+The minimum staking amount required to become a validator is 500,000 Karma Coins.
 
 ### What is a validator genesis partner?
 A validator genesis partner is an organization that commits to become a validator in Q1 2023 and  purchases at least the minimum amount of Karma Coins stake required for validation in Q2 2023.
@@ -56,10 +56,10 @@ Until there are 1,000 unique validators, an organization that stakes the minimum
 The Karma Coin blockchain public testnet is going to be launched in Q3 2023.
 
 ### How can I become a validator on the Testnet?
-Contact us to get Testnet Karma Coins that are needed to be staked in order to validate on the Testnet. Note that Testnet Karma Coins have no monetary value. Validating on the Testnet helps preparing you to become a validator on the Mainnet.
+Contact us to get Testnet Karma Coins that are needed to be staked in order to validate on the Testnet. Note that Testnet Karma Coins have no monetary value. Validating on the Testnet helps to prepare you to become a validator on the Mainnet.
 
 ### When are you planning to launch the Mainnet?
-The Karma Coin blockchain mainent is launching in Q4 2023.
+The Karma Coin blockchain mainnet is launching in Q4 2023.
 
 ### Can I become a validator without running a Karma Coin blockchain full node?
 Yes, we have certified technical validators partners that can run Karma Coin validator nodes for you. Contact us for more information.
