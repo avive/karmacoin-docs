@@ -19,7 +19,7 @@ function Home() {
           <div className={clsx(styles.titleBanner)}>Hello Karma Coin</div>
           <div className={clsx(styles.subtitleBanner)}>Karma Coin is an easy-to-use cryptocurrency and app designed for appreciation, tipping and communities.</div>
           <div className={clsx(styles.titleBanner)}>
-          <iframe className={clsx(styles.titleBanner, styles.youtubeVideo)} src="https://www.youtube-nocookie.com/embed/w-GtQzaiKQw?controls=0"
+          <iframe className={clsx(styles.titleBanner, styles.youtubeVideo)} src="https://www.youtube-nocookie.com/embed/M-okhsTEa1s?controls=0"
                   title="Karma Coin App Demo" frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen>
@@ -79,7 +79,7 @@ function Home() {
 const features = [
   {
     title: 'Easy to use App',
-    imageUrl: 'screen1.png',
+    imageUrl: 'main.png',
     description: (
         <>Joining Karma Coin is simple and easy, all you need is a mobile phone. Karma Coin easy to use app revolutionizes the way we tip and appreciate. It is available for iOS, Android and Desktop devices.
         </>
@@ -87,7 +87,7 @@ const features = [
   },
   {
     title: 'A Universal Token of Appreciation',
-    imageUrl: 'screen3.png',
+    imageUrl: 'appreciate.png',
     description: (
         <>
           Tipping and appreciation just got easier and more meaningful. You can tip anyone with a mobile number with just few taps.
@@ -95,17 +95,17 @@ const features = [
     ),
   },
   {
-    title: 'Hello Karma Score',
-    imageUrl: 'screen4.png',
+    title: 'Universal',
+    imageUrl: 'android_main.png',
     description: (
         <>
-          Karma Score gives meaning and insight into people's positive character traits and personality, as perceived by others. Karma Score is the new crypto like.
+          Available this summer for Android, Web and iOS.
         </>
     ),
   },
   {
     title: 'A Coin For All of Us',
-    imageUrl: 'screen5.png',
+    imageUrl: 'send.png',
     description: (
         <>
           Send Karma Coin to anyone with a phone number with just few taps.
@@ -114,7 +114,7 @@ const features = [
   },
   {
     title: 'A solid open source blockchain',
-    imageUrl: 'screen6.png',
+    imageUrl: 'appreciation.png',
     description: (
         <>
           Karma Coin is maintained by a dedicated permissionless and modern blockchain which provides security and transparency.

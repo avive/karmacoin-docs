@@ -56,6 +56,18 @@
     flex-wrap: wrap;
 }
 
+.center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto 0 auto;
+}
+.imgContainer {
+    margin: 10px 32px 20px 32px;
+}
+
 .titleBanner {
     padding: 0;
     text-align: center;

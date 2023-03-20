@@ -5,8 +5,8 @@ sidebar_label: Introducing Karma Coin
 slug: /
 ---
 
-| ![](/screen1.png)   	 | ![](/screen4.png)	 | ![](/screen3.png)	 | ![](/screen5.png) |
-|-----------------------|--------------------|--------------------|-------------------|
+| ![](/main.png)   	 | ![](/appreciate.png)	 | ![](/send.png)	 | ![](/appreciation.png) |
+|--------------------|-----------------------|-----------------|------------------------|
 
 ## Why
 

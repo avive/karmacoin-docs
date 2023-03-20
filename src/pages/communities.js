@@ -18,7 +18,14 @@ export default function CommunitiesPage() {
                 <h2 className={clsx('text--center', styles.subtitleBanner, 'padding--sm')}>
                     Uniting communities through the power of positive action and cryptocurrency
                 </h2>
+
                 <div className={clsx(styles.mainTextContainer)}>
+                    <div className={clsx(styles.center)}>
+                        <img className={clsx(styles.imgContainer)} src="/community_screen.png" height="400"/>
+                        <img className={clsx(styles.imgContainer)} src="/community_appreciate.png" height="400"/>
+                        <img className={clsx(styles.imgContainer)} src="/community_appreciation.png" height="400"/>
+                    </div>
+
                     <div className={clsx('row', styles.mainText)}>
                         <p>Our customized Karma Coin app is the perfect tool to strengthen your community, increase core values, and give real-world benefits to your members. </p><p>With our app, your community will have a unique onboarding experience where we learn what your community's core values and strengths are and then modify the app's rating and appreciation labeling to match your community's language and messaging.</p><p> This encourages your members to use the app to show and send tokens of appreciation in a way that is familiar to them.</p>
                         <p>Key Benefits:</p>

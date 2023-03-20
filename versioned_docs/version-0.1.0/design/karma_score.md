@@ -92,13 +92,15 @@ The formula for Karma Score should take into account the number of non-zero coun
 `KarmaScore = received_appreciations +  sent_apprecitiaons + communities_memberships`
 
 Where
-- `received_appreciations` is the count of appreciations sent to the user (a payment transaction with a non-0 character trait) user. Note that this includes any special character trait point assigned by Karmachain to the user and not only appreciations sent by other users.
-- `sent_appreciations` is the count of appreciations sent by the user.
+- `received_appreciations` is the count of appreciations sent to the user (a payment transaction with a non-zero character trait and without a community context) user. Note that this includes any special character trait point assigned by Karmachain to the user and not only appreciations sent by other users.
+- `sent_appreciations` is the count of appreciations sent by the user (a payment transaction with a non-zero character trait and without a community context).
 - `communites_memberships` is the count of the Karma Coin communities that the user is member of.
 
 The goal of this simple formula is make the user's score based on their actions in the app and the actions of other users in the app in relation to it. The formula is designed to be simple and easy to compute. We will keep iterating over this formula to make more indicative of user's karma. 
 
 Note that users get points for referrals and payments via the special Karmachain assigned traits so users get karma score for these actions via these special traits..
+
+Note that community-specific appreciations do not affect the global karma score but only the community-specific karma score.
 
 
 -- 

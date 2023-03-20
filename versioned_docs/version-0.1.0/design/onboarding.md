@@ -7,8 +7,8 @@ slug: /onboarding
 
 ## On-boarding via a referral
 
+<img src="/appreciate.png" height="400"/>
 
-![](/screen3.png)
 
 1. Referrer's client creates a `payment transaction` with the receiver's mobile phone number and submits it to the network. In this case the receiver's has not created a user account yet. Referrer can optionally specify a receiver's character trait to appreciate as part of the transaction.
 

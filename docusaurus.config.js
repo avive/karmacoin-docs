@@ -87,6 +87,10 @@ module.exports = {
               label: 'Telegram',
               href: 'https://t.me/+YDBZLJNknFM4YTE0',
             },
+            {
+              label: 'Blog',
+              href: 'https://connect.karmaco.in/',
+            },
           ],
         },
         {
