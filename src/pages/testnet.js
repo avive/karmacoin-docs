@@ -42,7 +42,7 @@ export default function Testnet1Page() {
                          </ul>
 
                         <p>&nbsp;</p>
-                        <p>⚠️ Testnet 1 Karma Coins do not have any monetary value and do not carry over to the Karma Coin mainent.</p>
+                        <p>⚠️ Testnet 1 Karma Coins do not have any monetary value and do not carry over to the Karma Coin mainnet.</p>
                         <p>&nbsp;</p>
 
                         <h2>Karma Coin App 1.0</h2>
