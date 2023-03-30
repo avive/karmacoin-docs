@@ -17,21 +17,37 @@ export default function KarmaChainPage() {
                     Hello Karmachain
                 </h1>
                 <h2 className={clsx('text--center', styles.subtitleBanner, 'padding--sm')}>
-                    A modern, permissionless blockchain optimized for appreciation and tipping.
+                    A modern, permissionless blockchain optimized for appreciation and tipping
                 </h2>
                 <div className={clsx(styles.mainTextContainer)}>
                     <div className={clsx('row', styles.mainText, 'text--left')}>
-                        <p>Karmachain is app-specific nominated proof of stake (NPos) blockchain that is specifically designed for Karma Coin. It maintains all Karma Coin balances, users karma scores and all appreciations and tipping transactions.</p>
-                        <p>Karmachain is built using the <a href='https://substrate.io/' target='_blank'>Substrate blockchain framework</a> to enable the Karma Coin user experience.</p>
-                        <p>Karmachain is maintained by the <a href='/validators'>Karmachain validators</a>. Validators are responsible for creating blocks and for achieving consensus on all on-chain data. Validators are rewarded with Karma Coin for their work. Any organization or individual can become a Karmachain validator.</p>
-                        <p>Karmachain is 100% open source software and is developed in a fully transparent manner on Github. It is currently under <a href='https://github.com/karma-coin/karmachain'>heavy active development</a> by the Karma Coin dev team.</p>
-                        <p>A public open Karmachain testnet is going to be available in Q2 2023. The Karmachain mainnet genesis is planned for Q3 2023.</p>
-                        <p>Interested in learning more about Karmachain or getting involved? Contact us at <a href='mailto:info@karmaco.in'>info@karmaco.in</a>.</p>
+                        <h2>Karmachain 1.0</h2>
+                        <ul className={clsx(styles.mainBullets)}>
+                            <li>The first implementation of Karmachain</li>
+                            <li>A dedicated app-specific blockchain designed for Karma Coin</li>
+                            <li>Code complete and powering <a href="/testnet">Karma Coin Testnet 1</a></li>
+                            <li>Built in modern Rust</li>
+                            <li>100% <a target='_blank' href='https://github.com/karma-coin/karmacoin-server'>open source software</a></li>
+                        </ul>
+                        <p>&nbsp;</p>
+                        <h2>Karmachain 2.0</h2>
+                        <ul className={clsx(styles.mainBullets)}>
+                            <li>A dedicated app-specific nominated proof of stake (NPos) blockchain</li>
+                            <li>Custom designed for Karma Coin</li>
+                            <li>built with the <a href='https://substrate.io/' target='_blank'>Substrate blockchain framework</a></li>
+                            <li>Maintained by the <a href='/validators'>Karmachain validators</a></li>
+                            <li>100% open source software and is developed in a fully transparent manner on Github</li>
+                            <li>Under <a href='https://github.com/karma-coin/karmachain'>heavy active development</a> by the Karma Coin dev team</li>
+                            <li>Open public testnet in Q2 2023</li>
+                        </ul>
+                        <p>&nbsp;</p>
+                        <p>Interested in learning more about Karmachain or getting involved?</p>
+                        <p>Contact us at <a href='mailto:info@karmaco.in'>info@karmaco.in</a></p>
                         <p>&nbsp;</p>
                         <p>&nbsp;</p>
                     </div>
                 </div>
-            </main>z
+            </main>
         </Layout>
     );
 }

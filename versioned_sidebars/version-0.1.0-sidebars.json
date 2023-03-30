@@ -79,6 +79,14 @@
     {
       "type": "doc",
       "id": "version-0.1.0/license"
+    },
+    {
+      "type": "doc",
+      "id": "version-0.1.0/privacy"
+    },
+    {
+      "type": "doc",
+      "id": "version-0.1.0/support"
     }
   ]
 }

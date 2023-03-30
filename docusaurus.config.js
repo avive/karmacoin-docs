@@ -64,8 +64,8 @@ module.exports = {
         {
           position: 'left',
           className: 'header-link',
-          label: 'Jobs',
-          to: '/jobs',
+          label: 'Testnet',
+          to: '/testnet',
         },
       ],
     },
@@ -75,6 +75,10 @@ module.exports = {
         {
           title: 'Community',
           items: [
+            {
+              label: 'Discord',
+              href: 'http://bit.ly/3z9fvNe',
+            },
             {
               label: 'LinkedIn',
               href: 'https://www.linkedin.com/company/karmacoin',
@@ -114,6 +118,10 @@ module.exports = {
           title: 'Tech',
           items: [
             {
+              label: 'Testnet',
+              href: '/testnet',
+            },
+              {
               label: 'Code',
               href: 'https://github.com/karma-coin',
             },
@@ -141,7 +149,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} by the Karma Coin Authors. This work is licensed under the <a href="/docs/license"> Karma Coin License</a>.`,
+      copyright: `☥ Copyright © ${new Date().getFullYear()} by the Karma Coin Authors. This work is licensed under the <a href="/docs/license"> Karma Coin License</a>.`,
     },
   },
   presets: [

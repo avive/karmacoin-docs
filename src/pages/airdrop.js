@@ -21,16 +21,16 @@ export default function AirdropsPage() {
                 </h2>
                 <div className={clsx(styles.mainTextContainer)}>
                     <div className={clsx('row', styles.mainText, 'text--left')}>
-                        <p>Karma Coin has a unique economic model that rewards early adopters for signing-up and using the Karma Coin App for tipping and appreciating others.</p>
+                        <p>Good morning to you. Karma Coin has a unique economic model that rewards early adopters for signing-up and using the Karma Coin App for tipping and appreciating others.</p>
                         <p>The App is going to be available this summer for iOS, Android and web platforms.</p>
                         <p>We are glad to announce round one of our airdrop program. The program is designed to reward early adopters who sign-up to Karma coin pre app-launch.</p>
                         <p>To claim your Karma Coins, just get on our <a href="https://getwaitlist.com/waitlist/4912" target="_blank">Waiting List</a>.</p>
                         <p>The earlier you join, the higher your award...</p>
                         <ul className={clsx(styles.mainBullets)}>
-                            <li>The first 100 people who join the waiting list get 1,000 Karma Coins.</li>
+                            <li>The first 100 people who join the waiting list get 1,000 Karma Coins. <span className={clsx(styles.redText)}> Over-subscribed - thank you all!</span></li>
                             <li>The next 1,000 get 500 Karma Coins.</li>
                             <li>The next 10,000 get 250 Karma Coins.</li>
-                            <li>The next 10 million get good karma :-)</li>
+                            <li>The next 10 million get good karma ☥.</li>
                         </ul>
                         <p>To claim your award, just sign-up in the Karma Coin App with the same mobile phone number used to join the waiting list.</p>
 

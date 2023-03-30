@@ -110,6 +110,10 @@
     width: 42px;
 }
 
+.redText{
+    color: red;
+}
+
 .mainTextContainer {
     display: flex;
     flex-direction: row;

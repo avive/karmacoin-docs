@@ -24,20 +24,21 @@ function Home() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen>
           </iframe>
+
           </div>
           </div>
           <div className={styles.buttons}>
             <Link className={clsx(
                     'button button--outline button--secondary button--lg'
                 )} target='_blank'
-                to='https://bit.ly/3K0vyn2'>
-              Launch Demo
+                to='/testnet'>
+              Try it Now (Testnet)
             </Link>
             <Link className={clsx(
                 'button button--outline button--secondary button--lg'
             )} target='_blank'
                   to='https://getwaitlist.com/waitlist/4912'>
-              Join Waiting List
+              Join Waiting List (Mainnet)
             </Link>
           </div>
 
@@ -69,6 +70,14 @@ function Home() {
         <p className={clsx(styles.titleBanner)}>Karma Coin for Community Managers</p>
         <div className={clsx(styles.subtitleBanner)}>
           Grow your community stronger. Give your members real-world membership benefits. Enable your members to appreciate each-other according to your community values, and reward them according to their contribution to your community. <a href='/communities'> Learn more...</a>
+        </div>
+        <div className={clsx(styles.smallIconSection)}>
+          <img className={clsx(styles.karmaIcon)} src={'logo_400x400.png'}/>
+        </div>
+
+        <p className={clsx(styles.titleBanner)}>Karma Coin Testnet</p>
+        <div className={clsx(styles.subtitleBanner)}>
+          Run the Karma Coin App on our open, public <a href='/testnet'>Testnet</a>
         </div>
       </main>
 
