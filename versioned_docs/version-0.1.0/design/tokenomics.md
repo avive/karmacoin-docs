@@ -60,6 +60,7 @@ The Karma Coin protocol tokenomics are designed to encourage usage and growth in
 ### Signup Rewards
 Signup rewards are designed to solve the cryptocurrency on ramp problem. Upon sign-up, the protocol mints a 1 KC reward to each new user with a verified mobile phone number. 
 - A total of 300 million KCs is allocated by the protocol for signup rewards.
+- A user who gets this reward also gets the `Karma Rewards Winner` special appreciation.
 - The first 10 million users get 10 KCs on signup.
 - The next 200 millions user get 1 KC on signup. 
 - Users beyond the first 210 million users get a small reward of 1000 KCents on signup. This amounts to perpetual minting of 100 KCs for 1 million new users.
@@ -71,10 +72,14 @@ Signup rewards are designed to solve the cryptocurrency on ramp problem. Upon si
 - The next 200 millions referees get a 1 KC reward when their referral signs up.
 
 ### Karma Rewards
-- Each month, the protocol mints 10 KCs to the top 1,000 users with the highest Karma points who didn't get this award yet. 
+- Each month period, the protocol mints 10 KCs to up to 100 random users from the top 1,000 users with the highest Karma Score who didn't get this award yet who had appreciated at least 2 people in that time period.
 - Up to 300M KCs are allocated for this reward. When these have been allocated the protocol stops rewarding users with top karma.
+- Deterministic randomness is provided from Karmachain.
+- The rewards allocation continue monthly until the allocated amount has been distributed.
+- During the testnet, the params of these rewards will be different for testing purposes. e.g. every 1 day up to 10 random users from the top 100 users with the highest Karma Score who didn't get the reward get and who have appreaciated at least 1 people in the period.
 
-### Causes Rewards
+
+### Cause Rewards
 - 225 millions KCs are allocated by the protocol to reward causes submitted by users.
 - Each month, for at the first 50 months since genesis, 10,000 KCs are distributed by the protocol to up to 20 causes that got funding in that calendar month via appreciations that didn't get funding in the previous month. The causes are randomly selected by the protocol. Getting a cause to become eligible requires cause registration and verification as a real non-profit with an established reputation.
 

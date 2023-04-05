@@ -47,6 +47,18 @@ function Home() {
         </div>
 
 
+        <p className={clsx(styles.titleBanner)}>Karma Coin Vision</p>
+
+        <div className={clsx(styles.subtitleBanner)}>
+          Bring a positive change in the world by empowering people to appreciate anyone and perform positive actions.</div>
+
+        <div className={clsx(styles.smallIconSection)}>
+          <img className={clsx(styles.karmaIcon)} src={'logo_400x400.png'}/>
+        </div>
+
+        <p className={clsx(styles.titleBanner)}>Karma Coin Mission</p>
+        <div className={clsx(styles.subtitleBanner)}>Our mission is to create a global token of appreciation that is used by millions of everyday people to appreciate, give and share on a daily basis with an economic model that distributes value to all who participate in good actions.</div>
+
         {features && features.length > 0 && (
           <section className={styles.features}>
             <div className={clsx('container', 'text--center')}>
