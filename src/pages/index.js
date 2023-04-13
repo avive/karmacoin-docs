@@ -19,8 +19,8 @@ function Home() {
           <div className={clsx(styles.titleBanner)}>Hello Karma Coin</div>
           <div className={clsx(styles.subtitleBanner)}>Karma Coin is an easy-to-use cryptocurrency and app designed for appreciation, tipping and communities.</div>
           <div className={clsx(styles.titleBanner)}>
-          <iframe className={clsx(styles.titleBanner, styles.youtubeVideo)} src="https://www.youtube-nocookie.com/embed/M-okhsTEa1s?controls=0"
-                  title="Karma Coin App Demo" frameBorder="0"
+          <iframe className={clsx(styles.titleBanner, styles.youtubeVideo)} src="https://www.youtube-nocookie.com/embed/videoseries?controls=0&amp;list=PLF4zx8ioKJTshuDCUO8nnRRnsX3_a1Z8l"
+                  title="Hello Karma Coiמ" frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen>
           </iframe>
