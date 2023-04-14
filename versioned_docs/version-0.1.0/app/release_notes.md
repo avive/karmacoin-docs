@@ -6,6 +6,14 @@ sidebar_label: Release Notes
 
 # Karma Coin App Release Notes
 
+## Version 1.0.8
+Not released yet - currently in development.
+
+- Use user-provided transaction fees in user generated appreciations and transactions.
+- Display transactions fees in the transaction details screen.
+- New Karma Rewards benefits screen - displayed once per user after sign-up and also available from the actions menu.
+- Nicer signup screen with ambient background animation.
+
 ## Version 1.0.7
 - 🚛 🥂 Shipped April 13th, 2023 for Web, iOS, Android.
 - 🧱⛓️ Running on the Karmachain 1.0 testnet.
