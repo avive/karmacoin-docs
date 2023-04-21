@@ -1,0 +1,1 @@
+ <script src="https://tiger-avive.de.aista.com/magic/system/openai/include-javascript?markdown=true&speech=false&search=false&chat=true&css=chess&file=default&type=default&header=Ask%20about%20our%20services%20or%20products&button=" defer></script>

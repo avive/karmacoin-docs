@@ -5,6 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
+import { Helmet } from "react-helmet";
 
 function Home() {
   const context = useDocusaurusContext();
@@ -13,11 +14,14 @@ function Home() {
     <Layout
       title={`${siteConfig.title}`}
       description="The coin for positive humanity">
-
+      <Helmet>
+        <script src="https://cdn.customgpt.ai/js/embed.js" width="100%" height="600px" p_id="1064" p_key="ccbd8af1f90ebb0249653e30c2bc92f9" div_id="customgpt_chat" defer></script>
+      </Helmet>
       <main>
         <div className="container">
           <div className={clsx(styles.titleBanner)}>Hello Karma Coin</div>
           <div className={clsx(styles.subtitleBanner)}>Karma Coin is an easy-to-use cryptocurrency and app designed for appreciation, tipping and communities.</div>
+          <div id="customgpt_chat">&nbsp;</div>
           <div className={clsx(styles.titleBanner)}>
           <iframe className={clsx(styles.titleBanner, styles.youtubeVideo)} src="https://www.youtube-nocookie.com/embed/videoseries?controls=0&amp;list=PLF4zx8ioKJTshuDCUO8nnRRnsX3_a1Z8l"
                   title="Hello Karma Coiמ" frameBorder="0"

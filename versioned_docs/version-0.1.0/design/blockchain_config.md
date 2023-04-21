@@ -3,6 +3,7 @@ id: blockchain-config
 title: Blockchain Config
 sidebar_label: Blockchain Config
 slug: /blockchain-config
+description: Karma Coin blockchain config
 ---
 
 # Genesis Config

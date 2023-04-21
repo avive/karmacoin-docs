@@ -6,13 +6,63 @@ sidebar_label: Release Notes
 
 # Karma Coin App Release Notes
 
-## Version 1.0.8
-Not released yet - currently in development.
+## Version 1.5
+- In development and testing.   
+- Planned to be released for Karmachain 1.0 mainnet. 
 
-- Use user-provided transaction fees in user generated appreciations and transactions.
+---
+
+## Version 1.1.0
+- In development
+- Still runs on the Karmachain 1.0 testnet.
+
+### New Features
+- `Simple account migration`. If you moved to a new device or just lost access to your Karma Coin account, just sign-up again with your mobile phone number to migrate your old account to a new one. Your user-name, karma score, balance and appreciations will be restored. So you don't need to restore old account which is more work and not very user-friendly. Before this change a new account will be created and the old one left on the blockchain for later restoration.
+- `Change your user-name` at any time to an available one. Just click/tap on the `Change User Name` command from the actions menu and enter a requested user-name and clil/tap `Update`.
+
+### Bug Fixes
+- Fix a display issue in the about screen.
+
+---
+
+## Version 1.0.10
+- 🚛 🥂 Shipped April 19th, 2023 for Web, iOS, Android.
+- 🧱⛓️ Running on the Karmachain 1.0 testnet.
+- 📱✋ [Run the app on your device](https://karmaco.in/testnet).
+
+### New Features
+- Appreciation Text messages. When you appreciate someone who's not on Karma Coin yet, that person will receive a text message about your appreciation with a link to get the app. Once signed up, the appreciation will be automatically added to the recipient's account.
+
+
+### Bug Fixes
+- Improve sms code verification control. Enable one-tap sms code paste from keyboard on iOS and Android. 
+
+## Version 1.0.9
+- 🚛 🥂 Shipped April 18th, 2023 for Web, iOS, Android.
+- 🧱⛓️ Running on the Karmachain 1.0 testnet.
+- 📱✋ [Run the app on your device](https://karmaco.in/testnet).
+
+
+## Bug Fixes
+- Fix user-name and sms code screens bugs. Finally!
+
+----
+
+## Version 1.0.8
+- 🚛 🥂 Shipped April 18th, 2023 for Web, iOS, Android.
+- 🧱⛓️ Running on the Karmachain 1.0 testnet.
+- 📱✋ [Run the app on your device](https://karmaco.in/testnet).
+
+### New Features
 - Display transactions fees in the transaction details screen.
 - New Karma Rewards benefits screen - displayed once per user after sign-up and also available from the actions menu.
-- Nicer signup screen with ambient background animation.
+- Nicer signup screen with the ambient Karma background animation.
+
+## Bug Fixes
+- Use user-provided transaction fees in user generated appreciations and transactions. Fee was ignored in previous versions.
+- Fix restore account advanced feature. If you back your account you should be able to restore on any device.
+
+---
 
 ## Version 1.0.7
 - 🚛 🥂 Shipped April 13th, 2023 for Web, iOS, Android.
@@ -26,6 +76,7 @@ This is a minor release with emphasize on look and feel.
 - Click/tap on your karma coins balance to view your detailed balance and account details.
 - New main screen ambient background animation to make looking at the main screen a bit more fun and relaxing.
 
+---
 
 ## Version 1.0.6
 

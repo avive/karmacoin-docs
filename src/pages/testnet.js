@@ -27,7 +27,21 @@ export default function Testnet1Page() {
                     </div>
 
                     <div className={clsx('row', styles.mainText)}>
-                        <h2>Testnet 1</h2>
+                        <h2>Karma Coin App 1.0 for Testnet 1</h2>
+                        <p>Run the Karma Coin App to use Karma Coin.</p>
+                        <p>The app is available as an Android app, an iOS app, and as a web app that runs in your browser.</p>
+                        <ul className={clsx(styles.mainBullets)}>
+                            <li>Desktop - just run the <a href="https://app.karmaco.in">Karma Coin web app</a> in Chrome (Safari on macOS also works).</li>
+                            <li>iPhone - native app via <a href="https://apple.co/3LUannD">Testflight</a>, or run the <a href="https://app.karmaco.in">web app</a> in Chrome or Safari.</li>
+                            <li>Android - Install the <a href="https://bit.ly/3FPWRxE">Karma Coin Android App (apk)</a> or run <a href="https://app.karmaco.in">the web app</a> in Chrome.</li>
+                            <li>Apple silicon Mac - You can run the app on your Mac via <a href="https://apple.co/3LUannD">Testflight</a>.</li>
+                        </ul>
+
+                        <p>&nbsp;</p>
+                        <p>⚠️ Testnet 1 Karma Coins do not have any monetary value and do not carry over to the Karma Coin mainnet.</p>
+                        <p>&nbsp;</p>
+
+                        <h2>About Testnet 1</h2>
                         <p>We are super exciting to announce the availability of the first Karma Coin public open testnet.</p>
                         <p>This is an early release designed for partners to be able to experience the Karma Coin App on their devices. </p>
                         <p>To join, head over to our <a href="https://t.me/karmacoinapp/13">Telegram Group</a> and follow the instructions for your device.</p>
@@ -41,19 +55,7 @@ export default function Testnet1Page() {
                             <li>Experience Karma Coin community features.</li>
                          </ul>
 
-                        <p>&nbsp;</p>
-                        <p>⚠️ Testnet 1 Karma Coins do not have any monetary value and do not carry over to the Karma Coin mainnet.</p>
-                        <p>&nbsp;</p>
 
-                        <h2>Karma Coin App 1.0</h2>
-                        <p>Run the Karma Coin App to use Karma Coin. The app is available as an Android App and an iOS app, as well as a web app that runs in your browser.</p>
-                        <ul className={clsx(styles.mainBullets)}>
-                            <li>Desktop - run the <a href="https://app.karmaco.in">Karma Coin web app</a> in Chrome (Safari on macOS also works).</li>
-                            <li>iPhone - run the Karma Coin native iPhone app from Testflight, or use the <a href="https://app.karmaco.in">Karma Coin web app</a> in Chrome or Safari. <a href="https://apple.co/3LUannD">Get the App via Testflight</a>.</li>
-                            <li>Android - install the <a href="https://bit.ly/3FPWRxE">Karma Coin Android App (apk)</a> or use the <a href="https://app.karmaco.in">Karma Coin web app</a> in Chrome.</li>
-                            <li>Got an Apple silicon Mac? You can run the app on your mac via <a href="https://apple.co/3LUannD">Testflight</a>.</li>
-                        </ul>
-                        <p>&nbsp;</p>
 
                         <p>Having an issue joining? Please contact us at <a href='mailto:support@karmaco.in'>support@karmaco.in</a>.</p>
 
