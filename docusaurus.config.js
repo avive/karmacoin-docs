@@ -87,18 +87,7 @@ module.exports = {
           label: 'Karmachain',
           to: '/karmachain',
         },
-        {
-          position: 'left',
-          className: 'header-link',
-          label: 'Airdrop',
-          to: '/airdrop',
-        },
-        {
-          position: 'left',
-          className: 'header-link',
-          label: 'Testnet',
-          to: '/testnet',
-        },
+
         {
           type: 'search',
           position: 'right',
@@ -153,10 +142,6 @@ module.exports = {
         {
           title: 'Tech',
           items: [
-            {
-              label: 'Testnet',
-              href: '/testnet',
-            },
               {
               label: 'Code',
               href: 'https://github.com/karma-coin',

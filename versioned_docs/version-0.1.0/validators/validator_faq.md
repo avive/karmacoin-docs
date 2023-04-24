@@ -53,13 +53,13 @@ Yes, the Karma Coin blockchain supports the nominator role.
 Until there are 1,000 unique validators, an organization that stakes the minimum staking amount becomes a validator and no further nomination is needed. In case there will be more than 1,000 validators, the top 1,000 nominated organizations will be validators using on-chain nominations.
 
 ### When are you planning to launch a public Testnet?
-The Karma Coin blockchain public testnet is going to be launched in Q3 2023.
+The Karmachain 2.0 public testnet is going to be launched in Q3 2023.
 
 ### How can I become a validator on the Testnet?
 Contact us to get Testnet Karma Coins that are needed to be staked in order to validate on the Testnet. Note that Testnet Karma Coins have no monetary value. Validating on the Testnet helps to prepare you to become a validator on the Mainnet.
 
 ### When are you planning to launch the Mainnet?
-The Karma Coin blockchain mainnet is launching in Q4 2023.
+The Karma Coin blockchain mainnet launched in April 21st, 2023 on Karmachain 1.0. The mainnet is live but you can't validate on it just net. Karmachain 2.0 will be launched in Q1 2024 and supports staked validators. 
 
 ### Can I become a validator without running a Karma Coin blockchain full node?
 Yes, we have certified technical validators partners that can run Karma Coin validator nodes for you. Contact us for more information.

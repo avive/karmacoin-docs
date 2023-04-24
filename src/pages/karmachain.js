@@ -25,7 +25,7 @@ export default function KarmaChainPage() {
                         <ul className={clsx(styles.mainBullets)}>
                             <li>The first implementation of Karmachain</li>
                             <li>A dedicated app-specific blockchain designed for Karma Coin</li>
-                            <li>Code complete and powering <a href="/testnet">Karma Coin Testnet 1</a></li>
+                            <li>Mainnet launched April 21st, 2023. <a href="https://chain.karmaco.in">Check live status</a></li>
                             <li>Built in modern Rust</li>
                             <li>100% <a target='_blank' href='https://github.com/karma-coin/karmacoin-server'>open source software</a></li>
                         </ul>
@@ -38,7 +38,8 @@ export default function KarmaChainPage() {
                             <li>Maintained by the <a href='/validators'>Karmachain validators</a></li>
                             <li>100% open source software and is developed in a fully transparent manner on Github</li>
                             <li>Under <a href='https://github.com/karma-coin/karmachain'>heavy active development</a> by the Karma Coin dev team</li>
-                            <li>Open public testnet in Q2 2023</li>
+                            <li>Open public permission-less testnet in Q3 2023</li>
+                            <li>Open public permission-less in Q4 2023</li>
                         </ul>
                         <p>&nbsp;</p>
                         <p>Interested in learning more about Karmachain or getting involved?</p>

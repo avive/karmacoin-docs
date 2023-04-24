@@ -15,35 +15,37 @@ function Home() {
       title={`${siteConfig.title}`}
       description="The coin for positive humanity">
       <Helmet>
-        <script src="https://cdn.customgpt.ai/js/embed.js" width="100%" height="600px" p_id="1064" p_key="ccbd8af1f90ebb0249653e30c2bc92f9" div_id="customgpt_chat" defer></script>
+        <script src="https://cdn.customgpt.ai/js/embed.js" width="85%" height="600px" p_id="1064" p_key="ccbd8af1f90ebb0249653e30c2bc92f9" div_id="customgpt_chat" defer></script>
       </Helmet>
       <main>
         <div className="container">
           <div className={clsx(styles.titleBanner)}>Hello Karma Coin</div>
           <div className={clsx(styles.subtitleBanner)}>Karma Coin is an easy-to-use cryptocurrency and app designed for appreciation, tipping and communities.</div>
-          <div id="customgpt_chat">&nbsp;</div>
+          <div className={clsx(styles.subtitleBanner)}>
+            <p>The Karma Coin App is available for the web and for mobile.</p>
+          </div>
+          <div className={styles.buttons}>
+            <Link className={clsx(
+                'button button--outline button--secondary button--lg'
+            )} target='_blank'
+                  to='https://app.karmaco.in'>
+              Launch Karma Coin App
+            </Link>
+          </div>
           <div className={clsx(styles.titleBanner)}>
-          <iframe className={clsx(styles.titleBanner, styles.youtubeVideo)} src="https://www.youtube-nocookie.com/embed/videoseries?controls=0&amp;list=PLF4zx8ioKJTshuDCUO8nnRRnsX3_a1Z8l"
+            <div id="customgpt_chat">&nbsp;</div>
+
+            <div className={clsx(styles.smallIconSection)}>
+              <img className={clsx(styles.karmaIcon)} src={'logo_400x400.png'}/>
+            </div>
+
+
+            <iframe className={clsx(styles.titleBanner, styles.youtubeVideo)} src="https://www.youtube-nocookie.com/embed/videoseries?controls=0&amp;list=PLF4zx8ioKJTshuDCUO8nnRRnsX3_a1Z8l"
                   title="Hello Karma Coiמ" frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen>
           </iframe>
-
           </div>
-          </div>
-          <div className={styles.buttons}>
-            <Link className={clsx(
-                    'button button--outline button--secondary button--lg'
-                )} target='_blank'
-                to='/testnet'>
-              Try it Now (Testnet)
-            </Link>
-            <Link className={clsx(
-                'button button--outline button--secondary button--lg'
-            )} target='_blank'
-                  to='https://getwaitlist.com/waitlist/4912'>
-              Join Waiting List (Mainnet)
-            </Link>
           </div>
 
         <div className={clsx(styles.smallIconSection)}>
@@ -63,6 +65,27 @@ function Home() {
         <p className={clsx(styles.titleBanner)}>Karma Coin Mission</p>
         <div className={clsx(styles.subtitleBanner)}>Our mission is to create a global token of appreciation that is used by millions of everyday people to appreciate, give and share on a daily basis with an economic model that distributes value to all who participate in good actions.</div>
 
+        <div className={clsx(styles.smallIconSection)}>
+          <img className={clsx(styles.karmaIcon)} src={'logo_400x400.png'}/>
+        </div>
+
+        <p className={clsx(styles.titleBanner)}>The Karma Coin Mobile App</p>
+        <div className={clsx(styles.subtitleBanner)}>The App is not available yet in app stores. You can get the beta app via Testflight or via a direct download.</div>
+        <div className={styles.buttons}>
+          <Link className={clsx(
+              'button button--outline button--secondary button--lg'
+          )} target='_blank'
+                to='https://apple.co/3LUannD'>
+            Karma Coin for iPhone
+          </Link>
+          <Link className={clsx(
+              'button button--outline button--secondary button--lg'
+          )} target='_blank'
+                to='https://bit.ly/3FPWRxE'>
+            Karma Coin for Android
+          </Link>
+        </div>
+
         {features && features.length > 0 && (
           <section className={styles.features}>
             <div className={clsx('container', 'text--center')}>
@@ -78,8 +101,8 @@ function Home() {
           <img className={clsx(styles.karmaIcon)} src={'logo_400x400.png'}/>
         </div>
         <p className={clsx(styles.titleBanner)}>Karma Coin for Validators</p>
-        <div className={clsx(styles.subtitleBanner)}> Karma Coin is a new permissionless cryptocurrency enabled by the Karma Coin blockchain - an open and decentralized blockchain network.
-          As a validator, you play a vital role in maintaining and securing the Karma Coin permissionless blockchain, and in return, you are rewarded for your contributions with Karma Coin. <a href='/validators'> Learn more...</a></div>
+        <div className={clsx(styles.subtitleBanner)}>Karma Coin is a new cryptocurrency powered by <a href="/karmachain">Karmachain</a> - an open, dedicated and permissionless blockchain network.
+          As a validator, you play a vital role in maintaining and securing Karmachain, and in return, you are rewarded for your contributions with Karma Coin. <a href='/validators'> Learn more...</a></div>
         <div className={clsx(styles.smallIconSection)}>
           <img className={clsx(styles.karmaIcon)} src={'logo_400x400.png'}/>
         </div>
@@ -91,10 +114,6 @@ function Home() {
           <img className={clsx(styles.karmaIcon)} src={'logo_400x400.png'}/>
         </div>
 
-        <p className={clsx(styles.titleBanner)}>Karma Coin Testnet</p>
-        <div className={clsx(styles.subtitleBanner)}>
-          Run the Karma Coin App on our open, public <a href='/testnet'>Testnet</a>
-        </div>
       </main>
 
     </Layout>

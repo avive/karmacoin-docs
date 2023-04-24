@@ -4,19 +4,19 @@ title: Release Notes
 sidebar_label: Release Notes
 ---
 
-# Karma Coin App Release Notes
-
-## Version 1.5
-- In development and testing.   
-- Planned to be released for Karmachain 1.0 mainnet. 
-
----
 
 ## Version 1.1.0
-- In development
-- Still runs on the Karmachain 1.0 testnet.
+# Karma Coin App Release Notes
+- 🚛 🥂 Shipped April 21st, 2023.
+- 🧱⛓️ Runs on the [Karmachain 1.0 Mainnet](https://chain.karmaco.in/) 🎉🍾🎊🥳.
+
+### Getting The App
+- [Web app](https://app.karmaco.in) - Works in Chrome and in Safari browsers on desktop and mobile. No download needed.
+- [iOS app](https://apple.co/3LUannD) - Available via Testflight. Works on iPhones and on Macs with Apple Silicon.
+- [Android app](https://bit.ly/3FPWRxE) - for Android devices.
 
 ### New Features
+- Running on Karmachain 1.0 mainnet - no more testnets :-)
 - `Simple account migration`. If you moved to a new device or just lost access to your Karma Coin account, just sign-up again with your mobile phone number to migrate your old account to a new one. Your user-name, karma score, balance and appreciations will be restored. So you don't need to restore old account which is more work and not very user-friendly. Before this change a new account will be created and the old one left on the blockchain for later restoration.
 - `Change your user-name` at any time to an available one. Just click/tap on the `Change User Name` command from the actions menu and enter a requested user-name and clil/tap `Update`.
 

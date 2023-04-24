@@ -4,7 +4,7 @@ title: Karma Coin Support
 sidebar_label: 👩‍💻 Support
 ---
 
-We'd love to hear your feedback on the Karma Coin App and testnet and help out if you have any question or issue.
+We'd love to hear your feedback on the Karma Coin App and help out if you have any question or issue.
 
 Use one of these channels to send us feedback or to get support for the Karma Coin App:
 
