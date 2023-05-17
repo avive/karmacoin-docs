@@ -14,6 +14,16 @@ slug: /tokenomics
 - `KCoins ($KC)` - The Karma Coin cryptocurrency. One KC equals one million KCents.
 ---
 
+# Karmachain 1.0 Economic Model
+Karmachain 1.0 mainnet was launched on April 21st, 2023 via a 100% fair launch - no pre-minted coins were allocated at genesis time to anyone.
+
+The only Karma Coins in existence are coins being issued by the Karmachain 1.0 protocol as rewards for creating blocks and maintaining the chain data and coins issued by Karma Mining as detailed below to Karma Coin App users based on their actions.
+
+- The Karmachain 1.0 ledger will be fully migrated over the Karmachain 2.0 as part of the migration from 1.0 to 2.0 at genesis time.
+
+
+# Karmachain 2.0 Economic Model
+
 ## Coin Issuance Model
 The coin issuance and supply are designed to reward both users and validators and to encourage early adoption by both of these stakeholders, while also providing some coins to the Karma Coin dev company for the development and the maintenance of the product and the tech stack. 
 
@@ -78,10 +88,16 @@ Signup rewards are designed to solve the cryptocurrency on ramp problem. Upon si
 - The rewards allocation continue monthly until the allocated amount has been distributed.
 - During the testnet, the params of these rewards will be different for testing purposes. e.g. every 1 day up to 10 random users from the top 100 users with the highest Karma Score who didn't get the reward get and who have appreaciated at least 1 people in the period.
 
-
 ### Cause Rewards
-- 225 millions KCs are allocated by the protocol to reward causes submitted by users.
-- Each month, for at the first 50 months since genesis, 10,000 KCs are distributed by the protocol to up to 20 causes that got funding in that calendar month via appreciations that didn't get funding in the previous month. The causes are randomly selected by the protocol. Getting a cause to become eligible requires cause registration and verification as a real non-profit with an established reputation.
+- 225 millions KCs are allocated by the protocol to reward causes such as charities and non-profits.
+- Causes are submitted by users to Karma Coin for inclusion. The submitted causes are vetted in a by team Karma Coin before being added to Karma Coin to ensure that only legitimate non-profits with a provable reputation and a charitable track record get on Karma Coin.
+- Karma Coin users discover approved causes in the Karma Coin App and can contribute to them via sending them appreciations.
+- Each month, for at the first 50 months from genesis, Up 10,000 KCs are distributed by the protocol for matching users charity contributions per month.
+- Up to 10 causes that got some funding in that calendar month via users appreciations that didn't get funding in the previous calendar month, are eligible for matching funding by the Karma Coin protocol.
+- The protocol matching funding amount to the 10 selected causes is determined by a **quadratic funding** algorithm, so more value is given to the number of contributors over the contribution amount. This encourages small contributions from more people over large contributions from a small group of whales.
+- People who support a cause are encouraged to have as many people contribute to it on Karma Coin in order to increase funding via matching.
+- The Karma Coin protocol randomly selects up to 10 eligible causes in case there are more than 10 eligible ones in a month.
+- Total matching funding is limited to 10,000 Karma Coins a month, and it is distributed proportionally between the 10 selected causes in case the total of their quadratic matching funding amounts is higher than 10,000 Karma Coins.
 
 ### Transaction Fees Subsidies
 The protocol allocates up 250M KCs as transaction fees subsidies. Fees susedies are minted by the protocol for appreciation and payment transactions and are given to the Karma Coin blockchain block producers. When a subsidy is applied, the user who submitted the transaction doesn't pay the transaction fee from his own balance.
