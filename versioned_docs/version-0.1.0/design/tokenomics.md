@@ -65,7 +65,7 @@ Up to 375M KCs (15% of the supply) earned on Karmachain 1.0 as validation reward
 ---
 
 ## Karma Mining
-The Karma Coin protocol tokenomics are designed to encourage usage and growth in the early days of the network with the goal of destabilising Karma Coin as a global means of appreciation, tipping and payments. 
+The Karma Coin protocol tokenomics are designed to encourage usage and growth in the early days of the network with the goal of establishing Karma Coin as a global means of appreciation, tipping and payments. 
 
 1.375B KCs (55% of the supply) are distributed by the protocol and awarded to users to encourage sign-ups, usage as means of payment and appreciation. We call this Karma mining. Karma Mining includes the following coin issuance:
 
