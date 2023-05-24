@@ -31,6 +31,7 @@ export default function ValidatorsPage() {
                             <li>Help build the future of appreciation and payments.</li>
                         </ul>
                         <p>We are looking for solid validators to become a Karma Coin mainnet launch partner.</p>
+                        <p>📣 You can now run a validator node on the <a href="/docs/testnet/validator">Karmachain 2.0 public testnet</a>!</p>
                         <p>For more info, check out our <a href='/docs/validators/faq'>Validators FAQ</a>.</p>
                         <p>Interested in learning more? Please contact us at <a href='mailto:validators@karmaco.in'>validators@karmaco.in</a>.</p>
 

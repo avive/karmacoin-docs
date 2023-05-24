@@ -25,6 +25,21 @@
     {
       "collapsed": true,
       "type": "category",
+      "label": "🌆 Testnet",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-0.1.0/testnet/basics"
+        },
+        {
+          "type": "doc",
+          "id": "version-0.1.0/testnet/validator"
+        }
+      ]
+    },
+    {
+      "collapsed": true,
+      "type": "category",
       "label": "📐 Design",
       "items": [
         {

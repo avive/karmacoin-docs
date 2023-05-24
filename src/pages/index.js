@@ -33,13 +33,6 @@ function Home() {
             </Link>
           </div>
           <div className={clsx(styles.titleBanner)}>
-            <div id="customgpt_chat">&nbsp;</div>
-
-            <div className={clsx(styles.smallIconSection)}>
-              <img className={clsx(styles.karmaIcon)} src={'logo_400x400.png'}/>
-            </div>
-
-
             <iframe className={clsx(styles.titleBanner, styles.youtubeVideo)} src="https://www.youtube-nocookie.com/embed/videoseries?controls=0&amp;list=PLF4zx8ioKJTshuDCUO8nnRRnsX3_a1Z8l"
                   title="Hello Karma Coiמ" frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -114,6 +107,14 @@ function Home() {
           <img className={clsx(styles.karmaIcon)} src={'logo_400x400.png'}/>
         </div>
 
+        <div className={clsx(styles.titleBanner)}>
+          <div id="customgpt_chat">&nbsp;</div>
+        </div>
+        <div className={clsx(styles.smallIconSection)}>
+          <img className={clsx(styles.karmaIcon)} src={'logo_400x400.png'}/>
+        </div>
+
+
       </main>
 
     </Layout>
@@ -122,7 +123,7 @@ function Home() {
 
 const features = [
   {
-    title: 'Easy to use App',
+    title: 'Easy to use',
     imageUrl: 'main.png',
     description: (
         <>Joining Karma Coin is simple and easy, all you need is a mobile phone. Karma Coin easy to use app revolutionizes the way we tip and appreciate. It is available for iOS, Android and Desktop devices.
@@ -139,15 +140,6 @@ const features = [
     ),
   },
   {
-    title: 'Universal',
-    imageUrl: 'android_main.png',
-    description: (
-        <>
-          Available this summer for Android, Web and iOS.
-        </>
-    ),
-  },
-  {
     title: 'A Coin For All of Us',
     imageUrl: 'send.png',
     description: (
@@ -157,11 +149,11 @@ const features = [
     ),
   },
   {
-    title: 'A solid open source blockchain',
-    imageUrl: 'appreciation.png',
+    title: 'Universal',
+    imageUrl: 'android_main.png',
     description: (
         <>
-          Karma Coin is maintained by a dedicated permissionless and modern blockchain which provides security and transparency.
+          Available for Android, Web and iOS.
         </>
     ),
   },

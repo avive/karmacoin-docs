@@ -33,13 +33,12 @@ export default function KarmaChainPage() {
                         <h2>Karmachain 2.0</h2>
                         <ul className={clsx(styles.mainBullets)}>
                             <li>A dedicated app-specific nominated proof of stake (NPos) blockchain</li>
+                            <li>Open, public, permission-less <a href='/docs/testnet/validator'>testnet</a> launched May 23rd, 2023</li>
                             <li>Custom designed for Karma Coin</li>
                             <li>built with the <a href='https://substrate.io/' target='_blank'>Substrate blockchain framework</a></li>
                             <li>Maintained by the <a href='/validators'>Karmachain validators</a></li>
                             <li>100% open source software and is developed in a fully transparent manner on Github</li>
                             <li>Under <a href='https://github.com/karma-coin/karmachain'>heavy active development</a> by the Karma Coin dev team</li>
-                            <li>Open public permission-less testnet in Q3 2023</li>
-                            <li>Open public permission-less in Q4 2023</li>
                         </ul>
                         <p>&nbsp;</p>
                         <p>Interested in learning more about Karmachain or getting involved?</p>
