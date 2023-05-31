@@ -37,7 +37,7 @@ export default function CommunitiesPage() {
                                 <li>Gives community leaders a global tipping tool that is familiar and easy to use.</li>
                             </ul>
                         <p>Don't miss out on this opportunity to give your members a tool that will benefit their everyday life. Contact us to learn more and customize your Karma Coin app today!</p>
-                        <p>Interested in learning more? Please contact us at <a href='mailto:community@karmaco.in'>comunity@karmaco.in</a>.</p>
+                        <p>Interested in learning more? Please contact us at <a href='mailto:community@karmaco.in'>community@karmaco.in</a>.</p>
 
                             <div className={clsx('buttons')}>
                                 <Link className={clsx(

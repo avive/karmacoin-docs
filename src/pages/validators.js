@@ -19,6 +19,14 @@ export default function ValidatorsPage() {
                 <h2 className={clsx('text--center', styles.subtitleBanner, 'padding--sm')}>
                     Validate with Purpose: Join the Karma Coin Network
                 </h2>
+
+                <div className={clsx(styles.mainTextContainer, styles.bq)}>
+                    <blockquote><h3>The Karma team are attempting to change what money means for the betterment of all mankind. An amazing and ambitious project.</h3>
+                <p>&mdash;Louis Dharma,&nbsp;
+                        <cite>Head of <a target="_blank" href="https://www.hansa.network/">Hansa Accelerator</a>
+                    , in partnership with <a target="_blank" href="https://www.kotti.capital/">Kotti Capital</a></cite></p>
+                    </blockquote>
+                </div>
                 <div className={clsx(styles.mainTextContainer)}>
                     <div className={clsx('row', styles.mainText, 'text--left')}>
                         <p>Karma Coin is a unique cryptocurrency designed for appreciation and tipping. The cryptocurrency runs on the Karma Coin blockchain. The Karma Coin blockchain uses a proof-of-stake consensus protocol.</p><p> As a validator, you'll have the opportunity to help secure the network and earn rewards for your efforts.

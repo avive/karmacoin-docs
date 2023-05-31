@@ -67,6 +67,7 @@ The Karma Coin blockchain mainnet launched in April 21st, 2023 on Karmachain 1.0
 ### How do I contact your partnership team?
 Email us at validators@karmaco.in or [schedule a demo](https://forms.gle/MTT5esnpCBMU63vt9).
 
+
 ### Validators Resources
 - [Validators Deck (PDF)](https://bit.ly/43cx9ga)
 - [Running a validator node](https://karmaco.in/docs/testnet/validator)

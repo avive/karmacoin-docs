@@ -80,6 +80,12 @@
     margin-top: 30px;
 }
 
+.chatBar {
+    text-align: center;
+    margin: 30px 36px 18px;
+}
+
+
 .subtitleBanner {
   padding-left: 20%;
   padding-right: 20%;
@@ -112,6 +118,47 @@
 
 .redText{
     color: red;
+}
+
+.bq {
+    max-width: 1000px;
+    display: flex;
+    padding: 0.3em;
+    margin: auto auto;
+}
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+q::before {
+    content: open-quote;
+}
+q::after {
+    content: close-quote;
+}
+
+blockquote h3 {
+    font-size:24px;
+    font-weight: normal;
+    line-height: 1.1;
+}
+blockquote p {
+    font-size: 18px;
+}
+
+blockquote h3:before {
+    content: open-quote;
+    font-size:32px;
+}
+
+blockquote h3:after {
+    content: close-quote;
+    font-size:32px;
+}
+
+.quote figcaption,
+.quote blockquote {
+    margin: 1em;
 }
 
 .mainTextContainer {

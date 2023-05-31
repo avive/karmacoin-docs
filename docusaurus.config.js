@@ -87,6 +87,12 @@ module.exports = {
           label: 'Karmachain',
           to: '/karmachain',
         },
+        {
+          position: 'left',
+          className: 'header-link',
+          label: 'AMA',
+          to: '/chat',
+        },
 
         {
           type: 'search',
