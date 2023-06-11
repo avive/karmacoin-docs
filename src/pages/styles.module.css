@@ -197,6 +197,10 @@ blockquote h3:after {
     }
 }
 
+.playStoreBadge {
+    width: 300px;
+}
+
 .mainText {
     display: flex;
     flex-direction: column;

@@ -17,3 +17,7 @@ User account public data include balance, mobile phone number, user's name.
 
 By using the Karma Coin App you agree that your user account data, and your incoming and outgoing payments and appreciations are stored on the public Karma Coin blockchain and are visible to anyone.
 
+## Karma Coin App Terms of Service
+By signing up to the Karma Coin App you agree to share your mobile phone number on the public Karma Coin blockchain and are visible to anyone and you agree that your Karma Coin balance, Karma Score and your incoming and outgoing payments and appreciations are stored on the public Karma Coin blockchain and are visible to anyone.
+
+By sending an appreciation or a payment transaction you agree to share receiver's mobile phone number on the Karma Coin blockchain and are visible to anyone.

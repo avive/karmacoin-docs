@@ -24,8 +24,8 @@ export default function Testnet1Page() {
                         <h2>Joining Karma Coin</h2>
                         <ul className={clsx(styles.mainBullets)}>
                             <li><b>Desktop</b> - run the <a href="https://app.karmaco.in">Karma Coin web app</a> in Chrome (Safari on macOS also works).</li>
+                            <li><b>Android</b> - Get the <a href="https://play.google.com/store/apps/details?id=in.karmaco.app">Karma Coin Android App</a> (via Google Play Store), or run <a href="https://app.karmaco.in">the web app</a> in Chrome.</li>
                             <li><b>iPhone</b> - native app via <a href="https://apple.co/3LUannD">Testflight</a>, or run the <a href="https://app.karmaco.in">web app</a> in Chrome or Safari.</li>
-                            <li><b>Android</b> - Install the <a href="https://bit.ly/3FPWRxE">Karma Coin Android App (apk)</a> or run <a href="https://app.karmaco.in">the web app</a> in Chrome.</li>
                             <li><b>Apple silicon Mac</b> - You can run the app on your Mac via <a href="https://apple.co/3LUannD">Testflight</a>.</li>
                         </ul>
 
