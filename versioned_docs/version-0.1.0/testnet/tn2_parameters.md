@@ -22,22 +22,22 @@ keywords: [parameters, testnet2, tn2, on-chain]
 
 \*_A maximum of one block per slot can be in a canonical chain. Occasionally, a slot will be without
 a block in the chain. Thus, the times given are *estimates*. See
-[Consensus](../../learn/learn-consensus.md) for more details._
+[Consensus](https://guide.kusama.network/docs/learn-consensus) for more details._
 
 ### Accounts, Identity and Crowdloans
 
-- The [Existential Deposit](../../learn/learn-accounts.md#existential-deposit-and-reaping) is 100 KCents
+- The [Existential Deposit](https://guide.kusama.network/docs/learn-accounts.md#existential-deposit-and-reaping) is 100 KCents
 - No deposit required to set an Identity
 
 ### Staking, Validating, and Nominating
 
 A maximum of 40 validators can be nominated by a nominator on Karmachain.
 
-| Karmachain           | Time    | Slots   | Description                                                                                                                                                                                         |
-| -------------------- | ------- | ------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Term duration        | 6 hours | 1_800   | The time for which a validator is in the set after being elected. Note, this duration can be shortened in the case the a validator misbehaves.                                                      |
-| Nomination period    | 6 hours | 1_800   | How often a new validator set is [elected](../../learn/learn-phragmen.md).                                                                                                                          |
-| Bonding duration     | 7 days  | 302_400 | How long until your funds will be transferrable after unbonding. Note that the bonding duration is defined in eras, not directly by slots.                                                          |
+| Karmachain           | Time    | Slots   | Description                                                                                                                                                                                       |
+| -------------------- | ------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Term duration        | 6 hours | 1_800   | The time for which a validator is in the set after being elected. Note, this duration can be shortened in the case the a validator misbehaves.                                                    |
+| Nomination period    | 6 hours | 1_800   | How often a new validator set is [elected](https://guide.kusama.network/docs/learn-phragmen.md).                                                                                                                          |
+| Bonding duration     | 7 days  | 302_400 | How long until your funds will be transferrable after unbonding. Note that the bonding duration is defined in eras, not directly by slots.                                                        |
 | Slash defer duration | 7 days  | 302_400 | Prevents overslashing and validators "escaping" and getting their nominators slashed with no repercussions to themselves. Note that the bonding duration is defined in eras, not directly by slots. |
 
 ### Rewards
