@@ -1,7 +1,7 @@
 ---
 id: tn2-parameters
 title: Karmachain 2.0 Testnet 2 Parameters
-sidebar_label: TN2 Parameters
+sidebar_label: Testnet 2 Params
 description: Learn about common testnet parameters
 keywords: [parameters, testnet2, tn2, on-chain]
 ---
@@ -44,7 +44,7 @@ A maximum of 40 validators can be nominated by a nominator on Karmachain.
 
 #### Signup Rewards
 
-Signup rewards are designed to solve the cryptocurrency on ramp problem. Upon sign-up, the protocol mints a 1 KC reward to each new user with a verified mobile phone number.
+Signup rewards are designed to solve the cryptocurrency on ramp problem. Upon sign-up, the protocol mints a Karma Coin reward to each new user with a verified mobile phone number.
 
 * A total of 300 million KCs is allocated by the protocol for signup rewards.
 * A user who gets this reward also gets the Karma Rewards Winner special appreciation.
@@ -61,9 +61,9 @@ Signup rewards are designed to solve the cryptocurrency on ramp problem. Upon si
 
 #### Karma Rewards
 
-* Every day, the protocol mints 10 KCs to up to 10 random users from the top 100 users with the highest Karma Score who didn't get this award yet who had appreciated at least 1 people in that time period.
+* Every 24 hours, the protocol mints 10 KCs to up to 10 random users from the top 100 users with the highest Karma Score who didn't get this award yet who had appreciated at least 1 people in that time period.
 * Up to 300M KCs are allocated for this reward. When these have been allocated the protocol stops rewarding users with top karma.
-* Deterministic randomness is provided from Karmachain.
+* Deterministic randomness is provided by Karmachain.
 
 #### Transaction Fees Subsidies
 
@@ -75,4 +75,6 @@ The protocol allocates up 250M KCs as transaction fees subsidies. Fees susedies 
 
 ### Precision
 
-KCent have 6 decimals of precision. In other words, 1e6 (1_000_000, or one billion).
+Kcents have 6 decimals of precision. In other words, 1e6 (1_000_000, or one million). One KCoin (KC) is 6 million KCents.
+
+

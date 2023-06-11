@@ -15,6 +15,8 @@ All languages, frameworks and libraries used are 100% open source software. All 
 - [Substrate blockchain framework](https://substrate.io/) for Karmachain.
 - [Dart programming language](https://dart.dev/) for the verifier microservice.
 - [Docusaurus framework](https://docusaurus.io/) for all docs and for the Karma Coin website.
+- [Google Cloud Functions](https://cloud.google.com/functions), [Firebase Cloud Functions](https://firebase.google.com/docs/cloud-messaging) and [Firebase Cloud Firestore](https://firebase.google.com/docs/firestore) for providing push notifications to client apps when an appreication was received and when Karma Rewards were awarded.
+
 ### Service Providers
 
 A verity of high-quality service providers and production-grade paid service tiers are ued to implement karma Coin.

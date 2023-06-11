@@ -34,6 +34,10 @@
         {
           "type": "doc",
           "id": "version-0.1.0/testnet/validator"
+        },
+        {
+          "type": "doc",
+          "id": "version-0.1.0/testnet/tn2-parameters"
         }
       ]
     },
