@@ -32,34 +32,14 @@ This document walks you through the steps of running a validator node on the kar
 ---
 
 ## Dev Environment Setup
-Running a validator node requires Docker and Git.
+Running a validator node requires Docker.
 * [Docker](https://docs.docker.com/engine/install/)
-* [Git](https://github.com/git-guides/install-git)
 
 ## Read-up on the Release Notes
 Read the latest [testnet reelase notes](https://github.com/karma-coin/karmachain/releases/)
 
-## Download Karmachain source code
-- Karmachain 2.0 node software is open source software available on Github.
-- Get the latest Testnet release source code from GitHub.
-- The latest release is always [available on this page](https://github.com/karma-coin/karmachain/releases/).
-- The current latest release is `v0.1.0`.
-- Clone the repo and checkout the release tag.
-
-```bash
-git clone https://github.com/karma-coin/karmachain
-cd karmachain
-git checkout tags/v0.1.0 -b v0.1.0
-```
-
-## Prepare your node
-Build a node docker image.
-
-```bash
-docker build . --tag karmachain-node
-```
-
 ## Run your node
+Karmachain node available as docker image on [DockerHub](https://hub.docker.com/r/teamkarmacoin/karmachain)
 
 1. Set perms on chain-data directory.
 
@@ -71,7 +51,7 @@ sudo chmod 777 ./chain-data
 
 ```bash
 sudo chmod 777 ./chain-data
-sudo docker run --name karmachain-node --rm -v ./chain-data:/chain-data -p 30333:30333 -p 9944:9944 -p 9933:9933 karmachain-node --base-path /chain-data --chain chain-spec/chainSpecTN1.json --port 30333 --ws-port 9944 --unsafe-ws-external --rpc-port 9933 --rpc-cors all --rpc-methods Unsafe --validator --name [YOUR_NODE_NAME] --bootnodes /dns/testnet.karmaco.in/tcp/30333/p2p/12D3KooWFgrbXqQE1kp3ytTGTsgsVVFBp5P3TGYyGa2KaVs9nQta
+sudo docker run --name karmachain-node --rm -v ./chain-data:/chain-data -p 30333:30333 -p 9944:9944 -p 9933:9933 teamkarmacoin/karmachain:tn2 --base-path /chain-data --chain chain-spec/chainSpecTN2.json --port 30333 --ws-port 9944 --unsafe-ws-external --rpc-port 9933 --rpc-cors all --rpc-methods Unsafe --validator --name [YOUR_NODE_NAME] --bootnodes /dns/testnet.karmaco.in/tcp/30333/p2p/12D3KooWR7TFCKKePsQRvxAWh4SiqukYXZ8FPCFprviszBoNPJd9
 ```
 
 3. Modify the command to set your node's name as the value of the `--name` flag.
