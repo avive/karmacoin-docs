@@ -51,7 +51,7 @@ sudo chmod 777 ./chain-data
 
 ```bash
 sudo chmod 777 ./chain-data
-sudo docker run --name karmachain-node --rm -v ./chain-data:/chain-data -p 30333:30333 -p 9944:9944 -p 9933:9933 teamkarmacoin/karmachain:tn2 --base-path /chain-data --chain chain-spec/chainSpecTN2.json --port 30333 --ws-port 9944 --unsafe-ws-external --rpc-port 9933 --rpc-cors all --rpc-methods Unsafe --validator --name [YOUR_NODE_NAME] --bootnodes /dns/testnet.karmaco.in/tcp/30333/p2p/12D3KooWR7TFCKKePsQRvxAWh4SiqukYXZ8FPCFprviszBoNPJd9
+sudo docker run --name karmachain-node --rm -v ./chain-data:/chain-data -p 30333:30333 -p 9944:9944 -p 9933:9933 teamkarmacoin/karmachain:tn2 --base-path /chain-data --chain chain-spec/chainSpecTN2.json --port 30333 --ws-port 9944 --unsafe-ws-external --rpc-port 9933 --rpc-cors all --rpc-methods Unsafe --validator --name [YOUR_NODE_NAME] --bootnodes /dns/testnet.karmaco.in/tcp/30333/p2p/12D3KooWSFwns9MXoQStMhytZZso7cKfTTt3ivW2tEqBunfz9MZv
 ```
 
 3. Modify the command to set your node's name as the value of the `--name` flag.
