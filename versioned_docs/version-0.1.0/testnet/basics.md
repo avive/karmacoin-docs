@@ -43,7 +43,6 @@ You can choose to update username or phone number or both of them
 
 3. Click `Submit Transaction` to send the transaction. You should see an `ExtrinsicSuccess` message in few seconds.
 
-
 ---
 
 ## Appreciate Someone
