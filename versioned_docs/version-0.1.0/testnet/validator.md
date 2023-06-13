@@ -4,7 +4,7 @@ title: Running a Validator Node
 sidebar_label: 📜 Running a Node
 ---
 
-This document walks you through the steps of running a validator node on the karmachain 2.0 Testnet 1 (TN1).
+Follow the instructions in this document to run your own a validator node on the [karmachain 2.0 Testnet 2 (TN2)](https://github.com/karma-coin/karmachain/releases/tag/v0.2.0).
 
 ## System Requirements
 - The specs posted below are not a hard requirement to run a validator, but are considered best practice.
@@ -14,7 +14,7 @@ This document walks you through the steps of running a validator node on the kar
 ### CPU
 - x86-64 compatible
 - Intel Ice Lake, or newer (Xeon or Core series). AMD Zen3, or newer (EPYC or Ryzen)
-- 4 physical cores @ 3.4GHz
+- Minimum of 2 physical cores @ 3.4GHz. 4 cores recommended.
 - Simultaneous multithreading disabled (Hyper-Threading on Intel, SMT on AMD)
 - Prefer single-threaded performance over higher cores count
 - An NVMe SSD of 500 GB (As it should be reasonably sized to deal with blockchain growth)
@@ -32,31 +32,25 @@ This document walks you through the steps of running a validator node on the kar
 ---
 
 ## Dev Environment Setup
-Running a validator node requires Docker.
-* [Docker](https://docs.docker.com/engine/install/)
+Running a validator node requires [Docker](https://docs.docker.com/engine/install/).
 
-## Read-up on the Release Notes
-Read the latest [testnet reelase notes](https://github.com/karma-coin/karmachain/releases/)
+## Read Testnet 2 Release Notes
+Read the latest [testnet reelase notes](https://github.com/karma-coin/karmachain/releases/tag/v0.2.0).
 
 ## Run your node
-Karmachain node available as docker image on [DockerHub](https://hub.docker.com/r/teamkarmacoin/karmachain)
+The Karmachain TN2 node is available as a docker image on [DockerHub](https://hub.docker.com/layers/teamkarmacoin/karmachain/tn2/images/sha256-1699534176816b184a62703b9af1ec105c99edf8667c5fde36abdb6da3ba9e5d?context=explore). 
 
-1. Set perms on chain-data directory.
+Alternatively, you can clone the Karmachain open source Github repo and build a docker image directly from source code. To do so, git check out the code from the [release tag](https://github.com/karma-coin/karmachain/tree/v0.2.0) and modify the docker run command below to use your own image instead of the dockerhub one.
 
-```bash
-sudo chmod 777 ./chain-data
-```
-
-2. Copy the command below. 
+1. Copy the command below to a text editor.
 
 ```bash
-sudo chmod 777 ./chain-data
 sudo docker run --name karmachain-node --rm -v ./chain-data:/chain-data -p 30333:30333 -p 9944:9944 -p 9933:9933 teamkarmacoin/karmachain:tn2 --base-path /chain-data --chain chain-spec/chainSpecTN2.json --port 30333 --ws-port 9944 --unsafe-ws-external --rpc-port 9933 --rpc-cors all --rpc-methods Unsafe --validator --name [YOUR_NODE_NAME] --bootnodes /dns/testnet.karmaco.in/tcp/30333/p2p/12D3KooWSFwns9MXoQStMhytZZso7cKfTTt3ivW2tEqBunfz9MZv
 ```
 
-3. Modify the command to set your node's name as the value of the `--name` flag.
+2. Modify the command to set your node's name as the value of the `--name` flag.
 
-4. Run the modified command.
+3. Run the modified command.
 
 ### Create Accounts
 - To start validating, you need to create two accounts - a `Stash account` and a `Controller account`.

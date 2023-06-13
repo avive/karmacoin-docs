@@ -4,7 +4,7 @@ title: Getting Started
 sidebar_label: 📜 Getting Started
 ---
 
-This technical document describes the basic transactions and data operations supported by Karmachain 2.0 Testnest1 (TN1).
+This technical document describes the basic transactions and data operations supported by Karmachain 2.0 Testnest2 (TN2).
 
 ## Creating an account
 

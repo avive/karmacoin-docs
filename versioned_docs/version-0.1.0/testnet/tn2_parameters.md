@@ -75,6 +75,6 @@ The protocol allocates up 250M KCs as transaction fees subsidies. Fees susedies 
 
 ### Precision
 
-Kcents have 6 decimals of precision. In other words, 1e6 (1_000_000, or one million). One KCoin (KC) is 6 million KCents.
+KCOINs (KCs) have 6 decimals of precision. In other words, the smallest amount is one millionth (0.000001) KC which is 1 KCENT. There are 6 million KCENTs and one KCOIN.
 
 
