@@ -40,12 +40,12 @@ Read the latest [testnet reelase notes](https://github.com/karma-coin/karmachain
 ## Run your node
 The Karmachain TN2 node is available as a docker image on [DockerHub](https://hub.docker.com/layers/teamkarmacoin/karmachain/tn2/images/sha256-1699534176816b184a62703b9af1ec105c99edf8667c5fde36abdb6da3ba9e5d?context=explore). 
 
-Alternatively, you can clone the Karmachain open source Github repo and build a docker image directly from source code. To do so, git check out the code from the [release tag](https://github.com/karma-coin/karmachain/tree/v0.2.0) and modify the docker run command below to use your own image instead of the dockerhub one.
+Alternatively, you can clone the Karmachain open source Github repo and build a docker image directly from source code. To do so, git check out the code from the [release tag](https://github.com/karma-coin/karmachain/tree/v0.2.0), build a local docker image and modify the docker run command below to use your local image instead of the dockerhub one.
 
 1. Copy the command below to a text editor.
 
 ```bash
-sudo docker run --name karmachain-node --rm -v ./chain-data:/chain-data -p 30333:30333 -p 9944:9944 -p 9933:9933 teamkarmacoin/karmachain:tn2 --base-path /chain-data --chain chain-spec/chainSpecTN2.json --port 30333 --ws-port 9944 --unsafe-ws-external --rpc-port 9933 --rpc-cors all --rpc-methods Unsafe --validator --name [YOUR_NODE_NAME] --bootnodes /dns/testnet.karmaco.in/tcp/30333/p2p/12D3KooWSFwns9MXoQStMhytZZso7cKfTTt3ivW2tEqBunfz9MZv
+sudo docker run --name karmachain-node --rm --mount source=chain-data,target=/chain-data -p 30333:30333 -p 9944:9944 -p 9933:9933 teamkarmacoin/karmachain:tn2 --base-path /chain-data --chain chain-spec/chainSpecTN2.json --port 30333 --ws-port 9944 --unsafe-ws-external --rpc-port 9933 --rpc-cors all --rpc-methods Unsafe --validator --name [YOUR_NODE_NAME] --bootnodes /dns/testnet.karmaco.in/tcp/30333/p2p/12D3KooWSFwns9MXoQStMhytZZso7cKfTTt3ivW2tEqBunfz9MZv
 ```
 
 2. Modify the command to set your node's name as the value of the `--name` flag.
@@ -60,28 +60,25 @@ sudo docker run --name karmachain-node --rm -v ./chain-data:/chain-data -p 30333
 
 ## Request Testnet Coins
 - Join the Karma Coin [Testnet Telegram Channel](https://t.me/karmacoinapp/293).
-- The basic accounting unit of Karmachain is `Karma Cents` (KCENTs). One million Karma Cents are 1 Karma Coin.
-- The minimum testnet bonding amount is 1 KCENT. We configured it in this way to make it easy to bond and validate.
-- Share the public address of you `Stash account` and request testnet KCENTs for your bond.
-- You will be provided with 4 billion KCENTS to be able to pay translation fees for your validator setup and for stake, as for  Testnet 1, the fees are not yet optimized and artificially high.
+- The basic accounting unit of Karmachain is `Karma Coin` (KCOIN). The minimum amount is one-millionth KCOIN which is 1 Karma Cent (KCENT). 1 KCENT is one Micro KCOIN.
+- The minimum testnet bonding amount is 1 KCOIN. We configured it in this way to make it easy to bond and validate.
+- Share the public address of you `Stash account` and request testnet KCOINs for your bond.
 - Keep most of your funds in the `Stash account` since it is meant to be the custodian of your staking funds and move some coins to your `Controller account` so you can pay transaction fees for transactions from this account.
 
 ## Bond Coins
 Follow these steps to set up your validator.
 
+Bond coins in your `Stash account`. These coins will be used as stake for the security of the network and can be slashed. Make sure not to bond your entire coin balance since in that case you will be unable to pay transaction fees from your `Stash account`.
+
 - Access the testnet's web app on [polkadot.js](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftestnet.karmaco.in%2Ftestnet%2Fws#/explorer) and complete the steps below in it.
 
-- Bond coins in your `Stash account`. These coins will be used as stake for the security of the network and can be slashed. Make sure not to bond your entire coin balance since in that case you will be unable to pay transaction fees from your `Stash account`.
-
-- Select your `Controller account`. This account wil be used by you to decide when to start or to stop validating.
-
-- Go to the Staking section. Click on `Account Actions`, and then the `+ Stash` button.
+- Go to the Staking section. Click on `Accounts`, and then the `+ Stash` button.
 
   ![bond](/testnet/bond.png)
 
 - `Stash account` - Select your Stash account. Make sure that your `Stash account` contains at least this much. You can, of course, stake more than this.
-- `Controller account` - Select the Controller account created earlier. This account will also need a small amount of KCENTS in order to start and stop validating.
-- `Value bonded` - How much KCENTS from the Stash account you want to bond/stake. Note that you do not need to bond all the KCENTS in that account. Also note that you can always bond more KCENTS later. However, withdrawing any bonded amount requires the duration of the un-bonding period.
+- `Controller account` - Select the Controller account created earlier. This account will also need a small amount of KCOINs in order to start and stop validating.
+- `Value bonded` - How much KCOINs from the Stash account you want to bond/stake. Note that you do not need to bond all the KCOINs in that account. Also note that you can always bond more KCOINs later. However, withdrawing any bonded amount requires the duration of the un-bonding period.
 - `Payment destination` - The account where the rewards from validating are sent. Payouts can go to any account. If you'd like to redirect payments to an account that is neither the controller nor the stash account, set one up. Note that it is extremely unsafe to set an exchange address as the recipient of your staking rewards.
 - Next, click `Bond` and sign the transaction with your `Stash account`. You should see an ExtrinsicSuccess message in about a minute.
 - Your bonded account will available under `Stashes`.
@@ -109,12 +106,13 @@ The output will have a hex-encoded `result` field. Save this result for a later 
 
 ## Submit a `setKeys` Transaction
 
-You need to tell Karmachain about your Session keys by signing and submitting an extrinsic. This is what associates your validator with your `Controller account`.
+You need to tell Karmachain about your Session keys by signing and submitting an extrinsic. This is what associates your validator with your stash account and your controller account.
 
-1. Navigate to `Staking > Account`. 
-2. Locate your `Stash account` in the list of stashes.
-3. Click the `Session Key` button. 
-4. Paste the hex string value of `result field` of the response for `author_rotateKeys`.
+1. Select `Staking` from the `Network` menu.
+2. Click on `Accounts` and select `All stashes`.
+3. Locate your `Stash account` in the list of stashes.
+4. Click the `Session Key` button. 
+5. Paste the hex string value of `result field` of the response for `author_rotateKeys`.
 
 For example, for this response:
 ```json
@@ -130,13 +128,11 @@ The value to copy and paste is `0xcc10239e1384fb33117f5121bb394c3290c87e2ec79d14
 
 ## Validating
 
-1. Select `Staking` from the main menu and click on `Accounts`. 
+1. Select `Staking` from the `Network` menu and click on `Accounts`. 
 
-2. You will see a list of active validators currently running on the network.
+2. Click on `All Stashes` and Locate your stash account in the list.
 
-3. Click on `All Stashes` and Locate your validator in the list.
-
-4. Click `Validate` for your validator to set up validation.
+3. Click `Validate` for your validator to set up validation.
 
 The `reward commission percentage` is the commission percentage that you can declare against your validator's rewards. This is the rate that your validator will be commissioned with.
 
@@ -146,14 +142,13 @@ You can also determine if you would like to receive nominations with the `allows
 
 ![validate](/testnet/validate.png)
 
-Click `Bond & Validate`.
+4. Click `Bond & Validate`.
 
-
-Click on `Waiting` and verify that your node is listed as waiting.
+5. Click on `Waiting` and verify that your node is listed as waiting.
 
 At the top of the page, The number of validator slots that are available is displayed as well as the number of nodes that have signaled their intention to be a validator.
 
-If your validator is not selected to become part of the validator set, it will remain in the waiting queue until it is. 
+If your validator is not selected to become part of the validator set, it will remain in the waiting queue until it is.
 
 There is no need to re-start your node if you are not selected for the validator set in a particular era.
 
