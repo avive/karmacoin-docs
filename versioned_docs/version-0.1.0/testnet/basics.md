@@ -17,6 +17,7 @@ You can use any substrate-compatible wallet but the easiest way to get started i
 ---
 
 ## Signing Up
+
 1. Go to `Developer` > `Extrinsics` and choose from drop down menu `identity` and `newUser`.
 
 ![newUserTx](/testnet/new-user-tx.png)
@@ -29,7 +30,21 @@ You can use any substrate-compatible wallet but the easiest way to get started i
 
 3. Click `Submit Transaction` to send the transaction. You should see an `ExtrinsicSuccess` message in few seconds.
 
-----
+---
+
+## Update user
+
+1. Go to `Developer` > `Extrnsics` and choose from drop down menu `identity` and `updateUser`.
+
+![updateUserTx](/testnet/update-user-tx.png)
+
+2. Enter update information
+You can choose to update username or phone number or both of them
+
+3. Click `Submit Transaction` to send the transaction. You should see an `ExtrinsicSuccess` message in few seconds.
+
+
+---
 
 ## Appreciate Someone
 
