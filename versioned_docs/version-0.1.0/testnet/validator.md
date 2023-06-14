@@ -45,7 +45,7 @@ Alternatively, you can clone the Karmachain open source Github repo and build a 
 1. Copy the command below to a text editor.
 
 ```bash
-sudo docker run --name karmachain-node --rm --mount source=chain-data,target=/chain-data -p 30333:30333 -p 9944:9944 -p 9933:9933 teamkarmacoin/karmachain:tn2 --base-path /chain-data --chain chain-spec/chainSpecTN2.json --port 30333 --ws-port 9944 --unsafe-ws-external --rpc-port 9933 --rpc-cors all --rpc-methods Unsafe --validator --name [YOUR_NODE_NAME] --bootnodes /dns/testnet.karmaco.in/tcp/30333/p2p/12D3KooWSFwns9MXoQStMhytZZso7cKfTTt3ivW2tEqBunfz9MZv
+sudo docker run --name karmachain-node --rm --mount source=chain-data,target=/chain-data -p 30333:30333 -p 9944:9944 -p 9933:9933 teamkarmacoin/karmachain:tn2 --base-path /chain-data --chain chain-spec/chainSpecTN2.json --port 30333 --ws-port 9944 --unsafe-ws-external --rpc-port 9933 --rpc-cors all --rpc-methods Unsafe --validator --name [YOUR_NODE_NAME] --bootnodes /dns/testnet.karmaco.in/tcp/30333/p2p/12D3KooWSFwns9MXoQStMhytZZso7cKfTTt3ivW2tEqBunfz9MZv --telemetry-url "wss://telemetry.polkadot.io/submit/ 0"
 ```
 
 2. Modify the command to set your node's name as the value of the `--name` flag.
