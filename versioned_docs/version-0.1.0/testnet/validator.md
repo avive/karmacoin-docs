@@ -70,7 +70,7 @@ Follow these steps to set up your validator.
 
 Bond coins in your `Stash account`. These coins will be used as stake for the security of the network and can be slashed. Make sure not to bond your entire coin balance since in that case you will be unable to pay transaction fees from your `Stash account`.
 
-- Access the testnet's web app on [polkadot.js](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftestnet.karmaco.in%2Ftestnet%2Fws#/explorer) and complete the steps below in it.
+- Access the testnet's web app on [testnet.karmaco.in](https://testnet.karmaco.in/#/explorer) and complete the steps below in it.
 
 - Go to the Staking section. Click on `Accounts`, and then the `+ Stash` button.
 
