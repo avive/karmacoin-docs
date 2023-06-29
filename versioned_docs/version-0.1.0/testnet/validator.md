@@ -42,7 +42,7 @@ The Karmachain TN2 node is available as a docker image on [DockerHub](https://hu
 
 Alternatively, you can clone the Karmachain open source Github repo and build a docker image directly from source code. To do so, git check out the code from the [release tag](https://github.com/karma-coin/karmachain/tree/v0.2.0), build a local docker image and modify the docker run command below to use your local image instead of the dockerhub one.
 
-1. Install docker for your platform of choice.
+1. Install `docker` for your platform.
 
 2. Copy the command below to a text editor.
 
