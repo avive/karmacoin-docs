@@ -35,10 +35,10 @@ Follow the instructions in this document to run your own a validator node on the
 Running a validator node requires [Docker](https://docs.docker.com/engine/install/).
 
 ## Read Testnet 2 Release Notes
-Read the latest [testnet reelase notes](https://github.com/karma-coin/karmachain/releases/tag/v0.2.0).
+Read the latest [testnet reelase notes](https://github.com/karma-coin/karmachain/releases/tag/v0.2.1).
 
 ## Run your node
-The Karmachain TN2 node is available as a docker image on [DockerHub](https://hub.docker.com/layers/teamkarmacoin/karmachain/tn2/images/sha256-1699534176816b184a62703b9af1ec105c99edf8667c5fde36abdb6da3ba9e5d?context=explore). 
+The Karmachain TN2 node is available as a docker image on [DockerHub](https://hub.docker.com/layers/teamkarmacoin/karmachain/tn2.1/images/sha256-3c32d0b0896b8c67eb0f3a7221cfc430432c33d5569fc8e05c0eaa07d49deaac?context=explore). 
 
 Alternatively, you can clone the Karmachain open source Github repo and build a docker image directly from source code. To do so, git check out the code from the [release tag](https://github.com/karma-coin/karmachain/tree/v0.2.0), build a local docker image and modify the docker run command below to use your local image instead of the dockerhub one.
 
