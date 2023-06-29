@@ -4,7 +4,7 @@ title: Running a Validator Node
 sidebar_label: 📜 Running a Node
 ---
 
-Follow the instructions in this document to run your own a validator node on the [karmachain 2.0 Testnet 2 (TN2)](https://github.com/karma-coin/karmachain/releases/tag/v0.2.0).
+Follow the instructions in this document to run your own a validator node on the [karmachain 2.0 Testnet 2.1 (TN2.1)](https://github.com/karma-coin/karmachain/releases/tag/v0.2.1).
 
 ## System Requirements
 - The specs posted below are not a hard requirement to run a validator, but are considered best practice.
