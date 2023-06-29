@@ -4,7 +4,7 @@ title: Running a Validator Node
 sidebar_label: 📜 Running a Node
 ---
 
-Follow the instructions in this document to run your own a validator node on the [karmachain 2.0 Testnet 2 (TN2)](https://github.com/karma-coin/karmachain/releases/tag/v0.2.0).
+Follow the instructions in this document to run your own a validator node on the [karmachain 2.0 Testnet 2.1 (TN2.1)](https://github.com/karma-coin/karmachain/releases/tag/v0.2.1).
 
 ## System Requirements
 - The specs posted below are not a hard requirement to run a validator, but are considered best practice.
@@ -45,7 +45,7 @@ Alternatively, you can clone the Karmachain open source Github repo and build a 
 1. Copy the command below to a text editor.
 
 ```bash
-sudo docker run --name karmachain-node --rm --mount source=chain-data,target=/chain-data -p 30333:30333 -p 9944:9944 -p 9933:9933 teamkarmacoin/karmachain:tn2 --base-path /chain-data --chain chain-spec/chainSpecTN2.json --port 30333 --ws-port 9944 --unsafe-ws-external --rpc-port 9933 --rpc-cors all --rpc-methods Unsafe --validator --name [YOUR_NODE_NAME] --bootnodes /dns/testnet.karmaco.in/tcp/30333/p2p/12D3KooWSFwns9MXoQStMhytZZso7cKfTTt3ivW2tEqBunfz9MZv --telemetry-url "wss://telemetry.polkadot.io/submit/ 0"
+sudo docker run --name karmachain-node --rm --mount source=chain-data,target=/chain-data -p 30333:30333 -p 9944:9944 -p 9933:9933 teamkarmacoin/karmachain:tn2.1 --base-path /chain-data --chain chain-spec/chainSpecTN2.json --port 30333 --ws-port 9944 --unsafe-ws-external --rpc-port 9933 --rpc-cors all --rpc-methods Unsafe --validator --name [YOUR_NODE_NAME] --bootnodes /dns/testnet.karmaco.in/tcp/30333/p2p/12D3KooWSy23WueyJtRB7K7XU3ugKHD9y41qBY2Bz8gFURtR5vVH --telemetry-url "wss://telemetry.polkadot.io/submit/ 0"
 ```
 
 2. Modify the command to set your node's name as the value of the `--name` flag.
