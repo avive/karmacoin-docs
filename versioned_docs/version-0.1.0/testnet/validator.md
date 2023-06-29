@@ -13,7 +13,7 @@ Follow the instructions in this document to run your own a validator node on the
 
 ### CPU
 - x86-64 compatible
-- Intel Ice Lake, or newer (Xeon or Core series). AMD Zen3, or newer (EPYC or Ryzen)
+- Intel Ice Lake, or newer (Xeon or Core series).
 - Minimum of 2 physical cores @ 3.4GHz. 4 cores recommended.
 - Simultaneous multithreading disabled (Hyper-Threading on Intel, SMT on AMD)
 - Prefer single-threaded performance over higher cores count
@@ -42,15 +42,17 @@ The Karmachain TN2 node is available as a docker image on [DockerHub](https://hu
 
 Alternatively, you can clone the Karmachain open source Github repo and build a docker image directly from source code. To do so, git check out the code from the [release tag](https://github.com/karma-coin/karmachain/tree/v0.2.0), build a local docker image and modify the docker run command below to use your local image instead of the dockerhub one.
 
-1. Copy the command below to a text editor.
+1. Install docker for your platform of choice.
+
+2. Copy the command below to a text editor.
 
 ```bash
 sudo docker run --name karmachain-node --rm --mount source=chain-data,target=/chain-data -p 30333:30333 -p 9944:9944 -p 9933:9933 teamkarmacoin/karmachain:tn2.1 --base-path /chain-data --chain chain-spec/chainSpecTN2.json --port 30333 --ws-port 9944 --unsafe-ws-external --rpc-port 9933 --rpc-cors all --rpc-methods Unsafe --validator --name [YOUR_NODE_NAME] --bootnodes /dns/testnet.karmaco.in/tcp/30333/p2p/12D3KooWSy23WueyJtRB7K7XU3ugKHD9y41qBY2Bz8gFURtR5vVH --telemetry-url "wss://telemetry.polkadot.io/submit/ 0"
 ```
 
-2. Modify the command to set your node's name as the value of the `--name` flag.
+3. Modify the command to set your node's name as the value of the `--name` flag.
 
-3. Run the modified command.
+4. Run the modified command.
 
 ### Create Accounts
 - To start validating, you need to create two accounts - a `Stash account` and a `Controller account`.
@@ -62,8 +64,8 @@ sudo docker run --name karmachain-node --rm --mount source=chain-data,target=/ch
 - Join the Karma Coin [Testnet Telegram Channel](https://t.me/karmacoinapp/293).
 - The basic accounting unit of Karmachain is `Karma Coin` (KCOIN). The minimum amount is one-millionth KCOIN which is 1 Karma Cent (KCENT). 1 KCENT is one Micro KCOIN.
 - The minimum testnet bonding amount is 1 KCOIN. We configured it in this way to make it easy to bond and validate.
-- Share the public address of you `Stash account` and request testnet KCOINs for your bond.
-- Keep most of your funds in the `Stash account` since it is meant to be the custodian of your staking funds and move some coins to your `Controller account` so you can pay transaction fees for transactions from this account.
+- Share the public address of you `Stash account` and of your `Controller Account` and request testnet KCOINs for your bond. Both account will be funded.
+- Keep most of your funds in the `Stash account` since it is meant to be the custodian of your staking funds and only keep some coins in your `Controller account` so you can pay transaction fees for transactions from this account.
 
 ## Bond Coins
 Follow these steps to set up your validator.
