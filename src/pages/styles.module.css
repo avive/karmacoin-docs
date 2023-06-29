@@ -201,6 +201,10 @@ blockquote h3:after {
     width: 300px;
 }
 
+.appStoreBadge {
+    width: 230px;
+}
+
 .mainText {
     display: flex;
     flex-direction: column;

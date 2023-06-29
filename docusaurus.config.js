@@ -88,13 +88,6 @@ module.exports = {
           to: '/karmachain',
         },
         {
-          position: 'left',
-          className: 'header-link',
-          label: 'AMA',
-          to: '/chat',
-        },
-
-        {
           type: 'search',
           position: 'right',
         },

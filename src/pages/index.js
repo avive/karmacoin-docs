@@ -21,7 +21,7 @@ function Home() {
             <div className={clsx(styles.subtitleBanner)}>The Karma Coin App is available for web and for mobile worldwide.</div>
             <div className={styles.buttons}>
                 <a href='https://apps.apple.com/app/karma-coin/id6446460911'>
-                    <img className={clsx(styles.playStoreBadge)} alt='Get it on the App Store'
+                    <img className={clsx(styles.appStoreBadge)} alt='Get it on the App Store'
                          src='app_store_badge.png'/>
                 </a>
 
@@ -29,7 +29,8 @@ function Home() {
                   <img className={clsx(styles.playStoreBadge)} alt='Get it on Google Play'
                        src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/>
               </a>
-
+            </div>
+            <div className={clsx(styles.subtitleBanner)}>
                 <Link className={clsx(
                     'button button--outline button--secondary button--lg'
                 )} target='_blank'
@@ -37,7 +38,6 @@ function Home() {
                     Launch Web App
                 </Link>
             </div>
-
         </div>
          <div className={clsx(styles.subtitleBanner)}>
               <iframe className={clsx(styles.titleBanner, styles.youtubeVideo)} src="https://www.youtube-nocookie.com/embed/videoseries?controls=0&amp;list=PLF4zx8ioKJTshuDCUO8nnRRnsX3_a1Z8l"
@@ -67,23 +67,6 @@ function Home() {
 
         <div className={clsx(styles.smallIconSection)}>
           <img className={clsx(styles.karmaIcon)} src={'logo_400x400.png'}/>
-        </div>
-
-        <p className={clsx(styles.titleBanner)}>The Karma Coin Mobile App</p>
-        <div className={clsx(styles.subtitleBanner)}>The App is not available yet in app stores. You can get the beta app via Testflight or via a direct download.</div>
-        <div className={styles.buttons}>
-          <Link className={clsx(
-              'button button--outline button--secondary button--lg'
-          )} target='_blank'
-                to='https://apple.co/3LUannD'>
-            Karma Coin for iPhone
-          </Link>
-          <Link className={clsx(
-              'button button--outline button--secondary button--lg'
-          )} target='_blank'
-                to='https://bit.ly/3FPWRxE'>
-            Karma Coin for Android
-          </Link>
         </div>
 
         {features && features.length > 0 && (

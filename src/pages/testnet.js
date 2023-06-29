@@ -9,24 +9,20 @@ export default function Testnet1Page() {
     const {siteConfig} = useDocusaurusContext();
     return (
         <Layout
-            title={`Karma Coin Testnet`}
-            description="Join our test">
+            title={`Karma Coin Mainent is Live!`}
+            description="Join our mainnet">
             <main>
                 <h1 className={clsx('text--center', styles.titleBanner, 'padding--sm')}>
-                    Karma Coin Testnet
+                    Karma Coin
                 </h1>
-                <h2 className={clsx('text--center', styles.subtitleBanner, 'padding--sm')}>
-                    Karma Coin is now running on Mainnet!
-                </h2>
-
                 <div className={clsx(styles.mainTextContainer)}>
                     <div className={clsx('row', styles.mainText)}>
                         <h2>Joining Karma Coin</h2>
                         <ul className={clsx(styles.mainBullets)}>
                             <li><b>Desktop</b> - run the <a href="https://app.karmaco.in">Karma Coin web app</a> in Chrome (Safari on macOS also works).</li>
+                            <li><b>iPhone</b> - Get the <a href="https://apps.apple.com/app/karma-coin/id6446460911">Karma Coin iPhone App from the App Store</a>, or run the <a href="https://app.karmaco.in">web app</a> in Chrome or Safari.</li>
                             <li><b>Android</b> - Get the <a href="https://play.google.com/store/apps/details?id=in.karmaco.app">Karma Coin Android App</a> (via Google Play Store), or run <a href="https://app.karmaco.in">the web app</a> in Chrome.</li>
-                            <li><b>iPhone</b> - native app via <a href="https://apple.co/3LUannD">Testflight</a>, or run the <a href="https://app.karmaco.in">web app</a> in Chrome or Safari.</li>
-                            <li><b>Apple silicon Mac</b> - You can run the app on your Mac via <a href="https://apple.co/3LUannD">Testflight</a>.</li>
+                            <li><b>Apple silicon Mac</b> - Get the app from the <a href="https://apps.apple.com/app/karma-coin/id6446460911">MacOS App Store</a>.</li>
                         </ul>
 
                         <div className={clsx(styles.center)}>
