@@ -118,7 +118,7 @@ Where
 - `received apprecitions(community)` is the count of community-specific appreciations sent by other users by another community member. Note that these include special traits assigned by the protocol in the community.
 - `sent_appreciations(community)` is the count of community-specific appreciations that the user has sent to other community members. e.g. an appreciation where the community id was specified.
 
-By community-specific appreciation we mean an appreciation that was sent by one community member to another community memmber in the Karma Coin App in the context of a specific community. Note that when a community manager appreciates someone and that person signs-up, it becomes a member of the community and the appreciation is also community-specific.
+By community-specific appreciation we mean an appreciation that was sent by one community member to another community member in the Karma Coin App in the context of a specific community. Note that when a community manager appreciates someone and that person signs-up, it becomes a member of the community and the appreciation is also community-specific.
 
 ---
 :::info License

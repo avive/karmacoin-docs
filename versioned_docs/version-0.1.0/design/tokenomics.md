@@ -84,11 +84,12 @@ Signup rewards are designed to solve the cryptocurrency on ramp problem. Upon si
 - The next 200 millions referees get a 1 KC reward when their referral signs up.
 
 ### Karma Rewards
-- Each month period, the protocol mints 10 KCs to up to 100 random users from the top 1,000 users with the highest Karma Score who didn't get this award yet who had appreciated at least 2 people in that time period.
+- Each month period, the protocol mints 10 KCs to up to 500 random users who had appreciated at least two times in that time period, and who didn't previously get this award.
+- The appreciation must be received by a Karma Coin user. Appreciations that are sent and not received by the receiver do not count for purposes of this reward.
 - Up to 300M KCs are allocated for this reward. When these have been allocated the protocol stops rewarding users with top karma.
 - Deterministic randomness is provided from Karmachain.
 - The rewards allocation continue monthly until the allocated amount has been distributed.
-- During the testnet, the params of these rewards will be different for testing purposes. e.g. every 1 day up to 10 random users from the top 100 users with the highest Karma Score who didn't get the reward get and who have appreaciated at least 1 people in the period.
+- During the testnet, the params of these rewards will be different for testing purposes. e.g. every 1 day up to 10 random users from the top 100 users with the highest Karma Score who didn't get the reward get and who have appreciated at least 1 people in the period.
 
 ### Cause Rewards
 - 225 millions KCs are allocated by the protocol to reward causes such as charities and non-profits.
