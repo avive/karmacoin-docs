@@ -54,9 +54,9 @@ Up to 375M KCs (15% of the supply) earned on Karmachain 1.0 as validation reward
 ---
 
 ## Validator Rewards
-- 500M KCs (20% of the supply) are allocated by the protocol to rewards the Karma Coin blockchain validators for providing security to the network for the first 20 years from genesis.
-- These are minting by the protocol using a standard exponential decay function which rewards validators that start validating early while still rewarding new validators that join the system over time. 
-- On the first month from genesis, the total validators rewards are 10M KCs, Lambda = 0.020036). 
+- 500M KCs (20% of the supply) are allocated by the protocol to reward the Karma Coin blockchain validators for providing security to the network for the first 20 years from genesis.
+- These are minted by the protocol using a standard exponential decay function which rewards validators that start validating early while still rewarding new validators that join the system over time. 
+- On the first month from genesis, the total validators' rewards are 10M KCs, Lambda = 0.020036). 
 - The issuance continues indefinitely using the same decay function. So on the second month from genesis, total rewards are 9.8M KCs and 9.6M on the third month and so on.
 - The expected rewards of a validator, depends on the amount of its staked Karma Coin. For example, if a validator has staked 2.5M KCs, and total active validators staking in a given month is 25M KCs, then the validator is expected to receive 10% of the total validators rewards for that period.
 - Additional details about the validators rewards issuance model, expevted total rewards since genesis, and the delay function are available [here](http://bit.ly/3SkmQlz).
@@ -74,13 +74,17 @@ Signup rewards are designed to solve the cryptocurrency on ramp problem. Upon si
 - A total of 300 million KCs is allocated by the protocol for signup rewards.
 - A user who gets this reward also gets the `Karma Rewards Winner` special appreciation.
 - The first 10 million users get 10 KCs on signup.
-- The next 200 millions user get 1 KC on signup. 
+- The next 200 millions users get 1 KC on signup. 
 - Users beyond the first 210 million users get a small reward of 1000 KCents on signup. This amounts to perpetual minting of 100 KCs for 1 million new users.
 
 ### Referral Rewards
-- A total of 300 million KCs is allocated by the protocol for referral rewards. Referral rewards are awarded to a users who appreciated someone who signed up as a result to Karma Coin.
-- A Karma Coin user can only get 1 referral reward.
-- The first 10 million referees get a 10 KCs reward when their referral signs up.
+- A total of 300 million KCs is allocated by the protocol for referral rewards. 
+- Referral rewards are awarded to users who appreciated someone who signed to Karma Coin up to 2 weeks after the appreciation was sent.
+- You refer a person by appreciating their phone number using the Karma Coin App.
+- You get a referral reward, when your appreciated person signs up on the Karma Coin.
+- You can get multiple referral rewards. One for each of your referrals.
+- The first 10,000 referees get a 100 Kcs reward when their referral signs up.
+- The next 9,900,000 referees get a 10 KCs reward when their referral signs up.
 - The next 200 millions referees get a 1 KC reward when their referral signs up.
 
 ### Karma Rewards
@@ -88,14 +92,14 @@ Signup rewards are designed to solve the cryptocurrency on ramp problem. Upon si
 - The appreciation must be received by a Karma Coin user. Appreciations that are sent and not received by the receiver do not count for purposes of this reward.
 - Up to 300M KCs are allocated for this reward. When these have been allocated the protocol stops rewarding users with top karma.
 - Deterministic randomness is provided from Karmachain.
-- The rewards allocation continue monthly until the allocated amount has been distributed.
-- During the testnet, the params of these rewards will be different for testing purposes. e.g. every 1 day up to 10 random users from the top 100 users with the highest Karma Score who didn't get the reward get and who have appreciated at least 1 people in the period.
+- The rewards allocation continues monthly until the allocated amount has been distributed.
+- During the testnet, the params of these rewards will be different for testing purposes. e.g. every 1 day up to 10 random users from the top 100 users with the highest Karma Score who didn't get the reward get and who have appreciated at least one person in the period.
 
 ### Cause Rewards
-- 225 millions KCs are allocated by the protocol to reward causes such as charities and non-profits.
+- 225 million KCs are allocated by the protocol to reward causes such as charities and nonprofits.
 - Causes are submitted by users to Karma Coin for inclusion. The submitted causes are vetted in a by team Karma Coin before being added to Karma Coin to ensure that only legitimate non-profits with a provable reputation and a charitable track record get on Karma Coin.
 - Karma Coin users discover approved causes in the Karma Coin App and can contribute to them via sending them appreciations.
-- Each month, for at the first 50 months from genesis, Up 10,000 KCs are distributed by the protocol for matching users charity contributions per month.
+- Each month, for the first 50 months from genesis, Up 10,000 KCs are distributed by the protocol for matching users charity contributions per month.
 - Up to 10 causes that got some funding in that calendar month via users appreciations that didn't get funding in the previous calendar month, are eligible for matching funding by the Karma Coin protocol.
 - The protocol matching funding amount to the 10 selected causes is determined by a **quadratic funding** algorithm, so more value is given to the number of contributors over the contribution amount. This encourages small contributions from more people over large contributions from a small group of whales.
 - People who support a cause are encouraged to have as many people contribute to it on Karma Coin in order to increase funding via matching.
@@ -105,7 +109,7 @@ Signup rewards are designed to solve the cryptocurrency on ramp problem. Upon si
 ### Transaction Fees Subsidies
 The protocol allocates up 250M KCs as transaction fees subsidies. Fees susedies are minted by the protocol for appreciation and payment transactions and are given to the Karma Coin blockchain block producers. When a subsidy is applied, the user who submitted the transaction doesn't pay the transaction fee from his own balance.
 - Only the first 10 transactions per user are eligible for transaction fees subsidies to mitigate spam attacks.
-- These intentional design decision is designed to encourage sign-ups, appreciation, and coin usage in the real-world as means of tipping, appreciation and payment. 
+- These intentional design decisions were made to encourage sign-ups, appreciation, and coin usage in the real-world as means of tipping, appreciation and payment. 
 - After the 250M KCs have been minted for fees subsidies, the protocol keeps minting 1 KCent for each transaction to subsidize the transaction fees of signup transactions. This is required to seamlessly onboard new users. This amounts to issuance of 1 KCs for 1 million new users, so it doesn't change the overall supply significantly in the long term.
 ---
 
