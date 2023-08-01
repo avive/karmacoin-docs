@@ -12,6 +12,10 @@
       ]
     },
     {
+      "type": "doc",
+      "id": "version-0.1.0/community/faq"
+    },
+    {
       "collapsed": true,
       "type": "category",
       "label": "📱 App",

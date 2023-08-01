@@ -1,7 +1,7 @@
 ---
 id: privacy
 title: Karma Coin Privacy
-sidebar_label: 🔒Privacy
+sidebar_label: 🔒 Privacy
 ---
 
 ## Karma Coin App Privacy Policy

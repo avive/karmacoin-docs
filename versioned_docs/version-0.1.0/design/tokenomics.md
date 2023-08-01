@@ -45,9 +45,9 @@ In the following years, after the first 20 years from Karmachain 2.0 genesis, th
 ## Genesis Minting
 There is no genesis minting for Karmachain 2.0. The only coin in existence at genesis time will be coins minted by Karmachain 1.0 protocol. These coins will be migrated over to the Karmachain 2.0 ledger on genesis time.
 
-Up to 625M KCs (25% of the supply) may be issued by the Karmachain 1.0 protocol, based on its utility to users.
+630M KCs (~25% of the supply) minted by the Karmachain 1.0 protocol, based on its utility to users as block rewards to validators. These coins will be migrated over to the Karmachain 2.0 ledger on genesis time.
 
-Up to 250M KCs (10% of the supply) of these coins will be sold to Karmachain 2.0 validators before Karmachain 2.0 genesis time, and will be staked by them in order to receive block producers and validators rewards on Karmachain 2.0.
+Up to 245M KCs (~10% of the supply) of these coins will be sold to Karmachain 2.0 validators before Karmachain 2.0 genesis time, and will be staked by them in order to receive block producers and validators rewards on Karmachain 2.0.
 
 Up to 375M KCs (15% of the supply) earned on Karmachain 1.0 as validation rewards will be used as the treasury of the Karma coin dev company.
 
@@ -70,7 +70,7 @@ The Karma Coin protocol tokenomics are designed to encourage usage and growth in
 1.375B KCs (55% of the supply) are distributed by the protocol and awarded to users to encourage sign-ups, usage as means of payment and appreciation. We call this Karma mining. Karma Mining includes the following coin issuance:
 
 ### Signup Rewards
-Signup rewards are designed to solve the cryptocurrency on ramp problem. Upon sign-up, the protocol mints a 1 KC reward to each new user with a verified mobile phone number. 
+Signup rewards are designed to solve the cryptocurrency on ramp problem. Upon sign-up, the protocol mints a 10 KC reward to each new user with a verified mobile phone number. 
 - A total of 300 million KCs is allocated by the protocol for signup rewards.
 - A user who gets this reward also gets the `Karma Rewards Winner` special appreciation.
 - The first 10 million users get 10 KCs on signup.

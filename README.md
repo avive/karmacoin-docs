@@ -28,6 +28,10 @@ This command starts a local development server and open up a browser window. Mos
 ## Build
 
 ```console
+export NODE_OPTIONS=--openssl-legacy-provider
+```
+
+```console
 yarn build
 ```
 
