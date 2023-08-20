@@ -111,6 +111,13 @@ The protocol allocates up 250M KCs as transaction fees subsidies. Fees susedies 
 - Only the first 10 transactions per user are eligible for transaction fees subsidies to mitigate spam attacks.
 - These intentional design decisions were made to encourage sign-ups, appreciation, and coin usage in the real-world as means of tipping, appreciation and payment. 
 - After the 250M KCs have been minted for fees subsidies, the protocol keeps minting 1 KCent for each transaction to subsidize the transaction fees of signup transactions. This is required to seamlessly onboard new users. This amounts to issuance of 1 KCs for 1 million new users, so it doesn't change the overall supply significantly in the long term.
+
+### Account Deletion 
+User may delete his account at any time by submitting a delete account transaction. 
+- This transaction will cause deletion of all user data from the chain besides a tombstone of user's phone number hash that is needed to avoid multiple signup rewards on a future sign-up with the same phone number. 
+- The account balance at deletion time will be transferred to a community treasury account. 
+- If a user signs up again later using a phone number that was already used previously for a deleted account, then user's will not get any signup reward and its balance after signup will be 0 KC. In this case, the user will need to fund its account from another account in order to pay, tip or appreciate again.
+
 ---
 
 ## Protocol Minting Summary

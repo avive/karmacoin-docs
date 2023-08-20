@@ -22,6 +22,10 @@
       "items": [
         {
           "type": "doc",
+          "id": "version-0.1.0/app/v2.0-preview"
+        },
+        {
+          "type": "doc",
           "id": "version-0.1.0/app/release-notes"
         }
       ]
