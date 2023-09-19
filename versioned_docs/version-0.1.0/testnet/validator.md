@@ -47,7 +47,7 @@ Alternatively, you can clone the Karmachain open source Github repo and build a 
 2. Copy the command below to a text editor.
 
 ```bash
-sudo docker run --name karmachain-node --rm --mount source=chain-data,target=/chain-data -p 30333:30333 -p 9944:9944 -p 9933:9933 teamkarmacoin/karmachain:tn2.1 --base-path /chain-data --chain chain-spec/chainSpecTN2.json --port 30333 --ws-port 9944 --unsafe-ws-external --rpc-port 9933 --rpc-cors all --rpc-methods Unsafe --validator --name [YOUR_NODE_NAME] --bootnodes /dns/testnet.karmaco.in/tcp/30333/p2p/12D3KooWSy23WueyJtRB7K7XU3ugKHD9y41qBY2Bz8gFURtR5vVH --telemetry-url "wss://telemetry.polkadot.io/submit/ 0"
+sudo docker run --name karmachain-node --mount source=chain-data,target=/chain-data -p 30333:30333 -p 9944:9944 -p 9933:9933 teamkarmacoin/karmachain:tn3 --base-path /chain-data --chain chain-spec/chainSpecTN3.json --port 30333 --unsafe-rpc-external --rpc-port 9933 --rpc-cors all --rpc-methods unsafe --validator --name [YOUR_NODE_NAME] --bootnodes /dns/testnet.karmaco.in/tcp/30333/p2p/12D3KooWB5eiS1wVVNZcmUbrhPAzJwse4ri57zBeaELKEzd1gDSm --telemetry-url "wss://telemetry.polkadot.io/submit/ 0"
 ```
 
 3. Modify the command to set your node's name as the value of the `--name` flag.
@@ -55,17 +55,15 @@ sudo docker run --name karmachain-node --rm --mount source=chain-data,target=/ch
 4. Run the modified command.
 
 ### Create Accounts
-- To start validating, you need to create two accounts - a `Stash account` and a `Controller account`.
+- To start validating, you need to create a `Stash account`.
 - The `Stash account` is where you keep most of your coins. It is the custodian of your staking funds.
-- The `Controller account` is used to start and stop validation.
-- You can use any Substrate-compatible wallet to create these accounts. We recommend using the [polkadot.js extension](https://chrome.google.com/webstore/detail/polkadot%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd). Reffer to this guide [Create an Account using Polkadot JS Extension](https://www.youtube.com/watch?v=sy7lvAqyzkY) for more information about using the extension.
+- You can use any Substrate-compatible wallet to create these accounts. We recommend using the [polkadot.js extension](https://chrome.google.com/webstore/detail/polkadot%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd). Refer to this guide [Create an Account using Polkadot JS Extension](https://www.youtube.com/watch?v=sy7lvAqyzkY) for more information about using the extension.
 
 ## Request Testnet Coins
 - Join the Karma Coin [Testnet Telegram Channel](https://t.me/karmacoinapp/293).
 - The basic accounting unit of Karmachain is `Karma Coin` (KCOIN). The minimum amount is one-millionth KCOIN which is 1 Karma Cent (KCENT). 1 KCENT is one Micro KCOIN.
 - The minimum testnet bonding amount is 1 KCOIN. We configured it in this way to make it easy to bond and validate.
-- Share the public address of you `Stash account` and of your `Controller Account` and request testnet KCOINs for your bond. Both account will be funded.
-- Keep most of your funds in the `Stash account` since it is meant to be the custodian of your staking funds and only keep some coins in your `Controller account` so you can pay transaction fees for transactions from this account.
+- Share the public address of you `Stash account` and request testnet KCOINs for your bond.
 
 ## Bond Coins
 Follow these steps to set up your validator.
@@ -79,7 +77,6 @@ Bond coins in your `Stash account`. These coins will be used as stake for the se
   ![bond](/testnet/bond.png)
 
 - `Stash account` - Select your Stash account. Make sure that your `Stash account` contains at least this much. You can, of course, stake more than this.
-- `Controller account` - Select the Controller account created earlier. This account will also need a small amount of KCOINs in order to start and stop validating.
 - `Value bonded` - How much KCOINs from the Stash account you want to bond/stake. Note that you do not need to bond all the KCOINs in that account. Also note that you can always bond more KCOINs later. However, withdrawing any bonded amount requires the duration of the un-bonding period.
 - `Payment destination` - The account where the rewards from validating are sent. Payouts can go to any account. If you'd like to redirect payments to an account that is neither the controller nor the stash account, set one up. Note that it is extremely unsafe to set an exchange address as the recipient of your staking rewards.
 - Next, click `Bond` and sign the transaction with your `Stash account`. You should see an ExtrinsicSuccess message in about a minute.
