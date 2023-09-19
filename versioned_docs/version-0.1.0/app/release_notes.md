@@ -5,6 +5,12 @@ sidebar_label: Release Notes
 ---
 
 
+## Version 1.2.9
+- 🚛 🥂 Shipped Aug, 2023 for Web, iOS, Android.
+- Uses new WhatsApp verification. No more SMS verification hell.
+- Bug fixes and optimizations.
+
+---
 ## Version 1.1.0
 # Karma Coin App Release Notes
 - 🚛 🥂 Shipped April 21st, 2023.

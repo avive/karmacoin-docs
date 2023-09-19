@@ -1,14 +1,14 @@
 ---
 id: faq
 title: Validators FAQ
-sidebar_label: FAQ
+sidebar_label: Validators FAQ
 ---
 
 ### What is Karma Coin?
 Karma Coin is a new cryptocurrency designed for appreciation, tipping and communities.
 
 ### What is the Karma Coin Blockchain?
-The Karma Coin blockchain is a permission-less Proof-of-Stake based blockchain that maintains Karma Coins balances and transactions. The Karma Coin blockchain is called Karmachain. `Karmachain 1.0` permissioned mainnet launched 4/21/23. `Karmachain` 2.0 is permisionless and is built using the Substrate blockchain Rust framework. Testnet 1 was launched 5/23/23. Testnet 2 launch is planned for June 23 and mainnet for December 23.
+The Karma Coin blockchain is a permission-less Proof-of-Stake based blockchain that maintains Karma Coins balances and transactions. The Karma Coin blockchain is called Karmachain. `Karmachain 1.0` permissioned mainnet launched 4/21/23. `Karmachain` 2.0 is permisionless and is built using the Substrate blockchain Rust framework. Testnet 1 was launched onn 5/23/23. Testnet 2 was launched on 6/23/23 and we are almost code complete on Testnet 2 which is close to mainnet functionality.
 
 ### What is a validator?
 A validator is an organization that participates in the Karma Coin consensus protocol and is responsible for blocks authoring and blocks finalization on Karmachain 2.0.
@@ -32,7 +32,10 @@ To become a validator you need to purchase a Karma Coins stake from the Karma Co
 You need to purchase Karma Coins from the Karma Coin development company. Contact us for more information.
 
 ### What is the minimum staking amount?
-The minimum staking amount required to become a validator on Karmachain 2.0 mainnet is 500,000 Karma Coins.
+The minimum staking amount required to become a validator on Karmachain 2.0 mainnet is 500,000 Karma Coins. You can also validate using as little as 1 Karma Coin via our upcoming delegation pools functionality. Additional info on how to join a delegation pool directly from the Karma Coin App is going to be published soon.
+
+### What are delegation pools?
+Delegation pools are an on-chain delegation capability that allows anyone with a small amount of Karma Coins to join a pool that nominates a validation and gets validation rewards for the staked coins.
 
 ### What is a validator genesis partner?
 A validator genesis partner is an organization that commits to become a validator in Q4 2023 and purchases at least the minimum amount of Karma Coins stake required for validation by Q3 2023.
@@ -41,7 +44,7 @@ A validator genesis partner is an organization that commits to become a validato
 Karma Coin is currently priced at $0.02 USD per 1 Karma Coin.
 
 ### Can stake be delegated to another validator?
-Yes, Karma Coin supports on-chain stake delegation.
+Yes, Karma Coin supports on-chain stake delegation as well as delegation pools.
 
 ### How many validators are supported?
 Karmachain 2.0 supports to 1,000 validators.

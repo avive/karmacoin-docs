@@ -4,7 +4,7 @@ title: Running a Validator Node
 sidebar_label: 📜 Running a Node
 ---
 
-Follow the instructions in this document to run your own a validator node on the [karmachain 2.0 Testnet 2 (TN2)](https://github.com/karma-coin/karmachain/releases/tag/v0.2.0).
+Follow the instructions in this document to run your own a validator node on the [karmachain 2.0 Testnet 2.1 (TN2.1)](https://github.com/karma-coin/karmachain/releases/tag/v0.2.1).
 
 ## System Requirements
 - The specs posted below are not a hard requirement to run a validator, but are considered best practice.
@@ -13,7 +13,7 @@ Follow the instructions in this document to run your own a validator node on the
 
 ### CPU
 - x86-64 compatible
-- Intel Ice Lake, or newer (Xeon or Core series). AMD Zen3, or newer (EPYC or Ryzen)
+- Intel Ice Lake, or newer (Xeon or Core series).
 - Minimum of 2 physical cores @ 3.4GHz. 4 cores recommended.
 - Simultaneous multithreading disabled (Hyper-Threading on Intel, SMT on AMD)
 - Prefer single-threaded performance over higher cores count
@@ -35,22 +35,24 @@ Follow the instructions in this document to run your own a validator node on the
 Running a validator node requires [Docker](https://docs.docker.com/engine/install/).
 
 ## Read Testnet 2 Release Notes
-Read the latest [testnet reelase notes](https://github.com/karma-coin/karmachain/releases/tag/v0.2.0).
+Read the latest [testnet reelase notes](https://github.com/karma-coin/karmachain/releases/tag/v0.2.1).
 
 ## Run your node
-The Karmachain TN2 node is available as a docker image on [DockerHub](https://hub.docker.com/layers/teamkarmacoin/karmachain/tn2/images/sha256-1699534176816b184a62703b9af1ec105c99edf8667c5fde36abdb6da3ba9e5d?context=explore). 
+The Karmachain TN2 node is available as a docker image on [DockerHub](https://hub.docker.com/layers/teamkarmacoin/karmachain/tn2.1/images/sha256-3c32d0b0896b8c67eb0f3a7221cfc430432c33d5569fc8e05c0eaa07d49deaac?context=explore). 
 
 Alternatively, you can clone the Karmachain open source Github repo and build a docker image directly from source code. To do so, git check out the code from the [release tag](https://github.com/karma-coin/karmachain/tree/v0.2.0), build a local docker image and modify the docker run command below to use your local image instead of the dockerhub one.
 
-1. Copy the command below to a text editor.
+1. Install `docker` for your platform.
+
+2. Copy the command below to a text editor.
 
 ```bash
 sudo docker run --name karmachain-node --mount source=chain-data,target=/chain-data -p 30333:30333 -p 9944:9944 -p 9933:9933 teamkarmacoin/karmachain:tn3 --base-path /chain-data --chain chain-spec/chainSpecTN3.json --port 30333 --unsafe-rpc-external --rpc-port 9933 --rpc-cors all --rpc-methods unsafe --validator --name [YOUR_NODE_NAME] --bootnodes /dns/testnet.karmaco.in/tcp/30333/p2p/12D3KooWB5eiS1wVVNZcmUbrhPAzJwse4ri57zBeaELKEzd1gDSm --telemetry-url "wss://telemetry.polkadot.io/submit/ 0"
 ```
 
-2. Modify the command to set your node's name as the value of the `--name` flag.
+3. Modify the command to set your node's name as the value of the `--name` flag.
 
-3. Run the modified command.
+4. Run the modified command.
 
 ### Create Accounts
 - To start validating, you need to create a `Stash account`.
@@ -68,7 +70,7 @@ Follow these steps to set up your validator.
 
 Bond coins in your `Stash account`. These coins will be used as stake for the security of the network and can be slashed. Make sure not to bond your entire coin balance since in that case you will be unable to pay transaction fees from your `Stash account`.
 
-- Access the testnet's web app on [polkadot.js](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftestnet.karmaco.in%2Ftestnet%2Fws#/explorer) and complete the steps below in it.
+- Access the testnet's web app on [testnet.karmaco.in](https://testnet.karmaco.in/#/explorer) and complete the steps below in it.
 
 - Go to the Staking section. Click on `Accounts`, and then the `+ Stash` button.
 

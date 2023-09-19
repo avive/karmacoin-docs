@@ -88,13 +88,6 @@ module.exports = {
           to: '/karmachain',
         },
         {
-          position: 'left',
-          className: 'header-link',
-          label: 'AMA',
-          to: '/chat',
-        },
-
-        {
           type: 'search',
           position: 'right',
         },
@@ -107,6 +100,18 @@ module.exports = {
           title: 'Community',
           items: [
             {
+              label: 'Telegram',
+              href: 'https://t.me/+YDBZLJNknFM4YTE0',
+            },
+            {
+              label: 'Twitter',
+              href: 'https://twitter.com/TeamKarmaCoin',
+            },
+            {
+              label: 'Blog',
+              href: 'https://connect.karmaco.in/',
+            },
+            {
               label: 'Discord',
               href: 'http://bit.ly/3z9fvNe',
             },
@@ -114,23 +119,15 @@ module.exports = {
               label: 'LinkedIn',
               href: 'https://www.linkedin.com/company/karmacoin',
             },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/TeamKarmaCoin',
-            },
-            {
-              label: 'Telegram',
-              href: 'https://t.me/+YDBZLJNknFM4YTE0',
-            },
-            {
-              label: 'Blog',
-              href: 'https://connect.karmaco.in/',
-            },
           ],
         },
         {
           title: 'Docs',
           items: [
+            {
+              label: 'FAQ',
+              href: '/docs/faq',
+            },
             {
               label: 'Getting Started',
               href: '/docs',
@@ -142,7 +139,7 @@ module.exports = {
             {
               label: 'For Communities',
               href: '/communities',
-            },
+            }
           ],
         },
         {

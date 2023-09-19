@@ -1,7 +1,7 @@
 ---
 id: privacy
 title: Karma Coin Privacy
-sidebar_label: 🔒Privacy
+sidebar_label: 🔒 Privacy
 ---
 
 ## Karma Coin App Privacy Policy
@@ -20,4 +20,8 @@ By using the Karma Coin App you agree that your user account data, and your inco
 ## Karma Coin App Terms of Service
 By signing up to the Karma Coin App you agree to share your mobile phone number on the public Karma Coin blockchain and are visible to anyone and you agree that your Karma Coin balance, Karma Score and your incoming and outgoing payments and appreciations are stored on the public Karma Coin blockchain and are visible to anyone.
 
+By providing Karma Coin with your email address you agree to receive communications from Karma Coin about the app and the project. Karma Coin does share your email address with any third party.
+
 By sending an appreciation or a payment transaction you agree to share receiver's mobile phone number on the Karma Coin blockchain and are visible to anyone.
+
+
