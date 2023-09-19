@@ -57,7 +57,7 @@ sudo docker run --name karmachain-node --mount source=chain-data,target=/chain-d
 ### Create Accounts
 - To start validating, you need to create a `Stash account`.
 - The `Stash account` is where you keep most of your coins. It is the custodian of your staking funds.
-- You can use any Substrate-compatible wallet to create these accounts. We recommend using the [polkadot.js extension](https://chrome.google.com/webstore/detail/polkadot%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd). Reffer to this guide [Create an Account using Polkadot JS Extension](https://www.youtube.com/watch?v=sy7lvAqyzkY) for more information about using the extension.
+- You can use any Substrate-compatible wallet to create these accounts. We recommend using the [polkadot.js extension](https://chrome.google.com/webstore/detail/polkadot%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd). Refer to this guide [Create an Account using Polkadot JS Extension](https://www.youtube.com/watch?v=sy7lvAqyzkY) for more information about using the extension.
 
 ## Request Testnet Coins
 - Join the Karma Coin [Testnet Telegram Channel](https://t.me/karmacoinapp/293).
