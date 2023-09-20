@@ -1,7 +1,7 @@
 ---
-id: tn3-parameters
+id: tn3
 title: Karmachain 2.0 Testnet 3
-sidebar_label: ⚙️ Testnet 3
+sidebar_label: 🌎 Testnet 3
 description: Learn about common testnet parameters
 keywords: [parameters, testnet3, tn3, on-chain]
 ---
