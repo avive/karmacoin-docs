@@ -1,6 +1,6 @@
 ---
 id: nominator
-title: Become a nominator
+title: Become a Nominator
 sidebar_label: 🙋‍♂️ Nomination
 ---
 
@@ -10,7 +10,7 @@ While the validators are active participants in the network that engage in the b
 
 If you are a beginner, please watch the [video](https://www.youtube.com/watch?v=F59N3YKYCRs) below for detailed instructions.
 
-### Create Accounts
+## Create Accounts
 - To start validating, you need to create a `Stash account`.
 - The `Stash account` is where you keep most of your coins. It is the custodian of your staking funds.
 - You can use any Substrate-compatible wallet to create these accounts. We recommend using the [polkadot.js extension](https://chrome.google.com/webstore/detail/polkadot%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd). Refer to this guide [Create an Account using Polkadot JS Extension](https://www.youtube.com/watch?v=sy7lvAqyzkY) for more information about using the extension.

@@ -1,6 +1,6 @@
 ---
 id: tn3-parameters
-title: Karmachain 3.0 Testnet 3 Parameters
+title: Karmachain 2.0 Testnet 3
 sidebar_label: ⚙️ Testnet 3
 description: Learn about common testnet parameters
 keywords: [parameters, testnet3, tn3, on-chain]
@@ -15,14 +15,12 @@ keywords: [parameters, testnet3, tn3, on-chain]
 
 | Term    | Time       | Slots\* |
 | ------- | ---------- | ------- |
-| Slot    | 6 seconds  | 1       |
-| Epoch   | 4 hour     | 1200    |
-| Session | 4 hour     | 1200    |
-| Era     | 24 hours   | 7_200   |
+| Slot    | 12 seconds | 1       |
+| Epoch   | 4 hours    | 1,200   |
+| Session | 4 hours    | 1,200   |
+| Era     | 24 hours   | 7,200   |
 
-\*_A maximum of one block per slot can be in a canonical chain. Occasionally, a slot will be without
-a block in the chain. Thus, the times given are *estimates*. See
-[Consensus](https://guide.kusama.network/docs/learn-consensus) for more details.
+\*_A maximum of one block per slot can be in a canonical chain. Occasionally, a slot will be without a block in the chain. Thus, the times given are *estimates*. See [Consensus](https://guide.kusama.network/docs/learn-consensus) for more details._
 
 ### Accounts, Identity and Crowdloans
 
@@ -35,9 +33,9 @@ A maximum of 100 validators can be nominated by a nominator on Karmachain.
 
 | Karmachain           | Time    | Slots   | Description                                                                                                                                                                                       |
 | -------------------- | ------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Term duration        | 24 hours | 7_200   | The time for which a validator is in the set after being elected. Note, this duration can be shortened in the case the a validator misbehaves.                                                    |
-| Nomination period    | 24 hours | 7_200   | How often a new validator set is [elected](https://guide.kusama.network/docs/learn-phragmen.md).                                                                                                                          |
-| Bonding duration     | 24 hours  | 7_200 | How long until your funds will be transferrable after unbonding. Note that the bonding duration is defined in eras, not directly by slots.                                                        |
+| Term duration        | 24 hours | 7,200   | The time for which a validator is in the set after being elected. Note, this duration can be shortened in the case the a validator misbehaves.                                                    |
+| Nomination period    | 24 hours | 7,200   | How often a new validator set is [elected](https://guide.kusama.network/docs/learn-phragmen.md).                                                                                                                          |
+| Bonding duration     | 24 hours  | 7,200 | How long until your funds will be transferrable after unbonding. Note that the bonding duration is defined in eras, not directly by slots.                                                        |
 
 ### Rewards
 
