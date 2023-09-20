@@ -8,12 +8,12 @@ keywords: [parameters, testnet3, tn3, on-chain]
 
 ### Periods of common actions and attributes
 
-- Slot: 12 seconds \*(generally one block per slot, although see note below)
-- Epoch: 4 hour (1200 slots x 12 seconds)
-- Session: 4 hour (6 sessions per Era)
-- Era: 24 hours (7200 slots x 12 seconds)
+- Slot: 12 seconds. One block is epxected per slot.
+- Epoch: 4 hours (1,200 slots x 12 seconds).
+- Session: 4 hours (6 sessions per Era).
+- Era: 24 hours (7,200 slots x 12 seconds).
 
-| Kusama  | Time       | Slots\* |
+| Term    | Time       | Slots\* |
 | ------- | ---------- | ------- |
 | Slot    | 6 seconds  | 1       |
 | Epoch   | 4 hour     | 1200    |
@@ -22,12 +22,12 @@ keywords: [parameters, testnet3, tn3, on-chain]
 
 \*_A maximum of one block per slot can be in a canonical chain. Occasionally, a slot will be without
 a block in the chain. Thus, the times given are *estimates*. See
-[Consensus](https://guide.kusama.network/docs/learn-consensus) for more details._
+[Consensus](https://guide.kusama.network/docs/learn-consensus) for more details.
 
 ### Accounts, Identity and Crowdloans
 
-- The [Existential Deposit](https://guide.kusama.network/docs/learn-accounts.md#existential-deposit-and-reaping) is 100 KCents
-- No deposit required to set an Identity
+- The [Existential Deposit](https://guide.kusama.network/docs/learn-accounts.md#existential-deposit-and-reaping) is 100 KCents.
+- No deposit required to set an Identity.
 
 ### Staking, Validating, and Nominating
 

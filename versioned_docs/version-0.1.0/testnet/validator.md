@@ -7,13 +7,13 @@ sidebar_label: ⛓️ Validation
 Follow the instructions in this document to run your own a validator node on the [karmachain 3.0 Testnet 3 (TN3)](https://github.com/karma-coin/karmachain/releases/tag/v0.3.0).
 
 ## System Requirements
-- The specs posted below are not a hard requirement to run a validator, but are considered best practice.
+- The specs below are not a hard requirement to run a validator, but are considered best practice.
 - Running a validator is a responsible task. Using professional hardware is a must.
 - The most common way for a beginner to run a validator is on a cloud server running Linux. You may choose whatever VPS provider that your prefer. As for OS it is best to use a recent Debian-based Linux (Debian or Ubuntu).
 
 ### CPU
 - x86-64 compatible
-- Intel Ice Lake, or newer (Xeon or Core series).
+- Intel Ice Lake, or newer (Xeon or Core series)
 - Minimum of 2 physical cores @ 3.4GHz. 4 cores recommended.
 - Simultaneous multithreading disabled (Hyper-Threading on Intel, SMT on AMD)
 - Prefer single-threaded performance over higher cores count
@@ -35,7 +35,7 @@ Follow the instructions in this document to run your own a validator node on the
 Running a validator node requires [Docker](https://docs.docker.com/engine/install/).
 
 ## Read Testnet 3 Release Notes
-Read the latest [testnet release notes](https://github.com/karma-coin/karmachain/releases/tag/v0.3.0).
+Read the latest [testnet release](https://github.com/karma-coin/karmachain/releases/tag/v0.3.0).
 
 ## Run your node
 The Karmachain TN3 node is available as a docker image on [DockerHub](https://hub.docker.com/layers/teamkarmacoin/karmachain/tn3/images/sha256-3c32d0b0896b8c67eb0f3a7221cfc430432c33d5569fc8e05c0eaa07d49deaac?context=explore). 
@@ -65,10 +65,10 @@ sudo docker run --name karmachain-node --mount source=chain-data,target=/chain-d
 - The minimum testnet bonding amount is 1 KCOIN. We configured it in this way to make it easy to bond and validate.
 - Share the public address of you `Stash account` and request testnet KCOINs for your bond.
 
-## Bond Coins
+## Bond Karma Coins
 Follow these steps to set up your validator.
 
-Bond coins in your `Stash account`. These coins will be used as stake for the security of the network and can be slashed. Make sure not to bond your entire coin balance since in that case you will be unable to pay transaction fees from your `Stash account`.
+- Bond coins in your `Stash account`. These coins will be used as stake for the security of the network and can be slashed. Make sure not to bond your entire coin balance since in that case you will be unable to pay transaction fees from your `Stash account`.
 
 - Access the testnet's web app on [testnet.karmaco.in](https://testnet.karmaco.in/#/explorer) and complete the steps below in it.
 
@@ -133,7 +133,7 @@ The value to copy and paste is `0xcc10239e1384fb33117f5121bb394c3290c87e2ec79d14
 
 3. Click `Validate` for your validator to set up validation.
 
-The `reward commission percentage` is the commission percentage that you can declare against your validator's rewards. This is the rate that your validator will be commissioned with.
+The `Reward commission percentage` is the commission percentage that you can declare against your validator's rewards. This is the rate that your validator will be commissioned with.
 
 `Payment preferences` - You can specify the percentage of the rewards that will get paid to you. The remaining will be split among your nominators.
 
