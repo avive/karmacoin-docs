@@ -34,7 +34,7 @@ A maximum of 100 validators can be nominated by a nominator on Karmachain.
 | Karmachain           | Time    | Slots   | Description                                                                                                                                                                                       |
 | -------------------- | ------- | ------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Term duration        | 24 hours | 7,200   | The time for which a validator is in the set after being elected. Note, this duration can be shortened in the case the a validator misbehaves.                                                    |
-| Nomination period    | 24 hours | 7,200   | How often a new validator set is [elected](https://guide.kusama.network/docs/learn-phragmen.md).                                                                                                                          |
+| Nomination period    | 24 hours | 7,200   | How often a new validator set is [elected](https://guide.kusama.network/docs/learn-phragmenmd).                                                                                                                          |
 | Bonding duration     | 24 hours  | 7,200 | How long until your funds will be transferrable after unbonding. Note that the bonding duration is defined in eras, not directly by slots.                                                        |
 
 ### Rewards

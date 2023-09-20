@@ -4,7 +4,7 @@ title: Running a Validator Node
 sidebar_label: ⛓️ Validation
 ---
 
-Follow the instructions in this document to run your own a validator node on the [karmachain 3.0 Testnet 3 (TN3)](https://github.com/karma-coin/karmachain/releases/tag/v0.3.0).
+Follow the instructions in this document to run your own a validator node on the [karmachain 2.0 Testnet 3 (TN3)](https://github.com/karma-coin/karmachain/releases/tag/v0.3.0).
 
 ## System Requirements
 - The specs below are not a hard requirement to run a validator, but are considered best practice.
@@ -14,7 +14,7 @@ Follow the instructions in this document to run your own a validator node on the
 ### CPU
 - x86-64 compatible
 - Intel Ice Lake, or newer (Xeon or Core series)
-- Minimum of 2 physical cores @ 3.4GHz. 4 cores recommended.
+- Minimum of 2 physical cores @ 3.4GHz. 4 cores recommended
 - Simultaneous multithreading disabled (Hyper-Threading on Intel, SMT on AMD)
 - Prefer single-threaded performance over higher cores count
 - An NVMe SSD of 500 GB (As it should be reasonably sized to deal with blockchain growth)
@@ -26,8 +26,8 @@ Follow the instructions in this document to run your own a validator node on the
 - Linux Kernel 5.16 or newer
 
 ### Network
-- Minimum symmetric networking speed of 500 Mbit/s (62.5 MB/s)
-- Make sure your system is configured to run NTP to sync its local time
+- Minimum symmetric networking speed of 500 Mbit/s (62.5 MB/s).
+- Make sure your system is configured to run NTP to sync its local time.
 
 ---
 
