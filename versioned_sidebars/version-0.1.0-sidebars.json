@@ -34,18 +34,18 @@
       "collapsed": true,
       "type": "category",
       "label": "🌆 Testnet",
-      "items": [
-        {
-          "type": "doc",
-          "id": "version-0.1.0/testnet/basics"
-        },
+      "items": [       
         {
           "type": "doc",
           "id": "version-0.1.0/testnet/validator"
         },
         {
           "type": "doc",
-          "id": "version-0.1.0/testnet/tn2-parameters"
+          "id": "version-0.1.0/testnet/nominator"
+        },
+        {
+          "type": "doc",
+          "id": "version-0.1.0/testnet/tn3-parameters"
         }
       ]
     },

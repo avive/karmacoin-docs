@@ -1,7 +1,7 @@
 ---
 id: nominator
 title: Become a nominator
-sidebar_label: 📜 Become a nominator
+sidebar_label: 🙋‍♂️ Nomination
 ---
 
 Nominators are one type of participant in the staking subsystem of Polkadot. They appoint their stake to the validators, the second type of participant. By appointing their stake, they can elect the active set of validators and share in the rewards that are paid out.

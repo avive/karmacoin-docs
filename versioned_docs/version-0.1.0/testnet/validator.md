@@ -1,7 +1,7 @@
 ---
 id: validator
 title: Running a Validator Node
-sidebar_label: 📜 Running a Node
+sidebar_label: ⛓️ Validation
 ---
 
 Follow the instructions in this document to run your own a validator node on the [karmachain 3.0 Testnet 3 (TN3)](https://github.com/karma-coin/karmachain/releases/tag/v0.3.0).
