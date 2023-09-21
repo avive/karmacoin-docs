@@ -47,7 +47,7 @@ Alternatively, you can clone the Karmachain open source Github repo and build a 
 2. Copy the command below to a text editor.
 
 ```bash
-sudo docker run --name karmachain-node --mount source=chain-data,target=/chain-data -p 30333:30333 -p 9944:9944 -p 9933:9933 teamkarmacoin/karmachain:tn3 --base-path /chain-data --chain chain-spec/chainSpecTN3.json --port 30333 --unsafe-rpc-external --rpc-port 9933 --rpc-cors all --rpc-methods unsafe --validator --name [YOUR_NODE_NAME] --bootnodes /dns/testnet.karmaco.in/tcp/30333/p2p/12D3KooWB5eiS1wVVNZcmUbrhPAzJwse4ri57zBeaELKEzd1gDSm --telemetry-url "wss://telemetry.polkadot.io/submit/ 0"
+sudo docker run --name karmachain-node --mount source=chain-data,target=/chain-data -p 30333:30333 -p 9944:9944 -p 9933:9933 teamkarmacoin/karmachain:tn3 --base-path /chain-data --chain chain-spec/chainSpecTN3.json --port 30333 --unsafe-rpc-external --rpc-port 9933 --rpc-cors all --rpc-methods unsafe --validator --name [YOUR_NODE_NAME] --bootnodes /dns/testnet.karmaco.in/tcp/30333/p2p/12D3KooWF6sxqSYcgm2LTATwVWgnzTaZrf4zkJwskdAfFa9Crq2t --telemetry-url "wss://telemetry.polkadot.io/submit/ 0"
 ```
 
 3. Modify the command to set your node's name as the value of the `--name` flag.
@@ -98,7 +98,7 @@ sudo chmod a+x /usr/local/bin/websocat
 Run this command on the same machine that runs your validator node. Ensure that the node is running with the WS RPC port set to 9944.
 
 ```bash
-echo '{"id":1,"jsonrpc":"2.0","method":"author_rotateKeys","params":[]}' | websocat -n1 -B 99999999 ws://127.0.0.1:9944
+echo '{"id":1,"jsonrpc":"2.0","method":"author_rotateKeys","params":[]}' | websocat -n1 -B 99999999 ws://127.0.0.1:9933
 ```
 
 The output will have a hex-encoded `result` field. Save this result for a later step.
