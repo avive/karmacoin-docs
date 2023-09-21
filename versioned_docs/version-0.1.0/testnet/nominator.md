@@ -1,12 +1,12 @@
 ---
 id: nominator
-title: Become a nominator
-sidebar_label: 📜 Become a nominator
+title: Become a Nominator
+sidebar_label: 🙋‍♂️ Nomination
 ---
 
 Nominators are one type of participant in the staking subsystem of Polkadot. They appoint their stake to the validators, the second type of participant. By appointing their stake, they can elect the active set of validators and share in the rewards that are paid out.
 
-While the validators are active participants in the network that engage in the block production and finality mechanisms, nominators take a slightly more passive role. Being a nominator does not require running a node of your own or worrying about online uptime. However, a good nominator performs due diligence on the validators that they elect. When looking for validators to nominate, a nominator should pay attention to their own reward percentage for nominating a specific validator - as well as the risk that they bear of being slashed if the validator gets slashed.
+While the validators are active participants in the network that engage in the block production and finality mechanisms, nominators take a slightly more passive role. Being a nominator does not require running a node of your own or worrying about online uptime. However, a good nominator performs due-diligence on the validators that they elect. When looking for validators to nominate, a nominator should pay attention to their own reward percentage for nominating a specific validator - as well as the risk that they bear of being slashed if the validator gets slashed.
 
 If you are a beginner, please watch the [video](https://www.youtube.com/watch?v=F59N3YKYCRs) below for detailed instructions.
 
