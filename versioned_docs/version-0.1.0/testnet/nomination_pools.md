@@ -50,3 +50,9 @@ Now you can return to pool tab (`Network` > `Staking` > `Pools`) and see that yo
 6. After unbonding period pass, on the same page click on the three dots near your account and choose `Withdraw unbonded`.
 7. Submit transaction, and funds will be returned to your account.
 
+## Claim payout
+
+1. Go to `Network` > `Staking` tab.
+2. Then switch to `Accounts` tab and select `Pooled`.
+3. Here you can find your account, and your earnings under `claimable` column.
+4. To claim your earnings click on the three dots near your account and choose `Withdraw claimable`.
