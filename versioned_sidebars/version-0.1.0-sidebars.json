@@ -38,6 +38,10 @@
         {        
           "type": "doc",
           "id": "version-0.1.0/testnet/tn3"
+        },        
+        {
+          "type": "doc",
+          "id": "version-0.1.0/testnet/mining-pools"
         },
         {
           "type": "doc",
