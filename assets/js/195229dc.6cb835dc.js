@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkKarmaCoin=self.webpackChunkKarmaCoin||[]).push([[2780],{3769:a=>{a.exports=JSON.parse('{"name":"docusaurus-plugin-content-docs","id":"default"}')}}]);

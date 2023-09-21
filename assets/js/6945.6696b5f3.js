@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkKarmaCoin=self.webpackChunkKarmaCoin||[]).push([[6945],{6945:(a,e,s)=>{s.r(e)}}]);

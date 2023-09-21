@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkKarmaCoin=self.webpackChunkKarmaCoin||[]).push([[5608],{7085:a=>{a.exports=JSON.parse('{"name":"docusaurus-theme-search-algolia","id":"default"}')}}]);
