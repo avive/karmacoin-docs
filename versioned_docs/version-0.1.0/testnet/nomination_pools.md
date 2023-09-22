@@ -5,14 +5,17 @@ sidebar_label: 👨‍👩‍👧‍👦 Mining Pools
 ---
 
 ## Overview
-Mining pools empowers Karma Coin users to pool together Karma Coins to nominate one ore more Karmachain 2.0 validators, and to earn validation rewards awarded to the validators. 
+Mining pools empowers Karma Coin users to pool together Karma Coins to nominate one ore more Karmachain validators, and to earn a portion of the validation rewards awarded to the validators.
 
-Mining Pools exist on Karmachain and are therefore more secure than off-chain 3rd party pools. Users don't need to trust pool owners promises not to steal their coins from the pool. Karmachain enforces the security of users pool coins.
+### Mining Pools are On-chain
+Mining Pools exist on Karmachain and are therefore more secure than off-chain 3rd party pools. 
+Users don't need to trust pool owners promises not to steal their coins from the pool. Karmachain enforces the security of users' pool coins.
 
+### Mining Pools are Permissionless
 Mining pools can be created anynone without anyone's permission as long as the user stakes the minimum amount required to create a pool. 
+Mining pools can be joined by anyone without anyon'es persmission as long as the joiner staktes the minimum amount required to join a pool.
 
 This guide is designed for users who want to setup and make available mining pools to the Karma Coin users community.
-
 Note that operating a pool requires monitoring validators performance and changing validators nominated by the pool based on validators performance.
 
 ## Creating the Pool's Owner Account
@@ -63,8 +66,16 @@ You should see your pool in the pools list including pool id, description and th
 
 Note: you can only be creator or member of one pool at a time. So, if you previously created or join a pool with your account then you need to delete it or leave it before creating a new one.
 
-## Set Commision and update pool roles
+---
+
+
+## Set Pool Commision and update pool roles
+
+Pool commision is a percentage of pool's earning that pool creator gets for maintaining the pool and nominating validators on behalf of the pool.
+It can be in the range of 0% to 100% of pool's earnins. Follow these steps to set the pool's commision.
+
 TODO: write this.
+
 
 ## Nominate validators
 
