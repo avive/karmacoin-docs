@@ -164,3 +164,25 @@ To change pool roles follow these steps:
 1. Go to `Developer` > `Extrinsics` tab.
 2. Choose `nominationPools` and `updateRoles`. Enter your pool id, and choose the roles you want to set/remove.
 3. Submit transaction using your pool owner account.
+
+---
+
+## Destroying a pool
+
+Once pool owner decide no longer to support the pool, he should destroy the pool. To do this firstly owner should change pool state to `Destroying`:
+
+1. Go to `Developer` > `Extrinsics` tab.
+2. Choose `nominationPools` and `setState`. Enter your pool id, and choose `Destroying` state.
+3. Submit transaction using your pool owner account.
+
+Now owner should wait to all users leave pool by unbonding their funds or unbond their funds by itself. After that pool should be chilled:
+
+1. Go to `Developer` > `Extrinsics` tab.
+2. Choose `nominationPools` and `chill`. Enter your pool id.
+3. Submit transaction using your pool owner account.
+
+After pool chilled owner can unbond his funds and destroy the pool completely:
+
+1. Go to `Developer` > `Extrinsics` tab.
+2. Choose `nominationPools` and `unbond`. Enter your pool id and enter your bond amount including 6 decimals
+3. Submit transaction using your pool owner account.
