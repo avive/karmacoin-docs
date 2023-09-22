@@ -20,19 +20,20 @@ Mining pools can be joined by anyone without anyon'es persmission as long as the
 This guide is designed for users who want to setup and make available mining pools to the Karma Coin users community.
 Note that operating a pool requires monitoring validators performance and changing validators nominated by the pool based on validators performance.
 
+---
 
-## Creating the Pool's Owner Account
+## Creating Pool's Owner Account
 You can create a new Karmachain account in the polkadot.js browser extension or import an account created in the Karma Coin App to the extension.
 You need to have sufficient funds in your accounts to create the pool's intial bond. In Testnet 3 the bond's minumum amount is 5 Karma Coins.
 
-### Option 1 - Import a Karma Coin account
+### Option 1 - Import from Karma Coin App
 1. Open the `polkadot.js browser externsion` in your web browser.
 2. Click on the '+' button and select `import account from pre-existing seed`. 
 3. Paste your account backup words that you copied from the Karma Coin App.
 4. Choose the Karma Coin network for the account. e.g. `Karmachain TN3` for a testnet pool or `Karmachain Mainnet` for a mainnet pool.
 5. Enter account description and set password.
 
-### Option 2 - Create a new account
+### Option 2 - Create a New Account
 1. Open the `polkadot.js browser externsion` in your web browser.
 2. Click the '+' icon and select `Create new account`.
 3. Choose the Karma Coin network for the account. e.g. `Karmachain TN3` for a testnet pool or `Karmachain Mainnet` for a mainnet pool.
@@ -43,7 +44,7 @@ You need to have sufficient funds in your accounts to create the pool's intial b
 
 ## Creating a pool
 
-### Create your Pool Web Page
+### Pool's Web Page
 Create a web page for your pool such as a social media page or a linktree page.  This page will be reviewed by Karma Coin users when considering which pool to join. 
 - Add information abot your pool and about the pool's owner to this page.
 - Figure out the commision fee you are asking for maintaining the pool and add this information to the page.
@@ -51,9 +52,9 @@ Create a web page for your pool such as a social media page or a linktree page. 
 - Add the web page's friendly url to the pool's description.
 
 
-### Create your Pool
+### Creating a Pool
 
-Follow the steps below to create a pool using the web UI avaialble at [https://testnet.karmaco.in/#/explorer]((https://testnet.karmaco.in/#/explorer).
+Follow the steps below to create a pool using the web UI avaialble at [https://testnet.karmaco.in/#/explorer](https://testnet.karmaco.in/#/explorer).
 
 1. Go to `Network` > `Staking` tab.
 2. Switch to `Pools` tab.
@@ -70,7 +71,7 @@ Note: you can only be creator or member of one pool at a time. So, if you previo
 
 ---
 
-## Set Pool Commision
+## Setting Commision
 
 Pool commision is a percentage of pool's earning that pool creator gets for maintaining the pool and nominating validators on behalf of the pool.
 It can be in the range of 0% to 100% of pool's earnins. Follow these steps to set the pool's commision.
@@ -79,7 +80,8 @@ TODO: write this.
 
 ---
 
-## Nominate Validators
+## Nominating Validators
+Validators are nominated by the pool and the pool shares their validation rewards.
 
 1. Go to `Network` > `Staking` tab.
 2. Then switch to `Overview` tab.
@@ -92,7 +94,7 @@ Now you can return to pool tab (`Network` > `Staking` > `Pools`) and see that yo
 
 --- 
 
-## Join a Pool
+## Joining a Pool
 
 You can only be a mebmer of one pool at a time. You can't join a pool while still an owner or a member of another pool.
 
@@ -106,7 +108,7 @@ Note: you can also join a pool from the Karma Coin App.
 
 ---
 
-## Leave a Pool
+## Leaving a Pool
 
 1. Go to `Network` > `Staking` tab.
 2. Then switch to `Accounts` tab and select `Pooled`.
@@ -118,7 +120,7 @@ Note: you can also join a pool from the Karma Coin App.
 
 ---
 
-## Claim Pool Payout
+## Claiming Pool Payout
 
 1. Go to `Network` > `Staking` tab.
 2. Then switch to `Accounts` tab and select `Pooled`.
