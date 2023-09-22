@@ -93,7 +93,7 @@ Commission change rate allow to restrict how much commission can be changed at o
 2. Choose `nominationPools` and `setCommisionChangeRate`. Enter your pool id, commission change rate and commission change delay. Commission change rate is set in `Perbill` format, that means to set commission change rate equal to 10% you need to enter 100000. And commission change delay is set in number of blocks.
 3. Submit transaction using your pool owner account.
 
-### Setting commission
+### Setting commission and beneficiary
 
 1. Go to `Developer` > `Extrinsics` tab.
 2. Choose `nominationPools` and `setCommision`. Enter your pool id, commission and beneficiary account. Commission is set in `Perbill` format, that means to set commission equal to 10% you need to enter 100000.
@@ -147,3 +147,20 @@ Note: you can also join a pool from the Karma Coin App.
 2. Then switch to `Accounts` tab and select `Pooled`.
 3. Here you can find your account, and your earnings under `claimable` column.
 4. To claim your earnings click on the three dots near your account and choose `Withdraw claimable`.
+
+---
+
+## Pool roles
+
+Pool have 4 roles:
+
+1. Depositor - creates the pool and is the initial member. They can only leave the pool once all other members have left. Once they fully leave, the pool is destroyed.
+2. Root - can change the nominator, bouncer, or itself and can perform any of the actions the nominator or bouncer can and also manage commission.
+3. Nominator - can select which validators the pool nominates.
+4. Bouncer - can change the pools state and kick members if the pool is blocked.
+
+To change pool roles follow these steps:
+
+1. Go to `Developer` > `Extrinsics` tab.
+2. Choose `nominationPools` and `updateRoles`. Enter your pool id, and choose the roles you want to set/remove.
+3. Submit transaction using your pool owner account.
