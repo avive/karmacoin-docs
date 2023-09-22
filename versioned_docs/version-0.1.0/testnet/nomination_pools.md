@@ -15,20 +15,38 @@ This guide is designed for users who want to setup and make available mining poo
 
 Note that operating a pool requires monitoring validators performance and changing validators nominated by the pool based on validators performance.
 
-# Creating a pool
+## Creating the Pool's Owner Account
+You can create a new Karmachain account in the polkadot.js browser extension or import an account created in the Karma Coin App to the extension.
+You need to have sufficient funds in your accounts to create the pool's intial bond. In Testnet 3 the bond's minumum amount is 5 Karma Coins.
 
-## Create a pool owner account
-1. Create a user account using the Karma Coin App.
-2. Set up a web page, a social media page, or a Linktree page for your pool to provide information about it.
-3. Set the social url of your account to your pool's web page. This enables users to learn more about your pool when considering which pool to join. To set the url tap `Set Profile Social Link` in the app's main menu.
-4. Export your account's `backup words` from the app, write them down on a paper and store it in a safe place with your other important documents. To access the backwords, tap `Backup Account` from the app's main menu.
-5. Make sure your account has sufficient funds to post the `minimum pool creation bond amount`. On Testnet 3 this is 5 Karma Coins.
-6. Open the `polkadot.js browser externsion` in your web browser.
-7. Click on the '+' button and select `import account from pre-existing seed`. Paste your account backup words and choose to use it with a Karma Coin network. e.g. `Karmachain TN3` for a testnet pool or `Karmachain Mainnet` for a mainnet pool.
-8. Set the account's name to describe your pool. e.g. '[pool-name] owenr account' and set a password to enahance your account's security. 
+### Option 1 - Import a Karma Coin account
+1. Open the `polkadot.js browser externsion` in your web browser.
+2. Click on the '+' button and select `import account from pre-existing seed`. 
+3. Paste your account backup words that you copied from the Karma Coin App.
+4. Choose the Karma Coin network for the account. e.g. `Karmachain TN3` for a testnet pool or `Karmachain Mainnet` for a mainnet pool.
+5. Enter account description and set password.
+
+### Option 2 - Create a new account
+1. Open the `polkadot.js browser externsion` in your web browser.
+2. Click the '+' icon and select `Create new account`.
+3. Choose the Karma Coin network for the account. e.g. `Karmachain TN3` for a testnet pool or `Karmachain Mainnet` for a mainnet pool.
+4. Write down the account security words to paper and store it with your important documents.
+5. Enter account description and set password.
+
+---
+
+## Creating a pool
+
+### Create Pool's Web Page
+- Create a web page for your pool such as a social media page or a linktree page. 
+- This page will be reviewed by Karma Coin users when considering which pool to join.
+- Add information abot your pool and about the pool's owner to this page.
+- Figure out the commision fee you are asking for maintaining the pool and add this information to the page.
+- Explain the reasons for your requested commision fee.
+- Copy the page friendly url.
 
 
-## Create the pool
+### Creater Pool
 
 Follow the steps below to create a pool using the web UI avaialble [https://testnet.karmaco.in/#/explorer]((https://testnet.karmaco.in/#/explorer).
 
@@ -37,7 +55,7 @@ Follow the steps below to create a pool using the web UI avaialble [https://test
 3. Click the `Add Pool` button.
 4. `create pool from`` - Use your pool account your.
 5. `initial value` - Set your initial bond amount (5 Karma Coins or more for Testnet 3) 
-6. `description` - enter a short description of your pool or a social media url for your pool
+6. `description` - paste the friendly url of your pool's webpage.
 7. Click `create` to create the pool.
 
 Note the pool id - this is the unqiue identifier for your new pool.
