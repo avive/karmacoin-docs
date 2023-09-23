@@ -61,7 +61,8 @@ To verify that your node is running, view the logs of your node obtain the conta
 - The `Stash account` is where you keep most of your coins. It is the custodian of your staking funds.
 - The `Controller account` is an account designed to perform various validation-related transactions.
 
-Security note. On mainnet, for increased security, you want to set up your `Stash Account` as a cold wallet. Meaning, its private key should not be stored on your computer. Your controller acccount can be a hot-wallet with private key on your computer. For testnet, you can have both account private keys in your hot wallet. On Testnet, you can may skip the controller account creation step and use your stash account as your controller.
+> Security note. 
+On mainnet, for increased security, you want to set up your `Stash Account` as a cold wallet. Meaning, its private key should not be stored on your computer. Your controller acccount can be a hot-wallet with private key on your computer. For testnet, you can have both account private keys in your hot wallet. On Testnet, you can may skip the controller account creation step and use your stash account as your controller.
 
 - You can use any Substrate-compatible wallet to create these accounts. We recommend using the [polkadot.js extension](https://chrome.google.com/webstore/detail/polkadot%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd). Refer to this guide [Create an Account using Polkadot JS Extension](https://www.youtube.com/watch?v=sy7lvAqyzkY) for more information about using the extension.
 
