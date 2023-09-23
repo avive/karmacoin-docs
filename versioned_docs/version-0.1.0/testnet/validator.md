@@ -54,9 +54,15 @@ sudo docker run --name karmachain-node --mount source=chain-data,target=/chain-d
 
 4. Run the modified command.
 
+To verify that your node is running, view the logs of your node obtain the container id by running `sudo docker ps` and run `sudo docker logs NODE-CONTAINER-ID -f`. If your node is correctly set up then you should see blocks syncing via the logs.
+
 ### Create Accounts
-- To start validating, you need to create a `Stash account`.
+- To start validating, you should create a `Stash account` and a `Controller account`.
 - The `Stash account` is where you keep most of your coins. It is the custodian of your staking funds.
+- The `Controller account` is an account designed to perform various validation-related transactions.
+
+Security note. On mainnet, for increased security, you want to set up your `Stash Account` as a cold wallet. Meaning, its private key should not be stored on your computer. Your controller acccount can be a hot-wallet with private key on your computer. For testnet, you can have both account private keys in your hot wallet. On Testnet, you can may skip the controller account creation step and use your stash account as your controller.
+
 - You can use any Substrate-compatible wallet to create these accounts. We recommend using the [polkadot.js extension](https://chrome.google.com/webstore/detail/polkadot%7Bjs%7D-extension/mopnmbcafieddcagagdcbnhejhlodfdd). Refer to this guide [Create an Account using Polkadot JS Extension](https://www.youtube.com/watch?v=sy7lvAqyzkY) for more information about using the extension.
 
 ## Request Testnet Coins
@@ -64,11 +70,18 @@ sudo docker run --name karmachain-node --mount source=chain-data,target=/chain-d
 - The basic accounting unit of Karmachain is `Karma Coin` (KCOIN). The minimum amount is one-millionth KCOIN which is 1 Karma Cent (KCENT). 1 KCENT is one Micro KCOIN.
 - The minimum testnet bonding amount is 1 KCOIN. We configured it in this way to make it easy to bond and validate.
 - Share the public address of you `Stash account` and request testnet KCOINs for your bond.
+- You will receive 1 million testnet Karma Coins which is sufficient to post the validation bond and additional smaller bonds.
+- Once you received some funds, transfer some of them to your `Controller account`.
 
 ## Bond Karma Coins
 Follow these steps to set up your validator.
 
-- Bond coins in your `Stash account`. These coins will be used as stake for the security of the network and can be slashed. Make sure not to bond your entire coin balance since in that case you will be unable to pay transaction fees from your `Stash account`.
+- Bond coins in your `Stash account`. These coins will be used as stake for the security of the network and can be slashed. 
+
+- Make sure not to bond your entire coin balance since in that case you will be unable to pay transaction fees from your `Stash account`.
+
+- Make sure that your bond amount must be equal or greater than the minimum validation amount. For testnets, this is 500,000 Karma Coins.
+
 
 - Access the testnet's web app on [testnet.karmaco.in](https://testnet.karmaco.in/#/explorer) and complete the steps below in it.
 
@@ -78,6 +91,7 @@ Follow these steps to set up your validator.
 
 - `Stash account` - Select your Stash account. Make sure that your `Stash account` contains at least this much. You can, of course, stake more than this.
 - `Value bonded` - How much KCOINs from the Stash account you want to bond/stake. Note that you do not need to bond all the KCOINs in that account. Also note that you can always bond more KCOINs later. However, withdrawing any bonded amount requires the duration of the un-bonding period.
+- `Controller account` - Select yhour controller account.
 - `Payment destination` - The account where the rewards from validating are sent. Payouts can go to any account. If you'd like to redirect payments to an account that is neither the controller nor the stash account, set one up. Note that it is extremely unsafe to set an exchange address as the recipient of your staking rewards.
 - Next, click `Bond` and sign the transaction with your `Stash account`. You should see an ExtrinsicSuccess message in about a minute.
 - Your bonded account will available under `Stashes`.
