@@ -5,7 +5,8 @@ sidebar_label: 👨‍👩‍👧‍👦 Mining Pools
 ---
 
 ## Overview
-Mining pools empowers Karma Coin users to pool together Karma Coins to nominate one or more Karmachain validators, and to earn a portion of the validation rewards awarded to Karmachain validators. Karma Coin users use the Karma Coin App to join a pool and to claim rewards. 
+Mining pools is a unique feature of Karma Coin.
+Mining pools empower Karma Coin users to pool together Karma Coins to nominate one or more Karmachain validators, and to earn a portion of the validation rewards awarded to Karmachain validators. Karma Coin users use the Karma Coin App to join a pool and to claim rewards. 
 
 Pools creators and maintainers use the more advanced web UI to create pools and to perform pool-related operations.
 
@@ -17,44 +18,48 @@ Users don't need to trust pool owners promises not to steal their coins from the
 Mining pools can be created anyone without anyone's permission as long as the user stakes the minimum amount required to create a pool. 
 Mining pools can be joined by anyone without anyone's permission as long as the joiner stakes the minimum amount required to join a pool.
 
-This guide is designed for users who want to setup and make available mining pools to the Karma Coin users community.
-Note that operating a pool requires monitoring validators performance and changing validators nominated by the pool based on validators performance.
+This guide is for users who want to setup and make available mining pools to the Karma Coin users community.
+Note that operating a pool requires monitoring Karmachain validators performance and changing validators nominated by the pool based on validators performance.
 
 ---
 
-## Creating Pool's Owner Account
-You can create a new Karmachain account in the polkadot.js browser extension or import an account created in the Karma Coin App to the extension.
-You need to have sufficient funds in your accounts to create the pool's initial bond. In Testnet 3 the bond's minimum amount is 5 Karma Coins.
+## Step 1 - Create Pool Owner
+Before creating a pool, you need to create a new Karma Coin account for its owner. 
+You can create a new account in the `polkadot.js browser extension` or import an account you created in the `Karma Coin App`` to the extension. 
+
+> You need to have sufficient funds in the pool owner account to create the pool's initial bond. In Testnet 3 the bond's minimum amount is 5 Karma Coins.
 
 ### Option 1 - Import from Karma Coin App
 1. Open the `polkadot.js browser externsion` in your web browser.
-2. Click on the '+' button and select `import account from pre-existing seed`. 
-3. Paste your account backup words that you copied from the Karma Coin App.
-4. Choose the Karma Coin network for the account. e.g. `Karmachain TN3` for a testnet pool or `Karmachain Mainnet` for a mainnet pool.
-5. Enter account description and set password.
+2. Click on the `+`` button and select `import account from a pre-existing seed`. 
+3. Tap `backup account`` from the app's main menu to display your account backup words.
+4. Write down the account security words to paper and store it with your important documents.
+5. Paste your account backup words in the `existing 12 word mnemonmic seed` text box.
+6. Choose the Karma Coin network for the account in the `network` dropdown. e.g. `Karmachain TN3` for a testnet, or `Karmachain Mainnet` for mainnet.
+7. Enter account description and set password.
 
 ### Option 2 - Create a New Account
 1. Open the `polkadot.js browser externsion` in your web browser.
 2. Click the '+' icon and select `Create new account`.
-3. Choose the Karma Coin network for the account. e.g. `Karmachain TN3` for a testnet pool or `Karmachain Mainnet` for a mainnet pool.
+3. Choose the Karma Coin network for the account. e.g. `Karmachain TN3` for a testnet, or `Karmachain Mainnet` for a mainnet.
 4. Write down the account security words to paper and store it with your important documents.
 5. Enter account description and set password.
 
 ---
 
-## Creating a pool
+## Step 2 - Create your pool's website
 
-### Pool's Web Page
-Create a web page for your pool such as a social media page or a linktree page.  This page will be reviewed by Karma Coin users when considering which pool to join. 
+Create a web page for your pool such as a social media page or a linktree page.
+This page will be reviewed by Karma Coin users when considering which pool to join. 
 - Add information about your pool and about the pool's owner to this page.
 - Figure out the commission fee you are asking for maintaining the pool and add this information to the page.
 - Explain the reasons for your requested commission fee.
 - Add the web page's friendly URL to the pool's description.
 
 
-### Creating a Pool
+## Step 3 - Create a New Pool
 
-Follow the steps below to create a pool using the web UI available at [https://testnet.karmaco.in/#/explorer](https://testnet.karmaco.in/#/explorer).
+Follow the steps below to create a pool using the Karmachain web UI available at [https://testnet.karmaco.in/#/explorer](https://testnet.karmaco.in/#/explorer).
 
 1. Go to `Network` > `Staking` tab.
 2. Switch to `Pools` tab.
@@ -64,56 +69,120 @@ Follow the steps below to create a pool using the web UI available at [https://t
 6. `description` - paste the friendly URL of your pool's web page.
 7. Click `create` to create the pool.
 
-Note the pool id - this is the unique identifier for your new pool.
-You should see your pool in the pools list including pool id, description and the current pool roles.
+Note the new pool's id - this is the unique identifier for your new pool.
+You should see your pool in the pools list including its pool id, description and the current pool roles.
 
 Note: you can only be creator or member of one pool at a time. So, if you previously created or join a pool with your account then you need to delete it or leave it before creating a new one.
 
 ---
 
-## Setting Commission
+## Step 4 - Set Commission
 
-Pool commission is a percentage of pool's earning that pool creator gets for maintaining the pool and nominating validators on behalf of the pool.
-It can be in the range of 0% to 100% of pool's earnings. Follow these steps to set the pool's commission.
+Pool commission is a percentage of pool's earning that a `beneficiary accounts` gets for maintaining the pool and for nominating validators on behalf of the pool. It can be in the range of 0% to 100% of the pool's earnings. 
 
-### Setting max commission
-
-Max commission is the maximum commission that the pool owner can set. Can not be removed once set, and can only be set to more
-restrictive values i.e. a lower max commission.
+### Setting Commission and Beneficiary
 
 1. Go to `Developer` > `Extrinsics` tab.
-2. Choose `nominationPools` and `setCommisionMax`. Enter your pool id and max commission. Commission is set in `Perbill` format, that means to set commission equal to 10% you need to enter 100000.
-3. Submit transaction using your pool owner account.
+2. Choose `nominationPools` and `setCommision`. Enter your `pool id`, `commission` and `beneficiary` account address.  Note that Commission is set in `Perbill` units where 100% is 1 billion. This means that to set commission of 1% you enter 10,000,000. Beneficiary can be any Karma Coin account such as pool creator account. The beneficiary account is the account that the pool's commission will be sent to.
+3. Submit the transaction using your `pool owner account`.
 
-### Setting commission change rate
+## Step 5 - Nominate Pool Validators
+One or more validators are nominated by the pool and the pool gets a back percentage their validation rewards. 
+These rewards are distributed as earnings to pool members. 
+A pool will have no earnings unless its nominated validators earn validaton rewards for seucring Karmachain.
 
-Commission change rate allow to restrict how much commission can be changed at once and how often it can be changed.
-
-1. Go to `Developer` > `Extrinsics` tab.
-2. Choose `nominationPools` and `setCommisionChangeRate`. Enter your pool id, commission change rate and commission change delay. Commission change rate is set in `Perbill` format, that means to set commission change rate equal to 10% you need to enter 100000. And commission change delay is set in number of blocks.
-3. Submit transaction using your pool owner account.
-
-### Setting commission and beneficiary
-
-1. Go to `Developer` > `Extrinsics` tab.
-2. Choose `nominationPools` and `setCommision`. Enter your pool id, commission and beneficiary account. Commission is set in `Perbill` format, that means to set commission equal to 10% you need to enter 100000.
-3. Submit transaction using your pool owner account.
-
----
-
-## Nominating Validators
-Validators are nominated by the pool and the pool shares their validation rewards.
 
 1. Go to `Network` > `Staking` tab.
 2. Then switch to `Overview` tab.
 3. Choose validators that you want to nominate, copy their account addresses.
 4. Go to `Developer` > `Extrinsics` tab.
-5. Choose `nominationPools` and `nominate`. Enter your pool id and add the validators addresses.
-6. Submit transaction using your pool owner account.
+5. Choose `nominationPools` and `nominate`. 
+6. Enter your pool id 
+7. Add one ore more validators account addresses.
+8. Submit transaction using your pool owner account.
 
 Now you can return to pool tab (`Network` > `Staking` > `Pools`) and see that your pool has nominees.
 
+-----
+
+## Optional Pool Configuration
+
+### Changing Nominators
+TODO: write this
+---
+
+
+### Setting Max Commission
+
+Max commission is the maximum commission that the pool owner can set. Once set, it can't be removed, and can only be set to a lower value. So for example, if a pool's max commision is 20% then the pool creator will never be able to set it to more than 25%.
+
+1. Go to `Developer` > `Extrinsics` tab.
+2. Choose `nominationPools` and `setCommisionMax`. Enter your pool id and max commission. Commission is set in `Perbill` (Parts per billion units where 100% is 1,000,000,000). This means that to set commission of 20% you need to enter 200,000,000.
+3. Submit transaction using your `pool owner account`.
+
+---
+
+### Setting Commission Change Rate
+
+Commission change rate allow's pool creator to restrict how much commission can be changed at a time, and how often can it be changed.
+So for example, setting change rate of 1% in 1,000 blocks means that the commision rate can't change in more than 1% in 1,000 blocks times the expected block time.
+
+1. Go to `Developer` > `Extrinsics` tab.
+2. Choose `nominationPools` and `setCommisionChangeRate`. Enter your pool id, commission change rate and commission change delay. Commission change rate is set in `Perbill` format, that means to set commission change rate equal to 1% you need to enter 10,000,000. And `commission change delay` is set in number of blocks units. 
+3. Submit transaction using your pool owner account.
+
+---
+
+### Changing Pool roles
+
+A pool has 4 roles:
+
+1. `Depositor` - creates the pool and is the initial member. Can only leave the pool once all other members have left. Once they have fully left, the pool is destroyed.
+2. `Root` - can change the `nominator`, `bouncer`, or itself and can perform any of the actions the nominator or bouncer can perform, and manage commission.
+3. `Nominator` - can select which validators the pool nominates.
+4. `Bouncer` - can change the pools state and kick members if the pool is blocked.
+
+When you create a pool, the creator account assumes all of the roles. You can update any of the roles to be assumes by any other account.
+
+To change pool roles follow these steps:
+
+1. Go to `Developer` > `Extrinsics` tab.
+2. Choose `nominationPools` and `updateRoles`. Enter your pool id, and choose the roles you want to set/remove.
+3. Submit transaction using your pool owner account.
+
 --- 
+
+### Destroying a pool
+
+Once pool owner decide no longer to support the pool, he should destroy the pool. To do this firstly owner should change pool state to `Destroying`:
+
+1. Go to `Developer` > `Extrinsics` tab.
+2. Choose `nominationPools` and `setState`. Enter your pool id, and choose `Destroying` state.
+3. Submit transaction using your pool owner account.
+
+Now owner should wait to all users leave pool by unbonding their funds or unbond their funds by itself. After that pool should be chilled:
+
+1. Go to `Developer` > `Extrinsics` tab.
+2. Choose `nominationPools` and `chill`. Enter your pool id.
+3. Submit transaction using your pool owner account.
+
+After pool chilled owner can unbond his funds and destroy the pool completely:
+
+1. Go to `Developer` > `Extrinsics` tab.
+2. Choose `nominationPools` and `unbond`. Enter your pool id and enter your bond amount including 6 decimals
+3. Submit transaction using your pool owner account.
+
+---
+
+### Claiming Pool Payout
+
+1. Go to `Network` > `Staking` tab.
+2. Then switch to `Accounts` tab and select `Pooled`.
+3. Here you can find your account, and your earnings under `claimable` column.
+4. To claim your earnings click on the three dots near your account and choose `Withdraw claimable`.
+
+---
+
 
 ## Joining a Pool
 
@@ -141,48 +210,5 @@ Note: you can also join a pool from the Karma Coin App.
 
 ---
 
-## Claiming Pool Payout
-
-1. Go to `Network` > `Staking` tab.
-2. Then switch to `Accounts` tab and select `Pooled`.
-3. Here you can find your account, and your earnings under `claimable` column.
-4. To claim your earnings click on the three dots near your account and choose `Withdraw claimable`.
-
 ---
 
-## Pool roles
-
-Pool have 4 roles:
-
-1. Depositor - creates the pool and is the initial member. They can only leave the pool once all other members have left. Once they fully leave, the pool is destroyed.
-2. Root - can change the nominator, bouncer, or itself and can perform any of the actions the nominator or bouncer can and also manage commission.
-3. Nominator - can select which validators the pool nominates.
-4. Bouncer - can change the pools state and kick members if the pool is blocked.
-
-To change pool roles follow these steps:
-
-1. Go to `Developer` > `Extrinsics` tab.
-2. Choose `nominationPools` and `updateRoles`. Enter your pool id, and choose the roles you want to set/remove.
-3. Submit transaction using your pool owner account.
-
----
-
-## Destroying a pool
-
-Once pool owner decide no longer to support the pool, he should destroy the pool. To do this firstly owner should change pool state to `Destroying`:
-
-1. Go to `Developer` > `Extrinsics` tab.
-2. Choose `nominationPools` and `setState`. Enter your pool id, and choose `Destroying` state.
-3. Submit transaction using your pool owner account.
-
-Now owner should wait to all users leave pool by unbonding their funds or unbond their funds by itself. After that pool should be chilled:
-
-1. Go to `Developer` > `Extrinsics` tab.
-2. Choose `nominationPools` and `chill`. Enter your pool id.
-3. Submit transaction using your pool owner account.
-
-After pool chilled owner can unbond his funds and destroy the pool completely:
-
-1. Go to `Developer` > `Extrinsics` tab.
-2. Choose `nominationPools` and `unbond`. Enter your pool id and enter your bond amount including 6 decimals
-3. Submit transaction using your pool owner account.
