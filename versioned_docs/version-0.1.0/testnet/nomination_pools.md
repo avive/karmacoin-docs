@@ -144,6 +144,16 @@ To change pool roles follow these steps:
 2. Choose `nominationPools` and `updateRoles`. Enter your pool id, and choose the roles you want to set/remove.
 3. Submit transaction using your pool owner account.
 
+---
+
+### Updating pool metadata
+
+Metadata can be updated by `Root` or `Bouncer` in any moment.
+
+1. Go to `Developer` > `Extrinsics` tab.
+2. Choose `nominationPools` and `setMetadata`. Enter your pool id, and enter your new metadata.
+3. Submit and sign transaction.
+
 --- 
 
 ### Deleting a Pool
