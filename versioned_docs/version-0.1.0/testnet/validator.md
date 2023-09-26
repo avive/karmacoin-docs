@@ -1,4 +1,4 @@
----
+ ---
 id: validator
 title: Running a Validator Node
 sidebar_label: ⛓️ Validation
@@ -169,6 +169,32 @@ There is no need to re-start your node if you are not selected for the validator
 The validator set is refreshed every era. In the next era, if there's a slot available and your node is selected to join the validator set, your node will become an active validator. Until then, it will remain in the waiting queue.
 
 🎉 Congratulation, you have successfully set up validation and your node should start validation the testnet and get you coin rewards in the next era (in up to 24 hours).
+
+## Stop validating
+
+If you wish to remain a validator or nominator (e.g. you're only stopping for planned downtime or server maintenance), submitting the chill extrinsic in the staking pallet should suffice. It is only if you wish to unbond funds or reap an account that you should continue with the following.
+
+To ensure a smooth stop to validation, make sure you should do the following actions:
+
+* Chill your validator
+* Purge validator session keys
+* Unbond your tokens
+
+### Chill Validator
+
+1. Go to `Developer` > `Extrinsics`.
+2. Choose `staking` and `chill` from the drop-down menus.
+3. Submit extrinsic with your validator account.
+
+### Purge validator session keys
+
+1. Go to `Developer` > `Extrinsics`.
+2. Choose `session` > `purgeKeys` from the drop-down menus.
+3. Submit extrinsic with your account. The key reference exists on the account that originally called the session.set_keys() extrinsic, which could be the stash or the staking proxy (at the time the keys were set).
+
+### Unbond your tokens
+
+Unbonding your tokens can be done through the `Network` > `Staking` > `Account actions` page by clicking the corresponding stash account drop-down and selecting "Unbond funds".
 
 ## Summary
 We hope this guide got your validator up and running smoothly.
